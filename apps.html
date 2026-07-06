@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f2efe8;font-family:'Archivo',sans-serif}
+a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
+@media (max-width:1024px){.r-cols{grid-template-columns:1fr!important}}
+@media (max-width:640px){.r-hide-sm{display:none!important}.r-stack{flex-direction:column!important;align-items:flex-start!important;gap:16px!important}.r-pad{padding-left:20px!important;padding-right:20px!important}[data-screen-label]{padding-left:20px!important;padding-right:20px!important}}
+@keyframes barGrow{from{transform:scaleY(.2)}to{transform:scaleY(1)}}
+</style>
+</helmet>
+
+<!-- HEADER -->
+<div style="background:linear-gradient(160deg,#4318ff 0%,#3a0ce0 70%,#2b06a8 100%);position:relative;overflow:hidden" data-screen-label="Apps — En-tête">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1px);background-size:28px 28px"></div>
+  <div class="r-pad" style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:26px 56px;gap:16px">
+    <a href="index.html" style="display:flex;align-items:center;gap:9px;font:800 18px 'Archivo',sans-serif;color:#fff;letter-spacing:-.02em"><span style="display:grid;place-items:center;width:27px;height:27px;border-radius:8px;background:#c8ff2e;font:900 16px 'Archivo',sans-serif;color:#2b06a8">L</span>lemanova</a>
+    <div class="r-hide-sm" style="display:flex;gap:30px;font:600 13px 'Archivo',sans-serif;color:rgba(255,255,255,.75)"><a href="apps.html" style="color:#c8ff2e">Apps</a><a href="sites.html">Sites</a><a href="approche.html">Approche</a></div>
+    <a href="contact.html" style="font:700 13px 'Archivo',sans-serif;color:#2b06a8;background:#c8ff2e;padding:12px 22px;border-radius:100px">Planifier un échange</a>
+  </div>
+  <div class="r-pad" style="position:relative;padding:56px 56px 72px">
+    <div style="font:700 12px 'Archivo',sans-serif;color:#c8ff2e;letter-spacing:.12em">APPS</div>
+    <h1 style="margin:14px 0 0;font:900 clamp(36px,6vw,64px)/1 'Archivo',sans-serif;color:#fff;letter-spacing:-.035em;max-width:820px">Des applications qui bossent pour vous.</h1>
+    <p style="margin:22px 0 0;font:500 17px/1.6 'Archivo',sans-serif;color:rgba(255,255,255,.8);max-width:520px">Outils internes, produits SaaS, automatisations — sur mesure, pour les startups et PME de Suisse romande.</p>
+  </div>
+</div>
+
+<!-- 1 · OUTILS INTERNES -->
+<div style="background:#f2efe8;padding:80px 56px" data-screen-label="Outils internes">
+  <div class="r-cols" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center">
+    <div>
+      <div style="display:inline-grid;place-items:center;width:48px;height:48px;border-radius:12px;background:#4318ff;font:800 20px 'Archivo',sans-serif;color:#c8ff2e">⌗</div>
+      <h2 style="margin:20px 0 0;font:900 40px/1.05 'Archivo',sans-serif;color:#141414;letter-spacing:-.03em">Outils internes</h2>
+      <p style="margin:16px 0 0;font:400 16px/1.7 'Archivo',sans-serif;color:#555;max-width:440px">L&rsquo;application qui remplace vos Excel et vos doubles saisies. Production, planning, stocks, RH, devis&nbsp;: un seul outil, pensé pour votre façon de travailler — pas l&rsquo;inverse.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:22px">
+        <span style="font:600 12.5px 'Archivo',sans-serif;color:#2b06a8;background:#e9e4ff;border-radius:100px;padding:8px 16px">Gestion de production</span>
+        <span style="font:600 12.5px 'Archivo',sans-serif;color:#2b06a8;background:#e9e4ff;border-radius:100px;padding:8px 16px">Planning équipes</span>
+        <span style="font:600 12.5px 'Archivo',sans-serif;color:#2b06a8;background:#e9e4ff;border-radius:100px;padding:8px 16px">Stocks &amp; devis</span>
+      </div>
+    </div>
+    <div style="background:#fff;border-radius:16px;box-shadow:0 24px 60px rgba(10,0,60,.15);overflow:hidden">
+      <div style="display:flex;align-items:center;gap:6px;padding:12px 16px;border-bottom:1px solid #eee"><div style="width:10px;height:10px;border-radius:50%;background:#ff5f57"></div><div style="width:10px;height:10px;border-radius:50%;background:#febc2e"></div><div style="width:10px;height:10px;border-radius:50%;background:#28c840"></div><span style="margin-left:8px;font:600 12px 'Archivo',sans-serif;color:#333">Planning — semaine 28</span></div>
+      <div style="padding:16px;display:flex;flex-direction:column;gap:10px">
+        <div style="display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center"><span style="font:600 12px 'Archivo',sans-serif;color:#555">Atelier A</span><div style="display:flex;gap:6px"><div style="flex:2.2;height:26px;border-radius:6px;background:#4318ff;display:grid;place-items:center;font:700 10px 'Archivo',sans-serif;color:#fff">Commande Morel</div><div style="flex:1;height:26px;border-radius:6px;background:#e9e4ff"></div></div></div>
+        <div style="display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center"><span style="font:600 12px 'Archivo',sans-serif;color:#555">Atelier B</span><div style="display:flex;gap:6px"><div style="flex:1;height:26px;border-radius:6px;background:#e9e4ff"></div><div style="flex:1.6;height:26px;border-radius:6px;background:#c8ff2e;display:grid;place-items:center;font:700 10px 'Archivo',sans-serif;color:#2b06a8">Série #88</div><div style="flex:.8;height:26px;border-radius:6px;background:#e9e4ff"></div></div></div>
+        <div style="display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center"><span style="font:600 12px 'Archivo',sans-serif;color:#555">Livraisons</span><div style="display:flex;gap:6px"><div style="flex:.7;height:26px;border-radius:6px;background:#e9e4ff"></div><div style="flex:1.4;height:26px;border-radius:6px;background:#141414;display:grid;place-items:center;font:700 10px 'Archivo',sans-serif;color:#c8ff2e">Tournée GE</div></div></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#f4f4f8;border-radius:10px;padding:12px 16px;margin-top:4px"><span style="font:600 12.5px 'Archivo',sans-serif;color:#222">Charge de la semaine</span><span style="font:800 14px 'Archivo',sans-serif;color:#4318ff">87%</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2 · SAAS -->
+<div style="background:#141414;padding:80px 56px" data-screen-label="Produits SaaS">
+  <div class="r-cols" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center">
+    <div style="background:#12141c;border:1px solid rgba(255,255,255,.1);border-radius:16px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.4)">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.08)"><span style="font:600 12px 'Archivo',sans-serif;color:#fff">votre-saas.ch — abonnés</span><span style="font:700 12px 'Archivo',sans-serif;color:#c8ff2e">+212% cette année</span></div>
+      <div style="display:flex;align-items:flex-end;gap:7px;height:130px;padding:18px">
+        <sc-for list="{{ bars }}" as="b" hint-placeholder-count="14">
+          <div style="flex:1;height: {{ b.h }};background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
+        </sc-for>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid rgba(255,255,255,.08)">
+        <div style="padding:14px 18px;border-right:1px solid rgba(255,255,255,.08)"><div style="font:400 10.5px 'Archivo',sans-serif;color:rgba(255,255,255,.5)">MRR</div><div style="font:800 18px 'Archivo',sans-serif;color:#fff">CHF 24k</div></div>
+        <div style="padding:14px 18px;border-right:1px solid rgba(255,255,255,.08)"><div style="font:400 10.5px 'Archivo',sans-serif;color:rgba(255,255,255,.5)">Abonnés actifs</div><div style="font:800 18px 'Archivo',sans-serif;color:#fff">1&nbsp;408</div></div>
+        <div style="padding:14px 18px"><div style="font:400 10.5px 'Archivo',sans-serif;color:rgba(255,255,255,.5)">Churn</div><div style="font:800 18px 'Archivo',sans-serif;color:#c8ff2e">1.9%</div></div>
+      </div>
+    </div>
+    <div>
+      <div style="display:inline-grid;place-items:center;width:48px;height:48px;border-radius:12px;background:#ff6b2c;font:800 20px 'Archivo',sans-serif;color:#fff">◍</div>
+      <h2 style="margin:20px 0 0;font:900 40px/1.05 'Archivo',sans-serif;color:#fff;letter-spacing:-.03em">Produits SaaS</h2>
+      <p style="margin:16px 0 0;font:400 16px/1.7 'Archivo',sans-serif;color:rgba(255,255,255,.65);max-width:440px">Vous avez l&rsquo;idée et la connaissance du marché. Nous apportons la structure produit&nbsp;: conception UX, développement, mise en ligne, itérations. Du MVP testable en 4 semaines à la plateforme qui scale.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:22px">
+        <span style="font:600 12.5px 'Archivo',sans-serif;color:#fff;border:1.5px solid rgba(255,255,255,.25);border-radius:100px;padding:8px 16px">MVP en 4 semaines</span>
+        <span style="font:600 12.5px 'Archivo',sans-serif;color:#fff;border:1.5px solid rgba(255,255,255,.25);border-radius:100px;padding:8px 16px">Abonnements &amp; paiements</span>
+        <span style="font:600 12.5px 'Archivo',sans-serif;color:#fff;border:1.5px solid rgba(255,255,255,.25);border-radius:100px;padding:8px 16px">Multi-utilisateurs</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3 · AUTOMATISATIONS -->
+<div style="background:#f2efe8;padding:80px 56px" data-screen-label="Automatisations">
+  <div class="r-cols" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center">
+    <div style="background:#fff;border-radius:16px;box-shadow:0 24px 60px rgba(10,0,60,.15);padding:22px">
+      <div style="font:700 11px 'Archivo',sans-serif;color:#888;letter-spacing:.08em;margin-bottom:14px">AUTOMATISATIONS ACTIVES</div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#f8f7fb;border-radius:10px;padding:12px 16px"><span style="font:600 13px 'Archivo',sans-serif;color:#141414">Facture envoyée à la livraison</span><div style="width:42px;height:24px;border-radius:20px;background:#141414;position:relative"><div style="position:absolute;right:3px;top:3px;width:18px;height:18px;border-radius:50%;background:#c8ff2e"></div></div></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#f8f7fb;border-radius:10px;padding:12px 16px"><span style="font:600 13px 'Archivo',sans-serif;color:#141414">Relance client à J+15</span><div style="width:42px;height:24px;border-radius:20px;background:#141414;position:relative"><div style="position:absolute;right:3px;top:3px;width:18px;height:18px;border-radius:50%;background:#c8ff2e"></div></div></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#f8f7fb;border-radius:10px;padding:12px 16px"><span style="font:600 13px 'Archivo',sans-serif;color:#141414">Rapport hebdo chaque vendredi</span><div style="width:42px;height:24px;border-radius:20px;background:#141414;position:relative"><div style="position:absolute;right:3px;top:3px;width:18px;height:18px;border-radius:50%;background:#c8ff2e"></div></div></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#f8f7fb;border-radius:10px;padding:12px 16px"><span style="font:600 13px 'Archivo',sans-serif;color:#999">Synchronisation compta (bientôt)</span><div style="width:42px;height:24px;border-radius:20px;background:#e5e2da;position:relative"><div style="position:absolute;left:3px;top:3px;width:18px;height:18px;border-radius:50%;background:#fff"></div></div></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;background:#4318ff;border-radius:12px;padding:14px 18px;margin-top:14px"><span style="font:700 13px 'Archivo',sans-serif;color:#fff">Temps gagné ce mois</span><span style="font:900 20px 'Archivo',sans-serif;color:#c8ff2e">72 h</span></div>
+    </div>
+    <div>
+      <div style="display:inline-grid;place-items:center;width:48px;height:48px;border-radius:12px;background:#141414;font:800 20px 'Archivo',sans-serif;color:#c8ff2e">⚡</div>
+      <h2 style="margin:20px 0 0;font:900 40px/1.05 'Archivo',sans-serif;color:#141414;letter-spacing:-.03em">Automatisations</h2>
+      <p style="margin:16px 0 0;font:400 16px/1.7 'Archivo',sans-serif;color:#555;max-width:440px">Les tâches répétitives n&rsquo;ont pas besoin de vous. Factures, relances, rapports, synchronisations entre vos outils existants&nbsp;: on branche, ça tourne, vous récupérez vos heures.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:22px">
+        <span style="font:600 12.5px 'Archivo',sans-serif;color:#2b06a8;background:#e9e4ff;border-radius:100px;padding:8px 16px">Sur vos outils actuels</span>
+        <span style="font:600 12.5px 'Archivo',sans-serif;color:#2b06a8;background:#e9e4ff;border-radius:100px;padding:8px 16px">Sans migration</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:#141414;padding:72px 56px 40px" data-screen-label="CTA">
+  <div class="r-stack" style="display:flex;justify-content:space-between;align-items:center;gap:40px">
+    <h2 style="margin:0;font:900 clamp(28px,4.5vw,40px)/1.05 'Archivo',sans-serif;color:#fff;letter-spacing:-.03em">Pas sûr de la bonne formule&nbsp;?<br><span style="color:#c8ff2e">On la trouve ensemble.</span></h2>
+    <a href="contact.html" style="flex:none;font:700 16px 'Archivo',sans-serif;color:#2b06a8;background:#c8ff2e;padding:18px 34px;border-radius:100px">Planifier un échange →</a>
+  </div>
+  <div class="r-stack" style="display:flex;justify-content:space-between;margin-top:64px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font:500 12px 'Archivo',sans-serif;color:rgba(255,255,255,.45);flex-wrap:wrap;gap:12px">
+    <span>Lemanova · Suisse romande</span>
+    <span style="display:flex;gap:18px;flex-wrap:wrap"><a href="apps.html">Apps</a><a href="sites.html">Sites</a><a href="approche.html">Approche</a><a href="contact.html">Contact</a></span>
+    <span>© 2026</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const bars = [22,30,28,38,36,46,44,56,54,68,66,82,80,100].map(h => ({ h: h + '%' }));
+    return { bars };
+  }
+}
+</script>
+</body>
+</html>
