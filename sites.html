@@ -32,12 +32,6 @@
 <style>
 body{margin:0;background:#f2efe8;font-family:'Archivo',sans-serif}
 a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
-.svc-nav{position:relative}
-.svc-panel{position:absolute;top:100%;left:0;padding-top:16px;display:none;z-index:60}
-.svc-nav:hover .svc-panel{display:block}
-.svc-card{background:#fff;border-radius:16px;box-shadow:0 24px 60px rgba(10,0,60,.28);padding:8px;width:300px;display:flex;flex-direction:column}
-.svc-card a{display:block;font:600 13px 'Archivo',sans-serif;color:#141414;padding:11px 14px;border-radius:10px;white-space:nowrap;text-decoration:none}
-.svc-card a:hover{background:#f2efe8;color:#4318ff}
 @media (max-width:1024px){.r-cols3{grid-template-columns:1fr!important}}
 @media (max-width:640px){.r-hide-sm{display:none!important}.r-stack{flex-direction:column!important;align-items:flex-start!important;gap:16px!important}.r-pad{padding-left:20px!important;padding-right:20px!important}[data-screen-label]{padding-left:20px!important;padding-right:20px!important}}
 @keyframes siteScroll{0%,12%{transform:translateY(0)}42%,58%{transform:translateY(calc(-100% + 440px))}88%,100%{transform:translateY(0)}}
@@ -52,13 +46,7 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
   <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1px);background-size:28px 28px"></div>
   <div class="r-pad" style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:26px 56px;gap:16px">
     <a href="index.html" style="display:flex;align-items:center;gap:9px;font:800 18px 'Archivo',sans-serif;color:#fff;letter-spacing:-.02em"><img src="uploads/lemany-logo-blanc-outlined.svg" alt="lemany" style="height:30px;display:block"></a>
-    <div class="r-hide-sm" style="display:flex;gap:28px;font:600 13px 'Archivo',sans-serif;color:rgba(255,255,255,.75);align-items:center">
-      <div class="svc-nav"><a href="services-applications-web.html" style="display:flex;align-items:center;gap:5px;cursor:pointer">Services <span style="font-size:9px;opacity:.7">&#9662;</span></a>
-        <div class="svc-panel"><div class="svc-card"><a href="services-applications-web.html">Développement d'applications web</a><a href="services-logiciels-metier.html">Logiciels métier</a><a href="services-saas.html">Produits SaaS</a><a href="services-automatisation.html">Automatisation des processus</a><a href="services-sites-internet.html">Création de sites internet</a><a href="services-portails-clients.html">Portails clients</a><a href="services-maintenance.html">Maintenance & évolution</a></div></div>
-      </div>
-      <a href="approche.html">Approche</a>
-      <a href="blog.html">Blog</a>
-    </div>
+    <div class="r-hide-sm" style="display:flex;gap:30px;font:600 13px 'Archivo',sans-serif;color:rgba(255,255,255,.75)"><a href="apps.html">Apps</a><a href="sites.html" style="color:#c8ff2e">Sites</a><a href="approche.html">Approche</a></div>
     <a href="contact.html" style="font:700 13px 'Archivo',sans-serif;color:#2b06a8;background:#c8ff2e;padding:12px 22px;border-radius:100px">Planifier un échange</a>
   </div>
   <div class="r-pad" style="position:relative;padding:56px 56px 72px">

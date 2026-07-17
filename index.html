@@ -32,12 +32,6 @@
 <style>
 body{margin:0;background:#4318ff;font-family:'Archivo',sans-serif}
 a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
-.svc-nav{position:relative}
-.svc-panel{position:absolute;top:100%;left:0;padding-top:16px;display:none;z-index:60}
-.svc-nav:hover .svc-panel{display:block}
-.svc-card{background:#fff;border-radius:16px;box-shadow:0 24px 60px rgba(10,0,60,.28);padding:8px;width:300px;display:flex;flex-direction:column}
-.svc-card a{display:block;font:600 13px 'Archivo',sans-serif;color:#141414;padding:11px 14px;border-radius:10px;white-space:nowrap;text-decoration:none}
-.svc-card a:hover{background:#f2efe8;color:#4318ff}
 @media (max-width:1240px){.hero-cluster{transform:scale(.55);transform-origin:top right;right:-120px!important}}
 @media (max-width:1100px){.hero-cluster{display:none}.hero-wrap{height:auto!important;padding-bottom:72px}}
 @media (max-width:1024px){.r-cols{grid-template-columns:1fr!important}.r-grid4{grid-template-columns:1fr 1fr!important}}
@@ -55,19 +49,13 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
   <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1px);background-size:28px 28px"></div>
   <div class="r-pad" style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:26px 56px;z-index:5;gap:16px">
     <a href="index.html" style="display:flex;align-items:center;gap:9px;font:800 18px 'Archivo',sans-serif;color:#fff;letter-spacing:-.02em"><img src="uploads/lemany-logo-blanc-outlined.svg" alt="lemany" style="height:30px;display:block"></a>
-    <div class="r-hide-sm" style="display:flex;gap:28px;font:600 13px 'Archivo',sans-serif;color:rgba(255,255,255,.75);align-items:center">
-      <div class="svc-nav"><a href="services-applications-web.html" style="display:flex;align-items:center;gap:5px;cursor:pointer">Services <span style="font-size:9px;opacity:.7">&#9662;</span></a>
-        <div class="svc-panel"><div class="svc-card"><a href="services-applications-web.html">Développement d'applications web</a><a href="services-logiciels-metier.html">Logiciels métier</a><a href="services-saas.html">Produits SaaS</a><a href="services-automatisation.html">Automatisation des processus</a><a href="services-sites-internet.html">Création de sites internet</a><a href="services-portails-clients.html">Portails clients</a><a href="services-maintenance.html">Maintenance & évolution</a></div></div>
-      </div>
-      <a href="approche.html">Approche</a>
-      <a href="blog.html">Blog</a>
-    </div>
+    <div class="r-hide-sm" style="display:flex;gap:30px;font:600 13px 'Archivo',sans-serif;color:rgba(255,255,255,.75)"><a href="apps.html">Apps</a><a href="sites.html">Sites</a><a href="approche.html">Approche</a></div>
     <a href="contact.html" style="font:700 13px 'Archivo',sans-serif;color:#2b06a8;background:#c8ff2e;padding:12px 22px;border-radius:100px">Planifier un échange</a>
   </div>
   <div class="r-pad" style="position:relative;padding:52px 0 0 56px;max-width:530px;z-index:5">
     <div style="display:inline-flex;align-items:center;gap:9px;font:700 12px 'Archivo',sans-serif;color:#c8ff2e;letter-spacing:.1em;border:1.5px solid rgba(200,255,46,.5);border-radius:100px;padding:8px 16px;margin-bottom:22px"><span style="position:relative;display:inline-block;width:14px;height:14px;background:#e30613;border-radius:3px"><span style="position:absolute;left:6px;top:3px;width:2.5px;height:8.5px;background:#fff"></span><span style="position:absolute;left:3px;top:6px;width:8.5px;height:2.5px;background:#fff"></span></span>STUDIO PRODUIT DIGITAL — SUISSE ROMANDE</div>
     <h1 style="margin:0;font:900 clamp(40px,6vw,74px)/.98 'Archivo',sans-serif;color:#fff;letter-spacing:-.035em">On fabrique<br>des <span style="color:#c8ff2e">apps</span> et<br>des <span style="color:#c8ff2e">sites</span> qui<br>bossent pour vous.</h1>
-    <p style="margin:26px 0 0;font:500 17px/1.6 'Archivo',sans-serif;color:rgba(255,255,255,.8);max-width:420px">Lemany développe des applications web, plateformes SaaS, sites internet performants et automatisations sur mesure pour les PME et startups en Suisse romande.</p>
+    <p style="margin:26px 0 0;font:500 17px/1.6 'Archivo',sans-serif;color:rgba(255,255,255,.8);max-width:420px">Applications web, sites vitrine et automatisations sur mesure pour les startups et PME de Suisse romande. De l&rsquo;idée au produit, sans friction.</p>
     <div style="display:flex;gap:14px;margin-top:32px">
       <div style="font:700 15px 'Archivo',sans-serif;color:#2b06a8;background:#fff;padding:16px 28px;border-radius:100px">Voir ce qu&rsquo;on fabrique ↓</div>
     </div>
@@ -209,36 +197,6 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
     <div style="border-top:3px solid #4318ff;padding:22px 24px 0 0"><div style="font:900 15px 'Archivo',sans-serif;color:#4318ff">S2</div><div style="font:800 19px 'Archivo',sans-serif;color:#141414;margin-top:8px">On maquette</div><p style="margin:8px 0 0;font:400 13.5px/1.6 'Archivo',sans-serif;color:#666">Vous voyez votre app avant qu&rsquo;elle existe.</p></div>
     <div style="border-top:3px solid #4318ff;padding:22px 24px 0 0"><div style="font:900 15px 'Archivo',sans-serif;color:#4318ff">S3</div><div style="font:800 19px 'Archivo',sans-serif;color:#141414;margin-top:8px">On construit</div><p style="margin:8px 0 0;font:400 13.5px/1.6 'Archivo',sans-serif;color:#666">Démo chaque vendredi. Vous pilotez, on code.</p></div>
     <div style="border-top:3px solid #c8ff2e;padding:22px 0 0 0;background:linear-gradient(180deg,rgba(200,255,46,.12),transparent);border-radius:0 0 12px 12px"><div style="font:900 15px 'Archivo',sans-serif;color:#141414;padding-left:2px">S4</div><div style="font:800 19px 'Archivo',sans-serif;color:#141414;margin-top:8px">On livre</div><p style="margin:8px 0 0;font:400 13.5px/1.6 'Archivo',sans-serif;color:#666">En ligne, formée, utilisée. Et ça continue d&rsquo;évoluer.</p></div>
-  </div>
-</div>
-
-<!-- EXPERTISES / SEO -->
-<div style="background:#4318ff;padding:88px 56px" data-screen-label="Expertises">
-  <div style="font:700 12px 'Archivo',sans-serif;color:#c8ff2e;letter-spacing:.12em">NOS EXPERTISES</div>
-  <h2 style="margin:16px 0 0;max-width:900px;font:900 clamp(28px,4.4vw,42px)/1.08 'Archivo',sans-serif;color:#fff;letter-spacing:-.03em">Agence web et studio de développement sur mesure en Suisse romande</h2>
-  <p style="margin:20px 0 0;max-width:720px;font:500 16px/1.65 'Archivo',sans-serif;color:rgba(255,255,255,.8)">De la création de site internet au développement d&rsquo;applications web et de logiciels métier, nous concevons des produits digitaux performants pour les PME et startups romandes&nbsp;: SaaS, portails clients, CRM sur mesure et automatisations d&rsquo;entreprise.</p>
-  <div class="r-grid4" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:48px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14);border-radius:14px;overflow:hidden">
-    <a href="services-applications-web.html" style="background:#4318ff;padding:28px 26px;display:block;transition:background .15s" onmouseover="this.style.background='#3a0ce0'" onmouseout="this.style.background='#4318ff'"><h3 style="margin:0;font:800 19px 'Archivo',sans-serif;color:#fff">Développement d&rsquo;applications web</h3><p style="margin:10px 0 0;font:400 14px/1.6 'Archivo',sans-serif;color:rgba(255,255,255,.72)">Applications internes, plateformes SaaS et logiciels métier taillés pour vos processus, en développement React et Laravel.</p></a>
-    <a href="services-sites-internet.html" style="background:#4318ff;padding:28px 26px;display:block;transition:background .15s" onmouseover="this.style.background='#3a0ce0'" onmouseout="this.style.background='#4318ff'"><h3 style="margin:0;font:800 19px 'Archivo',sans-serif;color:#fff">Création de sites internet</h3><p style="margin:10px 0 0;font:400 14px/1.6 'Archivo',sans-serif;color:rgba(255,255,255,.72)">Sites vitrine rapides, soignés et optimisés pour le référencement, pensés pour convertir vos visiteurs en clients.</p></a>
-    <a href="services-portails-clients.html" style="background:#4318ff;padding:28px 26px;display:block;transition:background .15s" onmouseover="this.style.background='#3a0ce0'" onmouseout="this.style.background='#4318ff'"><h3 style="margin:0;font:800 19px 'Archivo',sans-serif;color:#fff">Portails clients &amp; CRM sur mesure</h3><p style="margin:10px 0 0;font:400 14px/1.6 'Archivo',sans-serif;color:rgba(255,255,255,.72)">Portails clients, CRM et ERP sur mesure qui centralisent vos données et remplacent les tableurs éparpillés.</p></a>
-    <a href="services-automatisation.html" style="background:#4318ff;padding:28px 26px;display:block;transition:background .15s" onmouseover="this.style.background='#3a0ce0'" onmouseout="this.style.background='#4318ff'"><h3 style="margin:0;font:800 19px 'Archivo',sans-serif;color:#fff">Automatisation d&rsquo;entreprise</h3><p style="margin:10px 0 0;font:400 14px/1.6 'Archivo',sans-serif;color:rgba(255,255,255,.72)">Automatisation des tâches répétitives et connexion de vos outils pour libérer du temps à vos équipes.</p></a>
-    <a href="services-saas.html" style="background:#4318ff;padding:28px 26px;display:block;transition:background .15s" onmouseover="this.style.background='#3a0ce0'" onmouseout="this.style.background='#4318ff'"><h3 style="margin:0;font:800 19px 'Archivo',sans-serif;color:#fff">Développement SaaS</h3><p style="margin:10px 0 0;font:400 14px/1.6 'Archivo',sans-serif;color:rgba(255,255,255,.72)">De l&rsquo;idée au produit lancé&nbsp;: architecture, développement et mise en production de votre plateforme SaaS.</p></a>
-    <a href="services-applications-web.html" style="background:#4318ff;padding:28px 26px;display:block;transition:background .15s" onmouseover="this.style.background='#3a0ce0'" onmouseout="this.style.background='#4318ff'"><h3 style="margin:0;font:800 19px 'Archivo',sans-serif;color:#fff">Développeur en Suisse romande</h3><p style="margin:10px 0 0;font:400 14px/1.6 'Archivo',sans-serif;color:rgba(255,255,255,.72)">Une équipe proche de vous, à Genève, Lausanne et dans toute la Suisse romande, sur place ou à distance.</p></a>
-  </div>
-  <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:36px">
-    <span style="font:600 12.5px 'Archivo',sans-serif;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:7px 15px">Développement application web</span>
-    <span style="font:600 12.5px 'Archivo',sans-serif;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:7px 15px">Agence web</span>
-    <span style="font:600 12.5px 'Archivo',sans-serif;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:7px 15px">Création site internet</span>
-    <span style="font:600 12.5px 'Archivo',sans-serif;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:7px 15px">Logiciel métier</span>
-    <span style="font:600 12.5px 'Archivo',sans-serif;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:7px 15px">Développement SaaS</span>
-    <span style="font:600 12.5px 'Archivo',sans-serif;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:7px 15px">Application interne</span>
-    <span style="font:600 12.5px 'Archivo',sans-serif;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:7px 15px">Portail client</span>
-    <span style="font:600 12.5px 'Archivo',sans-serif;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:7px 15px">CRM sur mesure</span>
-    <span style="font:600 12.5px 'Archivo',sans-serif;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:7px 15px">ERP</span>
-    <span style="font:600 12.5px 'Archivo',sans-serif;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:7px 15px">Automatisation entreprise</span>
-    <span style="font:600 12.5px 'Archivo',sans-serif;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:7px 15px">Développement Laravel</span>
-    <span style="font:600 12.5px 'Archivo',sans-serif;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:7px 15px">Développement React</span>
-    <span style="font:600 12.5px 'Archivo',sans-serif;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.22);border-radius:100px;padding:7px 15px">Développeur Suisse romande</span>
   </div>
 </div>
 
