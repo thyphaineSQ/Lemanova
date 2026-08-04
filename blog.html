@@ -5,6 +5,7 @@
 <title>Blog — Lemany</title>
 <meta name="description" content="Conseils et retours d'expérience sur les apps, sites et automatisations pour PME de Suisse romande.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://lemany.ch/blog.html">
 <link rel="icon" type="image/svg+xml" href="uploads/lemany-icone.svg">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M1EV1H4N9Q"></script>
@@ -32,6 +33,13 @@
 <style>
 body{margin:0;background:#f2efe8;font-family:'Archivo',sans-serif}
 a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
+.svc-nav{position:relative}
+.svc-panel{position:absolute;top:100%;left:0;padding-top:16px;display:none;z-index:60}
+.svc-nav:hover .svc-panel{display:block}
+.svc-card{background:#fff;border-radius:16px;box-shadow:0 24px 60px rgba(10,0,60,.28);padding:8px;width:300px;display:flex;flex-direction:column}
+.svc-card a{display:block;font:600 13px 'Archivo',sans-serif;color:#141414;padding:10px 14px;border-radius:10px;white-space:nowrap;text-decoration:none}
+.svc-card a:hover{background:#f2efe8;color:#4318ff}
+
 @media (max-width:1024px){.r-cols{grid-template-columns:1fr!important}}
 @media (max-width:640px){.r-hide-sm{display:none!important}.r-stack{flex-direction:column!important;align-items:flex-start!important;gap:16px!important}.r-pad{padding-left:20px!important;padding-right:20px!important}[data-screen-label]{padding-left:20px!important;padding-right:20px!important}}
 </style>
@@ -40,9 +48,46 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
 <!-- HEADER -->
 <div style="background:linear-gradient(160deg,#4318ff 0%,#3a0ce0 70%,#2b06a8 100%);position:relative;overflow:hidden" data-screen-label="Blog — En-tête">
   <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1px);background-size:28px 28px"></div>
-  <div class="r-pad" style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:26px 56px;gap:16px">
+  <div class="r-pad" style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:26px 56px;gap:16px;z-index:50">
     <a href="index.html" style="display:flex;align-items:center;gap:9px;font:800 18px 'Archivo',sans-serif;color:#fff;letter-spacing:-.02em"><img src="uploads/lemany-logo-blanc-outlined.svg" alt="lemany" style="height:30px;display:block"></a>
-    <div class="r-hide-sm" style="display:flex;gap:30px;font:600 13px 'Archivo',sans-serif;color:rgba(255,255,255,.75)"><a href="apps.html">Apps</a><a href="sites.html">Sites</a><a href="approche.html">Approche</a><a href="blog.html" style="color:#c8ff2e">Blog</a></div>
+    <div class="r-hide-sm" style="display:flex;gap:26px;font:600 13px 'Archivo',sans-serif;color:rgba(255,255,255,.75);align-items:center">
+      <div class="svc-nav"><a href="index.html#solutions" style="display:flex;align-items:center;gap:5px;cursor:pointer">Solutions <span style="font-size:9px;opacity:.7">&#9662;</span></a>
+        <div class="svc-panel"><div class="svc-card">
+          <a href="services-sites-internet.html">Cr&eacute;ation de site internet</a>
+          <a href="services-refonte-site.html">Refonte de site web</a>
+          <a href="services-seo.html">R&eacute;f&eacute;rencement SEO</a>
+          <a href="services-seo-local.html">SEO local</a>
+          <a href="services-automatisation-ia.html">Automatisation &amp; IA</a>
+          <a href="services-automatisation.html">Automatisation des processus</a>
+          <a href="services-logiciels-metier.html">Logiciels m&eacute;tier</a>
+          <a href="services-crm.html">CRM sur mesure</a>
+          <a href="services-reservation.html">Syst&egrave;mes de r&eacute;servation</a>
+          <a href="services-portails-clients.html">Portails clients</a>
+          <a href="services-mvp.html">MVP startup</a>
+          <a href="services-saas.html">Produits SaaS</a>
+          <a href="services-applications-web.html">Applications web</a>
+          <a href="services-maintenance.html">Maintenance &amp; &eacute;volution</a>
+        </div></div>
+      </div>
+      <div class="svc-nav"><a href="index.html#secteurs" style="display:flex;align-items:center;gap:5px;cursor:pointer">Secteurs <span style="font-size:9px;opacity:.7">&#9662;</span></a>
+        <div class="svc-panel"><div class="svc-card">
+          <a href="secteurs-restaurants.html">Restaurants</a>
+          <a href="secteurs-bars.html">Bars &amp; caf&eacute;s</a>
+          <a href="secteurs-dentistes.html">Dentistes</a>
+          <a href="secteurs-medecins.html">M&eacute;decins &amp; cabinets</a>
+          <a href="secteurs-avocats.html">Avocats</a>
+          <a href="secteurs-architectes.html">Architectes</a>
+          <a href="secteurs-immobilier.html">Immobilier</a>
+          <a href="secteurs-construction.html">Construction</a>
+          <a href="secteurs-garages.html">Garages</a>
+          <a href="secteurs-fitness.html">Fitness &amp; sport</a>
+          <a href="secteurs-beaute.html">Beaut&eacute; &amp; bien-&ecirc;tre</a>
+          <a href="secteurs-startups.html">Startups</a>
+        </div></div>
+      </div>
+      <a href="approche.html">Approche</a>
+      <a href="blog.html" style="color:#c8ff2e">Blog</a>
+    </div>
     <a href="contact.html" style="font:700 13px 'Archivo',sans-serif;color:#2b06a8;background:#c8ff2e;padding:12px 22px;border-radius:100px;white-space:nowrap">Planifier un échange</a>
   </div>
   <div class="r-pad" style="position:relative;padding:56px 56px 72px">
@@ -121,7 +166,7 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
   </div>
   <div class="r-stack" style="display:flex;justify-content:space-between;margin-top:64px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font:500 12px 'Archivo',sans-serif;color:rgba(255,255,255,.45);flex-wrap:wrap;gap:12px">
     <span>Lemany · Suisse romande</span>
-    <span style="display:flex;gap:18px;flex-wrap:wrap"><a href="apps.html">Apps</a><a href="sites.html">Sites</a><a href="approche.html">Approche</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></span>
+    <span style="display:flex;gap:18px;flex-wrap:wrap"><a href="index.html">Accueil</a><a href="index.html#solutions">Solutions</a><a href="index.html#secteurs">Secteurs</a><a href="approche.html">Approche</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></span>
     <span>© 2026</span>
   </div>
 </div>
@@ -145,13 +190,15 @@ class Component extends DCLogic {
       'SaaS': { color: '#c2410c', bg: '#ffe4d6', band: 'repeating-linear-gradient(45deg,#ffe4d6 0 12px,#ffd8c4 12px 24px)' },
       'Product thinking': { color: '#141414', bg: '#e3f9d3', band: 'repeating-linear-gradient(45deg,#e3f9d3 0 12px,#d4f3be 12px 24px)' },
       'Process': { color: '#3a4d00', bg: '#eaffab', band: 'repeating-linear-gradient(45deg,#eaffab 0 12px,#ddf88f 12px 24px)' },
+      'IA': { color: '#0e7490', bg: '#d7f5fb', band: 'repeating-linear-gradient(45deg,#d7f5fb 0 12px,#c2eef8 12px 24px)' },
+      'SEO': { color: '#7c2d92', bg: '#f3e2fa', band: 'repeating-linear-gradient(45deg,#f3e2fa 0 12px,#ead0f5 12px 24px)' },
     };
     return map[cat] || map['Automatisation'];
   }
 
   renderVals() {
     const { articles, selectedId, filter } = this.state;
-    const cats = ['Tous', 'Automatisation', 'SaaS', 'Product thinking', 'Process'];
+    const cats = ['Tous', 'Automatisation', 'IA', 'SEO', 'SaaS', 'Product thinking', 'Process'];
     const filters = cats.map(label => ({
       label,
       color: filter === label ? '#fff' : '#555',
