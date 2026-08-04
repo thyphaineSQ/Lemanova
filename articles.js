@@ -7,6 +7,22 @@
 // ============================================================
 export const articles = [
   {
+    id: 'site-internet-sans-clients',
+    category: 'Product thinking',
+    title: 'Votre site est joli. Pourquoi n\'amène-t-il aucun client ?',
+    date: '4 août 2026',
+    minutes: 6,
+    image: null,
+    excerpt: 'Un site vitrine qui ne génère ni appel ni demande de devis n\'est pas une fatalité. Les 3 raisons les plus fréquentes — et la plus ignorée.',
+    content: [
+      "Vous avez un site. Il est propre, les photos sont belles, les horaires sont à jour. Et pourtant : les nouveaux clients arrivent toujours par le bouche-à-oreille, jamais par le site. Quand on demande « il vous rapporte quoi, votre site ? », la réponse honnête est souvent : on ne sait pas. Probablement rien.",
+      "Première raison, la plus fréquente : personne ne le trouve. Votre site parle de vous (« Bienvenue chez Dupont SA, entreprise familiale depuis 1987 ») alors que vos futurs clients cherchent leur problème (« fuite d\'eau urgence Lausanne », « remplacer fenêtres prix »). Google ne fait pas le lien — donc il ne vous montre pas.",
+      "Deuxième raison : on vous trouve, mais on ne peut rien faire. Pas de prise de rendez-vous, pas de demande de devis en deux clics, juste un numéro de téléphone — que votre visiteur consulte à 22h, quand vous ne répondez pas. Il note « rappeler demain », et demain il a trouvé quelqu\'un d\'autre.",
+      "Troisième raison, la plus ignorée : le site vit tout seul. Personne ne regarde combien de personnes le visitent, d\'où elles viennent, sur quelle page elles abandonnent. Sans ces chiffres, impossible de savoir si le problème est d\'être trouvé, de convaincre ou de conclure — alors on ne corrige rien.",
+      "La bonne nouvelle : aucun de ces trois problèmes ne demande de refaire le site de zéro. Une page pensée autour des recherches réelles de vos clients, un moyen d\'agir en deux clics, et des mesures simples pour voir ce qui se passe — c\'est souvent l\'affaire de quelques semaines. Le test à faire ce soir : tapez sur Google ce qu\'un client taperait pour résoudre son problème (pas le nom de votre entreprise). Si vous n\'apparaissez pas sur la première page, vous savez par où commencer."
+    ]
+  },
+  {
     id: 'taches-repetitives-pme',
     category: 'Automatisation',
     title: 'Les 5 tâches que votre PME refait chaque semaine (et comment les supprimer)',
