@@ -23,17 +23,12 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "xiw30z4v7m");
 </script>
-<script src="./support.js"></script>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://lemany.ch/index.html"}, {"@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://lemany.ch/index.html#solutions"}, {"@type": "ListItem", "position": 3, "name": "Maintenance & évolution", "item": "https://lemany.ch/services-maintenance.html"}]}
 </script>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Combien co&ucirc;te la maintenance ?", "acceptedAnswer": {"@type": "Answer", "text": "Pour un site vitrine, comptez généralement entre 80 et 250 CHF par mois (hébergement, mises à jour de sécurité, sauvegardes, petites modifications). Pour une application métier, la fourchette usuelle se situe entre 300 et 1 200 CHF par mois selon le niveau de réactivité attendu et le volume d'évolutions prévu."}}, {"@type": "Question", "name": "Proposez-vous un contrat de maintenance ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, avec des engagements écrits : délai de prise en charge, sauvegardes régulières, mises à jour de sécurité et enveloppe d'heures pour les évolutions. Le contrat est sans durée minimale imposée : nous préférons que vous restiez parce que le service vous convient."}}, {"@type": "Question", "name": "Reprenez-vous une application ou un site existant ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, même si nous ne l'avons pas construit. Nous commençons par un audit du code, de la sécurité et des performances, puis nous vous disons honnêtement ce qui vaut la peine d'être repris et ce qui co&ucirc;tera plus cher à maintenir qu'à refaire. Aucun engagement n'est demandé avant cet audit."}}, {"@type": "Question", "name": "&Agrave; quelle vitesse corrigez-vous un bug ?", "acceptedAnswer": {"@type": "Answer", "text": "Un problème bloquant — site inaccessible, commande impossible, données en risque — est traité en priorité le jour ouvré même. Les anomalies sans impact direct sur votre activité sont groupées dans le cycle d'évolutions suivant. Vous savez toujours où en est votre demande : pas de ticket qui disparaît dans le vide."}}, {"@type": "Question", "name": "Que se passe-t-il si nous arrêtons la maintenance ?", "acceptedAnswer": {"@type": "Answer", "text": "Votre site ou votre application continue de fonctionner, et tout vous appartient : code, données, hébergement, noms de domaine. Nous transmettons les accès et la documentation nécessaires pour qu'une autre équipe prenne le relais. Le seul risque est celui de l'abandon : sans mises à jour de sécurité, un site vieillit vite et devient vulnérable."}}]}
 </script>
-</head>
-<body>
-<x-dc>
-<helmet data-dc-atomics>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 <style>
@@ -49,14 +44,16 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
 @media (max-width:900px){.r-cards{grid-template-columns:1fr 1fr!important}}
 @media (max-width:640px){.r-hide-sm{display:none!important}.r-cards{grid-template-columns:1fr!important}.r-stack{flex-direction:column!important;align-items:flex-start!important;gap:16px!important}.r-pad{padding-left:20px!important;padding-right:20px!important}[data-screen-label]{padding-left:20px!important;padding-right:20px!important}}
 </style>
-</helmet>
+</head>
+<body>
 
 <!-- HEADER -->
+<main>
 <div style="background:linear-gradient(160deg,#4318ff 0%,#3a0ce0 70%,#2b06a8 100%);position:relative;overflow:hidden" data-screen-label="Maintenance & évolution — En-tête">
   <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1px);background-size:28px 28px"></div>
   <div class="r-pad" style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:26px 56px;gap:16px;z-index:5">
     <a href="index.html" style="display:flex;align-items:center;gap:9px;font:800 18px 'Archivo',sans-serif;color:#fff;letter-spacing:-.02em"><img src="uploads/lemany-logo-blanc-outlined.svg" alt="lemany" style="height:30px;display:block"></a>
-    <div class="r-hide-sm" style="display:flex;gap:26px;font:600 13px 'Archivo',sans-serif;color:rgba(255,255,255,.75);align-items:center">
+    <nav class="r-hide-sm" style="display:flex;gap:26px;font:600 13px 'Archivo',sans-serif;color:rgba(255,255,255,.75);align-items:center" aria-label="Navigation principale">
       <div class="svc-nav"><a href="index.html#solutions" style="display:flex;align-items:center;gap:5px;cursor:pointer;color:#c8ff2e">Solutions <span style="font-size:9px;opacity:.7">&#9662;</span></a>
         <div class="svc-panel"><div class="svc-card">
           <a href="services-sites-internet.html">Cr&eacute;ation de site internet</a>
@@ -93,7 +90,7 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
       </div>
       <a href="approche.html">Approche</a>
       <a href="blog.html">Blog</a>
-    </div>
+    </nav>
     <a href="contact.html" style="font:700 13px 'Archivo',sans-serif;color:#2b06a8;background:#c8ff2e;padding:12px 22px;border-radius:100px;white-space:nowrap">Planifier un échange</a>
   </div>
   <div class="r-pad" style="position:relative;padding:52px 56px 72px;z-index:2">
@@ -183,9 +180,10 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
     <a href="blog.html" style="display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid #ddd6f5;border-radius:12px;padding:16px 18px;font:700 14px 'Archivo',sans-serif;color:#141414">Guides &amp; conseils sur le blog<span style="color:#4318ff">&rarr;</span></a>
   </div>
 </div>
+</main>
 
 <!-- CTA / FOOTER -->
-<div style="background:#141414;padding:80px 56px 40px" data-screen-label="Maintenance & évolution — Contact">
+<footer style="background:#141414;padding:80px 56px 40px" data-screen-label="Maintenance & évolution — Contact">
   <div class="r-stack" style="display:flex;justify-content:space-between;align-items:center;gap:40px">
     <h2 style="margin:0;font:900 clamp(28px,4.5vw,42px)/1.05 'Archivo',sans-serif;color:#fff;letter-spacing:-.03em">Un projet en tête&nbsp;?<br><span style="color:#c8ff2e">Parlons-en 30 minutes.</span></h2>
     <a href="contact.html" style="flex:none;font:700 16px 'Archivo',sans-serif;color:#2b06a8;background:#c8ff2e;padding:18px 34px;border-radius:100px">Planifier un échange &rarr;</a>
@@ -236,7 +234,6 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
     <span>Partenaire digital des PME — Gen&egrave;ve, Lausanne, Nyon &amp; toute la Suisse romande</span>
     <span>&copy; 2026 Lemany</span>
   </div>
-</div>
-</x-dc>
+</footer>
 </body>
 </html>

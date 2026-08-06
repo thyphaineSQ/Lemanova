@@ -1599,6 +1599,7 @@
     const s = document.createElement("style");
     s.textContent = "x-dc{display:none!important}";
     document.head.appendChild(s);
+    return () => s.remove();
   }
   function loadScript(src, integrity) {
     return new Promise((resolve2, reject) => {
@@ -1679,9 +1680,16 @@
     if (document.readyState !== "loading") api.__dcBoot();
     else document.addEventListener("DOMContentLoaded", () => api.__dcBoot());
   }
-  hideRawTemplate();
+  const unhideRawTemplate = hideRawTemplate();
+  // Filet de sécurité : sans lui, un échec de chargement de React laisse la page
+  // définitivement blanche (le contenu vit dans <x-dc>, masqué juste au-dessus).
+  // C'est ce qui empêchait les moteurs de rendu tiers — ChatGPT, aperçus de lien,
+  // outils de capture — d'afficher le site. Après un boot réussi, boot() a retiré
+  // <x-dc> du DOM, donc lever la règle CSS est sans effet : le filet est gratuit.
+  const rawTemplateFailsafe = setTimeout(unhideRawTemplate, 5e3);
   loadReactUmd().then(init).catch((err) => {
+    clearTimeout(rawTemplateFailsafe);
+    unhideRawTemplate();
     console.error("[dc] failed to load React or boot:", err);
-    throw err;
   });
 })();

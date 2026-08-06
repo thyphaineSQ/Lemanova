@@ -23,7 +23,6 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "xiw30z4v7m");
 </script>
-<script src="./support.js"></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Lemany","url":"https://lemany.ch/","logo":"https://lemany.ch/uploads/lemany-icone.svg","description":"Partenaire digital des PME en Suisse romande : création de sites internet, référencement SEO, logiciels métier, automatisation et IA.","areaServed":["Genève","Lausanne","Nyon","Suisse romande","Suisse"],"address":{"@type":"PostalAddress","addressRegion":"Suisse romande","addressCountry":"CH"},"knowsAbout":["Création de site internet","Refonte de site web","SEO","SEO local","Automatisation","Intelligence artificielle","CRM","Logiciels métier","SaaS","MVP"],"slogan":"Plus de clients, moins de tâches manuelles."}
 </script>
@@ -40,10 +39,6 @@
 {"@type":"Question","name":"Travaillez-vous uniquement à Genève et Lausanne ?","acceptedAnswer":{"@type":"Answer","text":"Non. Lemany accompagne des entreprises dans toute la Suisse romande — Genève, Lausanne, Nyon, Fribourg, Neuchâtel, Valais — sur place ou à distance. Le premier échange de 30 minutes se fait en visio ou autour d'un café."}}
 ]}
 </script>
-</head>
-<body>
-<x-dc>
-<helmet data-dc-atomics>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 <style>
@@ -67,14 +62,16 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
 @keyframes notifIn{0%{opacity:0;transform:translateX(40px)}12%{opacity:1;transform:translateX(0)}80%{opacity:1}100%{opacity:0;transform:translateY(-8px)}}
 @keyframes barGrow{from{transform:scaleY(.2)}to{transform:scaleY(1)}}
 </style>
-</helmet>
+</head>
+<body>
 
 <!-- HERO -->
+<main>
 <div class="hero-wrap" style="position:relative;height:780px;overflow:hidden;background:linear-gradient(160deg,#4318ff 0%,#3a0ce0 60%,#2b06a8 100%)" data-screen-label="Hero">
   <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1px);background-size:28px 28px"></div>
   <div class="r-pad" style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:26px 56px;z-index:50;gap:16px">
     <a href="index.html" style="display:flex;align-items:center;gap:9px;font:800 18px 'Archivo',sans-serif;color:#fff;letter-spacing:-.02em"><img src="uploads/lemany-logo-blanc-outlined.svg" alt="Lemany — partenaire digital des PME en Suisse romande" style="height:30px;display:block"></a>
-    <div class="r-hide-sm" style="display:flex;gap:26px;font:600 13px 'Archivo',sans-serif;color:rgba(255,255,255,.75);align-items:center">
+    <nav class="r-hide-sm" style="display:flex;gap:26px;font:600 13px 'Archivo',sans-serif;color:rgba(255,255,255,.75);align-items:center" aria-label="Navigation principale">
       <div class="svc-nav"><a href="#solutions" style="display:flex;align-items:center;gap:5px;cursor:pointer">Solutions <span style="font-size:9px;opacity:.7">&#9662;</span></a>
         <div class="svc-panel"><div class="svc-card">
           <a href="services-sites-internet.html">Cr&eacute;ation de site internet</a>
@@ -111,7 +108,7 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
       </div>
       <a href="approche.html">Approche</a>
       <a href="blog.html">Blog</a>
-    </div>
+    </nav>
     <a href="contact.html" style="font:700 13px 'Archivo',sans-serif;color:#2b06a8;background:#c8ff2e;padding:12px 22px;border-radius:100px;white-space:nowrap">Planifier un &eacute;change</a>
   </div>
   <div class="r-pad" style="position:relative;padding:52px 0 0 56px;max-width:560px;z-index:5">
@@ -151,9 +148,20 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
     <div style="position:absolute;left:270px;top:300px;width:360px;background:#12141c;border-radius:14px;box-shadow:0 30px 80px rgba(10,0,60,.5);animation:floatB 8s ease-in-out infinite;z-index:4">
       <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.08)"><span style="font:600 12px 'Archivo',sans-serif;color:#fff">Demandes clients ce mois</span><span style="font:700 12px 'Archivo',sans-serif;color:#c8ff2e">+38%</span></div>
       <div style="display:flex;align-items:flex-end;gap:7px;height:100px;padding:16px 18px 18px">
-        <sc-for list="{{ bars }}" as="b" hint-placeholder-count="14">
-          <div style="flex:1;height: {{ b.h }};background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
-        </sc-for>
+          <div style="flex:1;height:30%;background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
+          <div style="flex:1;height:44%;background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
+          <div style="flex:1;height:38%;background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
+          <div style="flex:1;height:55%;background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
+          <div style="flex:1;height:48%;background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
+          <div style="flex:1;height:66%;background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
+          <div style="flex:1;height:60%;background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
+          <div style="flex:1;height:74%;background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
+          <div style="flex:1;height:70%;background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
+          <div style="flex:1;height:85%;background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
+          <div style="flex:1;height:80%;background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
+          <div style="flex:1;height:94%;background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
+          <div style="flex:1;height:90%;background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
+          <div style="flex:1;height:100%;background:linear-gradient(180deg,#c8ff2e,#5be49b);border-radius:3px 3px 0 0;transform-origin:bottom;animation:barGrow 1.4s cubic-bezier(.2,.8,.2,1) both"></div>
       </div>
     </div>
     <!-- phone -->
@@ -322,9 +330,10 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
     </div>
   </div>
 </div>
+</main>
 
 <!-- CTA / FOOTER -->
-<div style="background:#141414;padding:88px 56px 40px" data-screen-label="Contact">
+<footer style="background:#141414;padding:88px 56px 40px" data-screen-label="Contact">
   <div style="text-align:center">
     <h2 style="margin:0;font:900 clamp(34px,5.5vw,56px)/1.02 'Archivo',sans-serif;color:#fff;letter-spacing:-.03em">30 minutes.<br><span style="color:#c8ff2e">Repartez avec un plan.</span></h2>
     <p style="margin:20px auto 0;font:500 16px/1.6 'Archivo',sans-serif;color:rgba(255,255,255,.65);max-width:520px">Racontez-nous ce qui vous freine. Vous recevez un plan d&rsquo;action &eacute;crit sous 48h — que l&rsquo;on travaille ensemble ou non.</p>
@@ -379,15 +388,6 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
     <span>Partenaire digital des PME — Gen&egrave;ve, Lausanne, Nyon &amp; toute la Suisse romande</span>
     <span>&copy; 2026 Lemany</span>
   </div>
-</div>
-</x-dc>
-<script type="text/x-dc" data-dc-script>
-class Component extends DCLogic {
-  renderVals() {
-    const bars = [30,44,38,55,48,66,60,74,70,85,80,94,90,100].map(h => ({ h: h + '%' }));
-    return { bars };
-  }
-}
-</script>
+</footer>
 </body>
 </html>
