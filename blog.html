@@ -115,16 +115,16 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
         <h2 style="margin:20px 0 0;font:900 clamp(24px,3.4vw,38px)/1.1 'Archivo',sans-serif;color:#fff;letter-spacing:-.025em">{{ featTitle }}</h2>
         <p style="margin:16px 0 0;font:400 15px/1.65 'Archivo',sans-serif;color:rgba(255,255,255,.65)">{{ featExcerpt }}</p>
       </div>
-      <a href="{{ featUrl }}" style="display:flex;align-items:center;gap:14px"><span style="font:700 14px 'Archivo',sans-serif;color:#c8ff2e">Lire l&rsquo;article →</span><span style="font:500 12px 'Archivo',sans-serif;color:rgba(255,255,255,.4)">{{ featDate }}</span></a>
+      <a href="{{ featUrl }}" style="cursor:pointer;display:flex;align-items:center;gap:14px"><span style="font:700 14px 'Archivo',sans-serif;color:#c8ff2e">Lire l&rsquo;article →</span><span style="font:500 12px 'Archivo',sans-serif;color:rgba(255,255,255,.4)">{{ featDate }}</span></a>
     </div>
-    <a href="{{ featUrl }}" style="display:block;background: {{ featBand }};min-height:260px"></a>
+    <a href="{{ featUrl }}" style="cursor:pointer;display:block;background: {{ featBand }};min-height:260px"></a>
   </div>
   </sc-if>
 
   <!-- grid -->
   <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:20px">
     <sc-for list="{{ rest }}" as="a" hint-placeholder-count="6">
-      <a href="{{ a.url }}" style="background:#fff;border-radius:16px;border:1px solid rgba(0,0,0,.06);overflow:hidden;display:flex;flex-direction:column">
+      <a href="{{ a.url }}" style="cursor:pointer;background:#fff;border-radius:16px;border:1px solid rgba(0,0,0,.06);overflow:hidden;display:flex;flex-direction:column">
         <div style="height:150px;background: {{ a.band }}"></div>
         <div style="padding:22px;display:flex;flex-direction:column;gap:10px;flex:1">
           <span style="font:700 10.5px 'Archivo',sans-serif;color: {{ a.catColor }};letter-spacing:.08em">{{ a.cat }}</span>
@@ -153,12 +153,12 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
   <div id="articles-statiques" style="background:#f2efe8;padding:32px 56px 48px">
     <div style="font:700 12px 'Archivo',sans-serif;color:#4318ff;letter-spacing:.12em;margin-bottom:18px">TOUS LES ARTICLES</div>
     <ul style="list-style:none;padding:0;margin:0;max-width:860px">
-      <li style="margin:0 0 10px"><a href="article-onboarding-nouveaux-collaborateurs.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Former un nouveau collaborateur vous prend six semaines ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Process, 11 août 2026</span></li>
+      <li style="margin:0 0 10px"><a href="article-logiciels-qui-ne-se-parlent-pas.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Pourquoi retapez-vous trois fois la même information client ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Automatisation, 11 août 2026</span></li>
       <li style="margin:0 0 10px"><a href="article-rapports-chantier-ressaisis.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Le chantier appelle, le bureau ressaisit : la double saisie du soir</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Automatisation, 10 août 2026</span></li>
       <li style="margin:0 0 10px"><a href="article-personne-qui-sait-tout.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Et si la personne qui sait tout partait demain ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Product thinking, 7 août 2026</span></li>
       <li style="margin:0 0 10px"><a href="article-avis-clients-google-pme.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Vos clients sont contents — mais Google ne le sait pas</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— SEO, 6 août 2026</span></li>
       <li style="margin:0 0 10px"><a href="article-devis-trop-lents.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Vos devis partent en trois jours ? Le client a déjà signé ailleurs</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Process, 5 août 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-outils-qui-ne-se-parlent-pas.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Vous saisissez la même information dans trois outils</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Automatisation, 4 août 2026</span></li>
+      <li style="margin:0 0 10px"><a href="article-onboarding-nouveaux-collaborateurs.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Former un nouveau collaborateur vous prend six semaines ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Process, 4 août 2026</span></li>
       <li style="margin:0 0 10px"><a href="article-combien-coute-site-internet-suisse.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Combien coûte un site internet en Suisse en 2026 ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— SEO, 30 juillet 2026</span></li>
       <li style="margin:0 0 10px"><a href="article-ia-pme-cas-concrets.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">L'IA peut-elle aider votre PME ? 7 cas concrets qui marchent déjà</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— IA, 22 juillet 2026</span></li>
       <li style="margin:0 0 10px"><a href="article-roi-automatisation-pme.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Quel ROI attendre de l'automatisation ? Le calcul honnête</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Automatisation, 15 juillet 2026</span></li>

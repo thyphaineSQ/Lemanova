@@ -7,11 +7,27 @@
 // ============================================================
 export const articles = [
   {
+    id: 'logiciels-qui-ne-se-parlent-pas',
+    links: ['services-automatisation.html', 'services-crm.html'],
+    category: 'Automatisation',
+    title: 'Pourquoi retapez-vous trois fois la même information client ?',
+    date: '11 août 2026',
+    minutes: 6,
+    image: null,
+    excerpt: 'Nom, adresse, numéro de TVA : la même information ressaisie dans le devis, la facturation puis le fichier de suivi. Ce geste invisible coûte cher — et se corrige sans tout changer.',
+    content: [
+      "Un nouveau client appelle mardi matin. Vous ouvrez votre logiciel de devis et tapez son nom, son adresse, son numéro de TVA. Le devis part, il est accepté. Vous ouvrez alors votre logiciel de facturation — Bexio, Winbiz, ou un simple classeur — et retapez le même nom, la même adresse. Puis vous ajoutez la ligne dans votre fichier de suivi Excel, pour le prochain rappel. Trois fois la même information, trois risques de faute de frappe, et personne dans l'équipe ne le remarque vraiment — c'est juste « comme ça qu'on fait ».",
+      "Chaque ressaisie prend 3 à 5 minutes. Pour une PME qui traite 15 nouveaux dossiers par semaine, cela représente 2h30 à 4h par semaine rien que pour retaper des informations déjà connues — soit 120 à 190 heures par an. À 70 CHF de l'heure chargée, cela vaut entre 8 000 et 13 000 CHF par an, sans compter les erreurs : une adresse mal recopiée fait revenir une facture, un numéro de TVA mal reporté demande une correction comptable.",
+      "Il ne s'agit pas de tout changer d'un coup. On commence par relier deux points précis — par exemple faire que le nom saisi dans le devis remplisse automatiquement la facture, ou que l'acceptation d'un devis crée toute seule la ligne dans le fichier de suivi. Ce sont des automatisations ciblées, souvent invisibles pour l'équipe au quotidien, qui branchent les outils déjà en place entre eux sans en changer aucun. C'est le genre de pont sur mesure que nous construisons, pièce par pièce.",
+      "Le test à faire cette semaine : demandez à chaque personne de l'équipe combien de fois elle retape le nom d'un même client dans une journée. Si la réponse dépasse deux, vous avez trouvé votre premier chantier — souvent le moins cher à corriger de tous, et celui qui rend tous les autres plus faciles ensuite."
+    ]
+  },
+  {
     id: 'onboarding-nouveaux-collaborateurs',
     links: ['services-logiciels-metier.html', 'services-portails-clients.html'],
     category: 'Process',
     title: 'Former un nouveau collaborateur vous prend six semaines ?',
-    date: '11 août 2026',
+    date: '4 août 2026',
     minutes: 5,
     image: null,
     excerpt: 'Le savoir-faire de votre PME tient dans la tête de trois personnes et dans un dossier partagé. Chaque arrivée coûte alors des semaines à tout le monde.',
@@ -89,23 +105,6 @@ export const articles = [
       "Le plus frustrant, c'est que ces trois jours ne sont pas du travail. Rédiger le devis prend vingt minutes. Le reste, c'est de l'attente : attendre que quelqu'un voie la demande, attendre de retrouver les bons prix, attendre une validation. On a l'impression d'être débordé alors qu'on est surtout en file d'attente.",
       "Les corrections sont modestes et se cumulent : un catalogue de prix tenu à jour dans un modèle de devis plutôt que reconstitué à chaque fois, une arrivée des demandes dans une liste partagée où chacune a un responsable et une échéance, et une règle de validation par montant — en dessous d'un seuil, la personne qui rédige envoie sans attendre. La plupart de nos clients n'ont pas eu besoin d'un nouveau logiciel pour cela, seulement de décider qui répond et avec quoi.",
       "Si vous ne faites qu'une chose ce mois-ci : notez, pour chaque demande, l'heure d'arrivée et l'heure d'envoi du devis. Rien d'autre. La moyenne au bout de quatre semaines vous dira où le temps se perd — et il est fréquent que la simple mesure suffise à diviser le délai par deux."
-    ]
-  },
-  {
-    id: 'outils-qui-ne-se-parlent-pas',
-    links: ['services-automatisation.html', 'services-logiciels-metier.html'],
-    category: 'Automatisation',
-    title: 'Vous saisissez la même information dans trois outils',
-    date: '4 août 2026',
-    minutes: 5,
-    image: null,
-    excerpt: 'Le même client existe dans votre boîte mail, dans un Excel de suivi et dans le logiciel de facturation. Saisi trois fois, donc faux à trois endroits différents.',
-    content: [
-      "Une commande arrive. Elle est recopiée dans le tableau de suivi, puis dans le logiciel de facturation, et parfois dans le planning de l'atelier. Quand le client change d'adresse ou de personne de contact, il faudrait le corriger partout. Cela n'arrive jamais — et c'est ainsi que la facture part à l'ancienne adresse.",
-      "Le coût se compte deux fois. En temps d'abord : dix à quinze minutes par commande, quarante commandes par mois, cela fait huit à dix heures mensuelles, soit environ 8 000 CHF par an. En confiance ensuite, et c'est le plus grave : le jour où deux fichiers ne disent pas la même chose, on cesse de croire les deux, et chaque décision demande une vérification.",
-      "Un malentendu fréquent mérite d'être levé : sortir de cette situation ne veut pas dire tout remplacer par un grand logiciel unique. Ces projets coûtent cher, prennent un an et se heurtent à l'équipe. Dans la majorité des cas, il suffit de faire parler entre eux les outils que vous avez déjà — pour une fraction du prix et en quelques semaines.",
-      "La méthode est toujours la même : repérer la donnée qui voyage (le client, la commande, l'heure travaillée), décider d'un seul endroit où elle vit, et faire en sorte que les autres outils la reçoivent au lieu de la redemander. Les logiciels de comptabilité, de facturation et de gestion courants savent tous faire cela ; c'est une question de mise en place, pas de technologie.",
-      "Le signal qui ne trompe pas : si quelqu'un dans l'équipe exporte un fichier pour l'importer ailleurs toutes les semaines, vous payez déjà cette connexion — en salaire, tous les mois. Construite une fois, elle coûte moins cher que six mois de copier-coller."
     ]
   },
   {
