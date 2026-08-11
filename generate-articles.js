@@ -155,7 +155,12 @@ function pageArticle(a, precedent, suivant, template) {
     ].join('\n'),
   };
 
-  let html = template;
+  // article-template.html est lui-même accessible publiquement et porte donc un
+  // noindex — mais les vraies pages générées à partir de lui doivent être indexées.
+  let html = template.replace(
+    /\s*<!-- Gabarit de génération, pas une page du site : ne doit pas être indexé\. -->\n<meta name="robots" content="noindex, nofollow">\n/,
+    '\n'
+  );
   for (const [cle, valeur] of Object.entries(remplacements)) html = html.split(cle).join(valeur);
   const restant = html.match(/\{\{[A-Z_]+\}\}/);
   if (restant) throw new Error(`placeholder non remplacé : ${restant[0]}`);
