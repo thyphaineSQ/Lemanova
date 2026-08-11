@@ -8,6 +8,7 @@
 export const articles = [
   {
     id: 'logiciels-qui-ne-se-parlent-pas',
+    links: ['services-automatisation.html', 'services-crm.html'],
     category: 'Automatisation',
     title: 'Pourquoi retapez-vous trois fois la même information client ?',
     date: '11 août 2026',
@@ -22,7 +23,94 @@ export const articles = [
     ]
   },
   {
+    id: 'onboarding-nouveaux-collaborateurs',
+    links: ['services-logiciels-metier.html', 'services-portails-clients.html'],
+    category: 'Process',
+    title: 'Former un nouveau collaborateur vous prend six semaines ?',
+    date: '4 août 2026',
+    minutes: 5,
+    image: null,
+    excerpt: 'Le savoir-faire de votre PME tient dans la tête de trois personnes et dans un dossier partagé. Chaque arrivée coûte alors des semaines à tout le monde.',
+    content: [
+      "La nouvelle recrue arrive un lundi. On lui montre l'écran par-dessus l'épaule : « tu verras, ici on fait comme ça ». Pendant six semaines, elle pose des questions à la personne d'à côté, qui s'arrête à chaque fois. Personne ne s'en plaint — c'est comme ça qu'on a toujours formé.",
+      "Le coût est pourtant facile à chiffrer. Une recrue à 6 500 CHF par mois qui n'est réellement productive qu'à moitié pendant six semaines, c'est environ 4 500 CHF. Ajoutez trois à quatre heures par semaine prises à un collègue expérimenté, soit près de 1 800 CHF. Et cela se répète à chaque arrivée, à chaque remplacement, à chaque retour de congé maternité.",
+      "La cause n'est pas le manque de sérieux : c'est que le processus n'existe nulle part par écrit. Il vit dans les habitudes, dans les modèles Word de chacun et dans la mémoire des anciens. Un classeur de procédures n'y change rien — il est rédigé une fois, jamais relu, et périmé au bout de trois mois.",
+      "Ce qui fonctionne, c'est de mettre le processus dans l'outil que l'équipe utilise déjà, pas dans un document à côté. Un formulaire qui demande les bonnes informations dans le bon ordre, des étapes qu'on ne peut pas sauter, des valeurs par défaut et un historique consultable : la formation devient invisible, elle est intégrée au travail. On commence par le processus le plus fréquent, celui qui déclenche le plus de questions.",
+      "Un test simple pour savoir par où commencer : demandez à la dernière personne arrivée de lister les dix questions qu'elle a posées le plus souvent. Cette liste est votre feuille de route — et elle vaut mieux que n'importe quel manuel."
+    ]
+  },
+  {
+    id: 'rapports-chantier-ressaisis',
+    links: ['services-applications-web.html', 'services-automatisation.html'],
+    category: 'Automatisation',
+    title: 'Le chantier appelle, le bureau ressaisit : la double saisie du soir',
+    date: '10 août 2026',
+    minutes: 5,
+    image: null,
+    excerpt: 'Vos équipes remontent l\'information par téléphone et par photos WhatsApp, et quelqu\'un la retape le soir. Voilà ce que cette habitude coûte réellement.',
+    content: [
+      "17h30. Les équipes rentrent avec des notes sur un carnet, des photos envoyées dans un groupe WhatsApp et des heures estimées de mémoire. Au bureau, quelqu'un retape tout cela dans un tableau, puis dans le logiciel de facturation. Ce quelqu'un termine rarement avant 19h.",
+      "Une heure de ressaisie par jour représente environ 220 heures par an, soit 15 000 à 20 000 CHF de temps de travail. Mais le vrai coût est ailleurs : les heures oubliées ne sont jamais facturées, les fournitures utilisées disparaissent des devis, et la facture part deux semaines après la fin du chantier — donc l'encaissement aussi.",
+      "La sortie tient en une phrase : l'information doit être saisie une fois, là où elle naît. Un formulaire mobile de cinq champs rempli sur place en 90 secondes — heures, tâches, fournitures, une photo, une signature — et le suivi comme la facturation reçoivent la même donnée, au même moment.",
+      "L'objection habituelle est légitime : « mes équipes ne sont pas à l'aise avec le numérique ». Elle est vraie quand l'outil ressemble à un logiciel de bureau. Elle disparaît avec de gros boutons, cinq champs, aucun mot de passe à retenir et un fonctionnement hors connexion — les zones industrielles et les caves n'ont pas de réseau. Le critère de réussite est simple : si remplir le rapport prend plus de deux minutes sur place, l'outil est mal conçu, pas l'équipe mal formée.",
+      "Le signal d'alarme : si vous facturez plus de dix jours après la fin des travaux, vous n'avez pas un problème d'administration, vous avez un problème de remontée d'information — et il se paie en trésorerie."
+    ]
+  },
+  {
+    id: 'personne-qui-sait-tout',
+    links: ['services-logiciels-metier.html', 'services-portails-clients.html'],
+    category: 'Product thinking',
+    title: 'Et si la personne qui sait tout partait demain ?',
+    date: '7 août 2026',
+    minutes: 5,
+    image: null,
+    excerpt: 'Dans chaque PME, quelqu\'un détient les accès, les procédures et l\'historique des clients. Ce n\'est pas une force de l\'entreprise, c\'est son point le plus fragile.',
+    content: [
+      "Elle est dans la maison depuis douze ans. Elle sait quel client paie toujours à 60 jours, quelle machine tousse en été, quel fournisseur accepte une commande urgente le vendredi, et où se trouve le classeur des garanties. Quand elle prend deux semaines de vacances, tout le monde le sent — les réponses mettent plus longtemps à venir.",
+      "Tant que rien n'arrive, ce risque ne coûte rien, ce qui explique qu'on ne s'en occupe jamais. Le jour où il se réalise — un départ, un accident, un burn-out — la reconstitution prend des mois : retrouver les informations, refaire les erreurs déjà faites une fois, réexpliquer aux clients. C'est le genre de coût qu'on ne budgète pas et qu'on paie plein tarif.",
+      "Ce n'est la faute de personne. Une PME grandit ainsi : les gens compétents absorbent la complexité pour que l'entreprise avance. D'ailleurs, cette personne est souvent la première épuisée d'être le passage obligé de toutes les questions — la soulager lui rend service autant qu'à vous.",
+      "On ne documente pas douze ans d'expérience, et personne n'a le temps d'écrire un manuel. Ce qui marche, c'est de capturer l'information au fil de l'eau, dans l'outil que l'équipe utilise déjà : une note sur la fiche client plutôt qu'un post-it, un historique qui s'écrit tout seul, une checklist pour les opérations rares. Six mois plus tard, l'essentiel est là sans que personne n'ait rédigé quoi que ce soit.",
+      "Le test à faire cette semaine : notez trois questions dont elle seule connaît la réponse, et demandez à un collègue de les retrouver sans l'appeler. S'il n'y arrive pas en deux minutes, vous savez exactement par où commencer."
+    ]
+  },
+  {
+    id: 'avis-clients-google-pme',
+    links: ['services-seo-local.html', 'services-seo.html'],
+    category: 'SEO',
+    title: 'Vos clients sont contents — mais Google ne le sait pas',
+    date: '6 août 2026',
+    minutes: 5,
+    image: null,
+    excerpt: 'On vous recommande de bouche-à-oreille, et votre fiche Google affiche quatre avis dont le dernier date de 2023. C\'est le levier de visibilité le moins cher qui existe.',
+    content: [
+      "Un prospect entend parler de vous en bien. Il tape votre nom sur son téléphone et tombe sur votre fiche Google : quatre avis, dont un mécontent qui date de 2023. Juste en dessous, un concurrent affiche 4,7 sur 87 avis, dont trois de la semaine dernière. La recommandation que vous aviez gagnée vient de se perdre en dix secondes.",
+      "Les avis jouent sur deux plans. Ils comptent dans le classement local de Google, mais surtout ils décident du clic : entre deux entreprises également bien placées, celle qui a du volume récent l'emporte presque toujours. Passer de 4 à 60 avis change davantage votre nombre d'appels que de gagner deux positions.",
+      "Personne n'aime demander, et c'est bien là le problème. Une demande envoyée par e-mail trois semaines après la prestation ne donne rien — le client est passé à autre chose. Ce n'est pas de la timidité mal placée, c'est une question de moment.",
+      "Ce qui marche est banal et efficace : demander systématiquement, juste après la livraison ou la fin de la prestation, quand la satisfaction est encore fraîche, avec un lien qui ouvre directement le formulaire en un clic — un QR code sur la facture, un SMS automatique le lendemain. Objectif réaliste pour une PME : deux à quatre avis par mois, tenus dans la durée. En un an, la fiche n'a plus rien à voir.",
+      "Dernier point, souvent négligé : répondez à tous les avis sous 48 heures, et surtout aux négatifs. Une réponse posée à un client mécontent rassure les prospects davantage qu'une note parfaite — parce qu'elle se lit, elle, et qu'elle montre comment vous réagissez quand ça se passe mal."
+    ]
+  },
+  {
+    id: 'devis-trop-lents',
+    links: ['services-automatisation.html', 'services-crm.html'],
+    category: 'Process',
+    title: 'Vos devis partent en trois jours ? Le client a déjà signé ailleurs',
+    date: '5 août 2026',
+    minutes: 6,
+    image: null,
+    excerpt: 'Sur une demande entrante, le premier à répondre emporte souvent l\'affaire. Voici où passent réellement vos trois jours — et comment tomber à trois heures.',
+    content: [
+      "La demande arrive le mardi à 9h dans une boîte e-mail générique. Elle est vue le mercredi en fin de journée. Il faut retrouver les prix dans un ancien devis, adapter, faire valider par le patron qui est en déplacement. Le devis part le vendredi. Entre-temps, le client en a reçu deux autres, dont un le mardi après-midi.",
+      "L'effet sur le chiffre d'affaires est direct. Prenons quinze demandes par mois et un panier moyen de 8 000 CHF : passer d'un taux de signature de 25 % à 35 % représente 12 000 CHF de commandes supplémentaires par mois. Aucune campagne publicitaire ne donne ce résultat pour ce prix.",
+      "Le plus frustrant, c'est que ces trois jours ne sont pas du travail. Rédiger le devis prend vingt minutes. Le reste, c'est de l'attente : attendre que quelqu'un voie la demande, attendre de retrouver les bons prix, attendre une validation. On a l'impression d'être débordé alors qu'on est surtout en file d'attente.",
+      "Les corrections sont modestes et se cumulent : un catalogue de prix tenu à jour dans un modèle de devis plutôt que reconstitué à chaque fois, une arrivée des demandes dans une liste partagée où chacune a un responsable et une échéance, et une règle de validation par montant — en dessous d'un seuil, la personne qui rédige envoie sans attendre. La plupart de nos clients n'ont pas eu besoin d'un nouveau logiciel pour cela, seulement de décider qui répond et avec quoi.",
+      "Si vous ne faites qu'une chose ce mois-ci : notez, pour chaque demande, l'heure d'arrivée et l'heure d'envoi du devis. Rien d'autre. La moyenne au bout de quatre semaines vous dira où le temps se perd — et il est fréquent que la simple mesure suffise à diviser le délai par deux."
+    ]
+  },
+  {
     id: 'combien-coute-site-internet-suisse',
+    seoTitle: 'Combien coûte un site internet en Suisse en 2026 ? — Lemany',
+    links: ['services-sites-internet.html', 'services-refonte-site.html'],
     category: 'SEO',
     title: 'Combien coûte un site internet en Suisse en 2026 ?',
     date: '30 juillet 2026',
@@ -38,6 +126,8 @@ export const articles = [
   },
   {
     id: 'ia-pme-cas-concrets',
+    seoTitle: 'L&rsquo;IA peut-elle aider votre PME ? 7 cas concrets',
+    links: ['services-automatisation-ia.html', 'services-automatisation.html'],
     category: 'IA',
     title: 'L\'IA peut-elle aider votre PME ? 7 cas concrets qui marchent déjà',
     date: '22 juillet 2026',
@@ -53,6 +143,8 @@ export const articles = [
   },
   {
     id: 'roi-automatisation-pme',
+    seoTitle: 'Quel ROI attendre de l&rsquo;automatisation ? Le calcul',
+    links: ['services-automatisation.html', 'services-logiciels-metier.html'],
     category: 'Automatisation',
     title: 'Quel ROI attendre de l\'automatisation ? Le calcul honnête',
     date: '15 juillet 2026',
@@ -68,6 +160,8 @@ export const articles = [
   },
   {
     id: 'faut-il-creer-une-app',
+    seoTitle: 'Faut-il cr&eacute;er une application ? Le test en 5 questions',
+    links: ['services-applications-web.html', 'services-mvp.html'],
     category: 'Product thinking',
     title: 'Faut-il créer une application pour votre entreprise ? Le test en 5 questions',
     date: '8 juillet 2026',
@@ -83,6 +177,8 @@ export const articles = [
   },
   {
     id: 'combien-temps-developpement',
+    seoTitle: 'Combien de temps pour d&eacute;velopper un site ou une app ?',
+    links: ['services-sites-internet.html', 'services-applications-web.html'],
     category: 'Process',
     title: 'Combien de temps pour développer un site ou une application ?',
     date: '1 juillet 2026',
@@ -98,6 +194,8 @@ export const articles = [
   },
   {
     id: 'seo-local-suisse-romande',
+    seoTitle: 'SEO local : &ecirc;tre trouv&eacute; &agrave; Gen&egrave;ve, Lausanne ou Nyon',
+    links: ['services-seo-local.html', 'services-seo.html'],
     category: 'SEO',
     title: 'SEO local : comment être trouvé à Genève, Lausanne ou Nyon',
     date: '24 juin 2026',
@@ -114,6 +212,8 @@ export const articles = [
   },
   {
     id: 'chatbot-ia-support-client',
+    seoTitle: 'Assistant IA client : gadget ou vrai levier ?',
+    links: ['services-automatisation-ia.html', 'services-portails-clients.html'],
     category: 'IA',
     title: 'Un assistant IA pour répondre à vos clients : gadget ou levier ?',
     date: '17 juin 2026',
@@ -129,6 +229,8 @@ export const articles = [
   },
   {
     id: 'refonte-site-7-signes',
+    seoTitle: 'Refonte de site web : les 7 signes qu\'il est temps — Lemany',
+    links: ['services-refonte-site.html', 'services-seo.html'],
     category: 'SEO',
     title: 'Refonte de site web : les 7 signes qu\'il est temps',
     date: '10 juin 2026',
@@ -144,6 +246,8 @@ export const articles = [
   },
   {
     id: 'crm-sur-mesure-ou-marche',
+    seoTitle: 'CRM sur mesure ou abonnement : comment trancher',
+    links: ['services-crm.html', 'services-logiciels-metier.html'],
     category: 'Product thinking',
     title: 'CRM sur mesure ou abonnement du marché : comment trancher',
     date: '3 juin 2026',
@@ -159,6 +263,8 @@ export const articles = [
   },
   {
     id: 'reservation-en-ligne-sans-commission',
+    seoTitle: 'R&eacute;servation en ligne : pourquoi payer une commission ?',
+    links: ['services-reservation.html', 'services-sites-internet.html'],
     category: 'Automatisation',
     title: 'Réservation en ligne : pourquoi payer une commission sur vos propres clients ?',
     date: '27 mai 2026',
@@ -173,23 +279,9 @@ export const articles = [
     ]
   },
   {
-    id: 'site-internet-sans-clients',
-    category: 'Product thinking',
-    title: 'Votre site est joli. Pourquoi n\'amène-t-il aucun client ?',
-    date: '4 août 2026',
-    minutes: 6,
-    image: null,
-    excerpt: 'Un site vitrine qui ne génère ni appel ni demande de devis n\'est pas une fatalité. Les 3 raisons les plus fréquentes — et la plus ignorée.',
-    content: [
-      "Vous avez un site. Il est propre, les photos sont belles, les horaires sont à jour. Et pourtant : les nouveaux clients arrivent toujours par le bouche-à-oreille, jamais par le site. Quand on demande « il vous rapporte quoi, votre site ? », la réponse honnête est souvent : on ne sait pas. Probablement rien.",
-      "Première raison, la plus fréquente : personne ne le trouve. Votre site parle de vous (« Bienvenue chez Dupont SA, entreprise familiale depuis 1987 ») alors que vos futurs clients cherchent leur problème (« fuite d\'eau urgence Lausanne », « remplacer fenêtres prix »). Google ne fait pas le lien — donc il ne vous montre pas.",
-      "Deuxième raison : on vous trouve, mais on ne peut rien faire. Pas de prise de rendez-vous, pas de demande de devis en deux clics, juste un numéro de téléphone — que votre visiteur consulte à 22h, quand vous ne répondez pas. Il note « rappeler demain », et demain il a trouvé quelqu\'un d\'autre.",
-      "Troisième raison, la plus ignorée : le site vit tout seul. Personne ne regarde combien de personnes le visitent, d\'où elles viennent, sur quelle page elles abandonnent. Sans ces chiffres, impossible de savoir si le problème est d\'être trouvé, de convaincre ou de conclure — alors on ne corrige rien.",
-      "La bonne nouvelle : aucun de ces trois problèmes ne demande de refaire le site de zéro. Une page pensée autour des recherches réelles de vos clients, un moyen d\'agir en deux clics, et des mesures simples pour voir ce qui se passe — c\'est souvent l\'affaire de quelques semaines. Le test à faire ce soir : tapez sur Google ce qu\'un client taperait pour résoudre son problème (pas le nom de votre entreprise). Si vous n\'apparaissez pas sur la première page, vous savez par où commencer."
-    ]
-  },
-  {
     id: 'taches-repetitives-pme',
+    seoTitle: 'Les 5 t&acirc;ches que votre PME refait chaque semaine',
+    links: ['services-automatisation.html', 'services-automatisation-ia.html'],
     category: 'Automatisation',
     title: 'Les 5 tâches que votre PME refait chaque semaine (et comment les supprimer)',
     date: '2 juillet 2026',
@@ -205,6 +297,8 @@ export const articles = [
   },
   {
     id: 'mvp-4-semaines',
+    seoTitle: 'MVP en 4 semaines : ce qu\'on garde, ce qu\'on coupe — Lemany',
+    links: ['services-mvp.html', 'services-saas.html'],
     category: 'SaaS',
     title: 'MVP en 4 semaines : ce qu\'on garde, ce qu\'on coupe',
     date: '18 juin 2026',
@@ -219,6 +313,8 @@ export const articles = [
   },
   {
     id: 'sortir-excel-methode-douce',
+    seoTitle: 'Sortir d\'Excel sans tout casser : la méthode douce — Lemany',
+    links: ['services-logiciels-metier.html', 'services-automatisation.html'],
     category: 'Process',
     title: 'Sortir d\'Excel sans tout casser : la méthode douce',
     date: '4 juin 2026',
@@ -234,6 +330,8 @@ export const articles = [
   },
   {
     id: 'idee-app-une-phrase',
+    seoTitle: 'Votre idée d\'app tient-elle en une phrase ? — Lemany',
+    links: ['services-mvp.html', 'services-applications-web.html'],
     category: 'Product thinking',
     title: 'Votre idée d\'app tient-elle en une phrase ?',
     date: '21 mai 2026',
@@ -248,6 +346,7 @@ export const articles = [
   },
   {
     id: 'relances-automatiques-encaissements',
+    links: ['services-automatisation.html', 'services-crm.html'],
     category: 'Automatisation',
     title: 'Relances clients automatiques : +18% d\'encaissements à J+30',
     date: '7 mai 2026',
@@ -262,6 +361,7 @@ export const articles = [
   },
   {
     id: 'vendredi-soir-consolidation',
+    links: ['services-automatisation.html', 'services-logiciels-metier.html'],
     category: 'Process',
     title: 'Le vendredi soir de trop : consolider ses chiffres à la main',
     date: '23 avril 2026',
@@ -276,6 +376,8 @@ export const articles = [
   },
   {
     id: 'portail-client-ou-emails',
+    seoTitle: 'Portail client ou emails ? Le calcul est vite fait — Lemany',
+    links: ['services-portails-clients.html', 'services-crm.html'],
     category: 'Product thinking',
     title: 'Portail client ou emails ? Le calcul est vite fait',
     date: '9 avril 2026',
