@@ -7,6 +7,21 @@
 // ============================================================
 export const articles = [
   {
+    id: 'logiciels-qui-ne-se-parlent-pas',
+    category: 'Automatisation',
+    title: 'Pourquoi retapez-vous trois fois la même information client ?',
+    date: '11 août 2026',
+    minutes: 6,
+    image: null,
+    excerpt: 'Nom, adresse, numéro de TVA : la même information ressaisie dans le devis, la facturation puis le fichier de suivi. Ce geste invisible coûte cher — et se corrige sans tout changer.',
+    content: [
+      "Un nouveau client appelle mardi matin. Vous ouvrez votre logiciel de devis et tapez son nom, son adresse, son numéro de TVA. Le devis part, il est accepté. Vous ouvrez alors votre logiciel de facturation — Bexio, Winbiz, ou un simple classeur — et retapez le même nom, la même adresse. Puis vous ajoutez la ligne dans votre fichier de suivi Excel, pour le prochain rappel. Trois fois la même information, trois risques de faute de frappe, et personne dans l'équipe ne le remarque vraiment — c'est juste « comme ça qu'on fait ».",
+      "Chaque ressaisie prend 3 à 5 minutes. Pour une PME qui traite 15 nouveaux dossiers par semaine, cela représente 2h30 à 4h par semaine rien que pour retaper des informations déjà connues — soit 120 à 190 heures par an. À 70 CHF de l'heure chargée, cela vaut entre 8 000 et 13 000 CHF par an, sans compter les erreurs : une adresse mal recopiée fait revenir une facture, un numéro de TVA mal reporté demande une correction comptable.",
+      "Il ne s'agit pas de tout changer d'un coup. On commence par relier deux points précis — par exemple faire que le nom saisi dans le devis remplisse automatiquement la facture, ou que l'acceptation d'un devis crée toute seule la ligne dans le fichier de suivi. Ce sont des automatisations ciblées, souvent invisibles pour l'équipe au quotidien, qui branchent les outils déjà en place entre eux sans en changer aucun. C'est le genre de pont sur mesure que nous construisons, pièce par pièce.",
+      "Le test à faire cette semaine : demandez à chaque personne de l'équipe combien de fois elle retape le nom d'un même client dans une journée. Si la réponse dépasse deux, vous avez trouvé votre premier chantier — souvent le moins cher à corriger de tous, et celui qui rend tous les autres plus faciles ensuite."
+    ]
+  },
+  {
     id: 'combien-coute-site-internet-suisse',
     category: 'SEO',
     title: 'Combien coûte un site internet en Suisse en 2026 ?',
@@ -155,6 +170,22 @@ export const articles = [
       "L'alternative : un module de réservation intégré à votre propre site. Réservation 24h/24, confirmations et rappels automatiques par e-mail ou SMS, gestion des créneaux et des capacités — et zéro commission, pour toujours. Le coût unique (généralement 2 500 à 8 000 CHF selon les intégrations) s'amortit souvent en moins d'un an de commissions évitées.",
       "L'autre enjeu, plus important que la commission : les données. Sur votre système, les coordonnées et l'historique de vos clients vous appartiennent. Vous pouvez les faire revenir — offre de saison, rappel d'entretien, relance des clients qui ne sont pas venus depuis 6 mois. Sur une plateforme, cet actif appartient à la plateforme.",
       "La stratégie raisonnable : gardez les plateformes comme canal d'acquisition pour les nouveaux clients si elles vous en apportent, et faites de votre site le canal principal — celui vers lequel pointent votre fiche Google, vos réseaux et vos rappels."
+    ]
+  },
+  {
+    id: 'site-internet-sans-clients',
+    category: 'Product thinking',
+    title: 'Votre site est joli. Pourquoi n\'amène-t-il aucun client ?',
+    date: '4 août 2026',
+    minutes: 6,
+    image: null,
+    excerpt: 'Un site vitrine qui ne génère ni appel ni demande de devis n\'est pas une fatalité. Les 3 raisons les plus fréquentes — et la plus ignorée.',
+    content: [
+      "Vous avez un site. Il est propre, les photos sont belles, les horaires sont à jour. Et pourtant : les nouveaux clients arrivent toujours par le bouche-à-oreille, jamais par le site. Quand on demande « il vous rapporte quoi, votre site ? », la réponse honnête est souvent : on ne sait pas. Probablement rien.",
+      "Première raison, la plus fréquente : personne ne le trouve. Votre site parle de vous (« Bienvenue chez Dupont SA, entreprise familiale depuis 1987 ») alors que vos futurs clients cherchent leur problème (« fuite d\'eau urgence Lausanne », « remplacer fenêtres prix »). Google ne fait pas le lien — donc il ne vous montre pas.",
+      "Deuxième raison : on vous trouve, mais on ne peut rien faire. Pas de prise de rendez-vous, pas de demande de devis en deux clics, juste un numéro de téléphone — que votre visiteur consulte à 22h, quand vous ne répondez pas. Il note « rappeler demain », et demain il a trouvé quelqu\'un d\'autre.",
+      "Troisième raison, la plus ignorée : le site vit tout seul. Personne ne regarde combien de personnes le visitent, d\'où elles viennent, sur quelle page elles abandonnent. Sans ces chiffres, impossible de savoir si le problème est d\'être trouvé, de convaincre ou de conclure — alors on ne corrige rien.",
+      "La bonne nouvelle : aucun de ces trois problèmes ne demande de refaire le site de zéro. Une page pensée autour des recherches réelles de vos clients, un moyen d\'agir en deux clics, et des mesures simples pour voir ce qui se passe — c\'est souvent l\'affaire de quelques semaines. Le test à faire ce soir : tapez sur Google ce qu\'un client taperait pour résoudre son problème (pas le nom de votre entreprise). Si vous n\'apparaissez pas sur la première page, vous savez par où commencer."
     ]
   },
   {

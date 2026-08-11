@@ -115,16 +115,16 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
         <h2 style="margin:20px 0 0;font:900 clamp(24px,3.4vw,38px)/1.1 'Archivo',sans-serif;color:#fff;letter-spacing:-.025em">{{ featTitle }}</h2>
         <p style="margin:16px 0 0;font:400 15px/1.65 'Archivo',sans-serif;color:rgba(255,255,255,.65)">{{ featExcerpt }}</p>
       </div>
-      <a href="{{ featUrl }}" style="display:flex;align-items:center;gap:14px"><span style="font:700 14px 'Archivo',sans-serif;color:#c8ff2e">Lire l&rsquo;article →</span><span style="font:500 12px 'Archivo',sans-serif;color:rgba(255,255,255,.4)">{{ featDate }}</span></a>
+      <a href="{{ featUrl }}" style="cursor:pointer;display:flex;align-items:center;gap:14px"><span style="font:700 14px 'Archivo',sans-serif;color:#c8ff2e">Lire l&rsquo;article →</span><span style="font:500 12px 'Archivo',sans-serif;color:rgba(255,255,255,.4)">{{ featDate }}</span></a>
     </div>
-    <a href="{{ featUrl }}" style="display:block;background: {{ featBand }};min-height:260px"></a>
+    <a href="{{ featUrl }}" style="cursor:pointer;display:block;background: {{ featBand }};min-height:260px"></a>
   </div>
   </sc-if>
 
   <!-- grid -->
   <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:20px">
     <sc-for list="{{ rest }}" as="a" hint-placeholder-count="6">
-      <a href="{{ a.url }}" style="background:#fff;border-radius:16px;border:1px solid rgba(0,0,0,.06);overflow:hidden;display:flex;flex-direction:column">
+      <a href="{{ a.url }}" style="cursor:pointer;background:#fff;border-radius:16px;border:1px solid rgba(0,0,0,.06);overflow:hidden;display:flex;flex-direction:column">
         <div style="height:150px;background: {{ a.band }}"></div>
         <div style="padding:22px;display:flex;flex-direction:column;gap:10px;flex:1">
           <span style="font:700 10.5px 'Archivo',sans-serif;color: {{ a.catColor }};letter-spacing:.08em">{{ a.cat }}</span>
@@ -153,23 +153,23 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
   <div id="articles-statiques" style="background:#f2efe8;padding:32px 56px 48px">
     <div style="font:700 12px 'Archivo',sans-serif;color:#4318ff;letter-spacing:.12em;margin-bottom:18px">TOUS LES ARTICLES</div>
     <ul style="list-style:none;padding:0;margin:0;max-width:860px">
-      <li style="margin:0 0 10px"><a href="article-combien-coute-site-internet-suisse.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Combien coûte un site internet en Suisse en 2026 ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— SEO, 30 juillet 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-ia-pme-cas-concrets.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">L'IA peut-elle aider votre PME ? 7 cas concrets qui marchent déjà</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— IA, 22 juillet 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-roi-automatisation-pme.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Quel ROI attendre de l'automatisation ? Le calcul honnête</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Automatisation, 15 juillet 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-faut-il-creer-une-app.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Faut-il créer une application pour votre entreprise ? Le test en 5 questions</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Product thinking, 8 juillet 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-taches-repetitives-pme.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Les 5 tâches que votre PME refait chaque semaine (et comment les supprimer)</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Automatisation, 2 juillet 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-combien-temps-developpement.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Combien de temps pour développer un site ou une application ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Process, 1 juillet 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-seo-local-suisse-romande.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">SEO local : comment être trouvé à Genève, Lausanne ou Nyon</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— SEO, 24 juin 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-mvp-4-semaines.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">MVP en 4 semaines : ce qu'on garde, ce qu'on coupe</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— SaaS, 18 juin 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-chatbot-ia-support-client.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Un assistant IA pour répondre à vos clients : gadget ou levier ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— IA, 17 juin 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-refonte-site-7-signes.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Refonte de site web : les 7 signes qu'il est temps</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— SEO, 10 juin 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-sortir-excel-methode-douce.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Sortir d'Excel sans tout casser : la méthode douce</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Process, 4 juin 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-crm-sur-mesure-ou-marche.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">CRM sur mesure ou abonnement du marché : comment trancher</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Product thinking, 3 juin 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-reservation-en-ligne-sans-commission.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Réservation en ligne : pourquoi payer une commission sur vos propres clients ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Automatisation, 27 mai 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-idee-app-une-phrase.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Votre idée d'app tient-elle en une phrase ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Product thinking, 21 mai 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-relances-automatiques-encaissements.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Relances clients automatiques : +18% d'encaissements à J+30</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Automatisation, 7 mai 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-vendredi-soir-consolidation.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Le vendredi soir de trop : consolider ses chiffres à la main</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Process, 23 avril 2026</span></li>
-      <li style="margin:0 0 10px"><a href="article-portail-client-ou-emails.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Portail client ou emails ? Le calcul est vite fait</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Product thinking, 9 avril 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/combien-coute-site-internet-suisse.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Combien coûte un site internet en Suisse en 2026 ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— SEO, 30 juillet 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/ia-pme-cas-concrets.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">L'IA peut-elle aider votre PME ? 7 cas concrets qui marchent déjà</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— IA, 22 juillet 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/roi-automatisation-pme.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Quel ROI attendre de l'automatisation ? Le calcul honnête</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Automatisation, 15 juillet 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/faut-il-creer-une-app.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Faut-il créer une application pour votre entreprise ? Le test en 5 questions</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Product thinking, 8 juillet 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/taches-repetitives-pme.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Les 5 tâches que votre PME refait chaque semaine (et comment les supprimer)</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Automatisation, 2 juillet 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/combien-temps-developpement.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Combien de temps pour développer un site ou une application ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Process, 1 juillet 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/seo-local-suisse-romande.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">SEO local : comment être trouvé à Genève, Lausanne ou Nyon</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— SEO, 24 juin 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/mvp-4-semaines.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">MVP en 4 semaines : ce qu'on garde, ce qu'on coupe</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— SaaS, 18 juin 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/chatbot-ia-support-client.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Un assistant IA pour répondre à vos clients : gadget ou levier ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— IA, 17 juin 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/refonte-site-7-signes.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Refonte de site web : les 7 signes qu'il est temps</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— SEO, 10 juin 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/sortir-excel-methode-douce.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Sortir d'Excel sans tout casser : la méthode douce</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Process, 4 juin 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/crm-sur-mesure-ou-marche.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">CRM sur mesure ou abonnement du marché : comment trancher</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Product thinking, 3 juin 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/reservation-en-ligne-sans-commission.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Réservation en ligne : pourquoi payer une commission sur vos propres clients ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Automatisation, 27 mai 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/idee-app-une-phrase.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Votre idée d'app tient-elle en une phrase ?</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Product thinking, 21 mai 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/relances-automatiques-encaissements.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Relances clients automatiques : +18% d'encaissements à J+30</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Automatisation, 7 mai 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/vendredi-soir-consolidation.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Le vendredi soir de trop : consolider ses chiffres à la main</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Process, 23 avril 2026</span></li>
+      <li style="margin:0 0 10px"><a href="articles/portail-client-ou-emails.html" style="font:600 15px 'Archivo',sans-serif;color:#4318ff">Portail client ou emails ? Le calcul est vite fait</a> <span style="font:500 13px 'Archivo',sans-serif;color:#777">— Product thinking, 9 avril 2026</span></li>
     </ul>
   </div>
 
@@ -231,9 +231,9 @@ class Component extends DCLogic {
         catColor: s.color, catBg: s.bg, band: bandFor(a),
         title: a.title,
         meta: a.date + ' · ' + a.minutes + ' min',
+        url: 'articles/' + a.id + '.html',
         image: a.image || '',
         hasImage: !!a.image,
-        url: 'article-' + a.id + '.html',
       };
     };
 
@@ -251,7 +251,7 @@ class Component extends DCLogic {
       featMinutes: featured ? featured.minutes : '',
       featDate: featured ? featured.date : '',
       featBand: featured ? bandFor(featured) : '#e9e4ff',
-      featUrl: featured ? 'article-' + featured.id + '.html' : 'blog.html',
+      featUrl: featured ? 'articles/' + featured.id + '.html' : 'blog.html',
     };
   }
 }
