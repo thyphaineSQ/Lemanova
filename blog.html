@@ -117,7 +117,11 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
       </div>
       <a href="{{ featUrl }}" style="cursor:pointer;display:flex;align-items:center;gap:14px"><span style="font:700 14px 'Archivo',sans-serif;color:#c8ff2e">Lire l&rsquo;article →</span><span style="font:500 12px 'Archivo',sans-serif;color:rgba(255,255,255,.4)">{{ featDate }}</span></a>
     </div>
-    <a href="{{ featUrl }}" style="cursor:pointer;display:block;background: {{ featBand }};min-height:260px"></a>
+    <a href="{{ featUrl }}" style="position:relative;display:block;background: {{ featCoverBg }};min-height:260px;overflow:hidden">
+      <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.28) 1px,transparent 1px);background-size:20px 20px"></div>
+      <span style="position:absolute;right:22px;top:20px;font:700 11px 'Archivo',sans-serif;color: {{ featCoverInk }};opacity:.8;letter-spacing:.08em">{{ featMinutes }} MIN DE LECTURE</span>
+      <span style="position:absolute;left:26px;bottom:22px;right:26px;font:900 34px/1.02 'Archivo',sans-serif;color: {{ featCoverInk }};letter-spacing:-.03em">{{ featCat }}</span>
+    </a>
   </div>
   </sc-if>
 
@@ -125,9 +129,12 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
   <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:20px">
     <sc-for list="{{ rest }}" as="a" hint-placeholder-count="6">
       <a href="{{ a.url }}" style="cursor:pointer;background:#fff;border-radius:16px;border:1px solid rgba(0,0,0,.06);overflow:hidden;display:flex;flex-direction:column">
-        <div style="height:150px;background: {{ a.band }}"></div>
+        <div style="position:relative;height:150px;background: {{ a.coverBg }};overflow:hidden">
+          <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.28) 1px,transparent 1px);background-size:16px 16px"></div>
+          <span style="position:absolute;right:14px;top:13px;font:700 10.5px 'Archivo',sans-serif;color: {{ a.coverInk }};opacity:.8;letter-spacing:.08em">{{ a.minutes }} MIN</span>
+          <span style="position:absolute;left:18px;bottom:14px;right:18px;font:900 21px/1.05 'Archivo',sans-serif;color: {{ a.coverInk }};letter-spacing:-.02em">{{ a.cat }}</span>
+        </div>
         <div style="padding:22px;display:flex;flex-direction:column;gap:10px;flex:1">
-          <span style="font:700 10.5px 'Archivo',sans-serif;color: {{ a.catColor }};letter-spacing:.08em">{{ a.cat }}</span>
           <div style="font:800 18px/1.25 'Archivo',sans-serif;color:#141414">{{ a.title }}</div>
           <span style="margin-top:auto;font:500 12px 'Archivo',sans-serif;color:#999">{{ a.meta }}</span>
         </div>
@@ -144,7 +151,7 @@ a{color:inherit;text-decoration:none}a:hover{color:#c8ff2e}
     <a href="contact.html" style="flex:none;font:700 16px 'Archivo',sans-serif;color:#2b06a8;background:#c8ff2e;padding:18px 34px;border-radius:100px">Planifier un échange →</a>
   </div>
   <div class="r-stack" style="display:flex;justify-content:space-between;margin-top:64px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font:500 12px 'Archivo',sans-serif;color:rgba(255,255,255,.45);flex-wrap:wrap;gap:12px">
-    <span>Lemany · Suisse romande</span>
+    <span>Lemany — Rue de Bourg, 1003 Lausanne</span>
     <span style="display:flex;gap:18px;flex-wrap:wrap"><a href="index.html">Accueil</a><a href="index.html#solutions">Solutions</a><a href="index.html#secteurs">Secteurs</a><a href="approche.html">Approche</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></span>
     <span>© 2026</span>
   </div>
@@ -217,6 +224,20 @@ class Component extends DCLogic {
     return map[cat] || map['Automatisation'];
   }
 
+  // Aucun article n'a de photo : plutôt qu'un bloc vide, on compose une
+  // couverture typographique à partir de la catégorie et du temps de lecture.
+  coverStyle(cat) {
+    const map = {
+      'Automatisation':   { bg: 'linear-gradient(150deg,#4318ff,#2b06a8)', ink: '#c8ff2e' },
+      'IA':               { bg: 'linear-gradient(150deg,#0e7490,#083f4d)', ink: '#d7f5fb' },
+      'SEO':              { bg: 'linear-gradient(150deg,#7c2d92,#43154f)', ink: '#f3e2fa' },
+      'SaaS':             { bg: 'linear-gradient(150deg,#c2410c,#6f2407)', ink: '#ffe4d6' },
+      'Product thinking': { bg: 'linear-gradient(150deg,#1f2430,#141414)', ink: '#c8ff2e' },
+      'Process':          { bg: 'linear-gradient(150deg,#3a4d00,#1e2800)', ink: '#eaffab' },
+    };
+    return map[cat] || map['Automatisation'];
+  }
+
   renderVals() {
     const { articles, filter } = this.state;
     const cats = ['Tous', 'Automatisation', 'IA', 'SEO', 'SaaS', 'Product thinking', 'Process'];
@@ -235,6 +256,9 @@ class Component extends DCLogic {
         id: a.id,
         cat: a.category.toUpperCase(),
         catColor: s.color, catBg: s.bg, band: bandFor(a),
+        coverBg: a.image ? bandFor(a) : this.coverStyle(a.category).bg,
+        coverInk: this.coverStyle(a.category).ink,
+        minutes: a.minutes,
         title: a.title,
         meta: a.date + ' · ' + a.minutes + ' min',
         image: a.image || '',
@@ -257,6 +281,8 @@ class Component extends DCLogic {
       featMinutes: featured ? featured.minutes : '',
       featDate: featured ? featured.date : '',
       featBand: featured ? bandFor(featured) : '#e9e4ff',
+      featCoverBg: featured ? (featured.image ? bandFor(featured) : this.coverStyle(featured.category).bg) : '#4318ff',
+      featCoverInk: featured ? this.coverStyle(featured.category).ink : '#c8ff2e',
       featUrl: featured ? 'article-' + featured.id + '.html' : 'blog.html',
     };
   }
