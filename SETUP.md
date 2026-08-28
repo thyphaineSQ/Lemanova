@@ -3,7 +3,7 @@
 Le chatbot est prêt côté code : widget sur toutes les pages (`chatbot-widget.js`)
 + backend serverless (`api/chat.js`) qui appelle Claude (Anthropic), avec recherche
 web, capture de leads par email (Resend) et escalade des questions sans réponse
-vers Slack.
+vers Telegram.
 
 Il reste 3 choses à faire côté comptes/hébergement, que le code seul ne peut pas
 faire à votre place.
@@ -18,14 +18,23 @@ faire à votre place.
   `chatbot@lemany.ch`, ajoutez le domaine `lemany.ch` dans Resend et suivez
   ses instructions DNS (enregistrements TXT/MX à ajouter chez votre
   registrar) — étape optionnelle, à faire quand vous voulez.
-- **Slack** (alerte quand le bot ne sait pas répondre) :
-  1. Allez sur https://api.slack.com/apps → *Create New App* → *From scratch*.
-  2. Donnez-lui un nom (ex. "Lemany Chatbot") et choisissez votre workspace.
-  3. Dans le menu de gauche, *Incoming Webhooks* → activez le toggle.
-  4. *Add New Webhook to Workspace* → choisissez le canal qui recevra les
-     alertes (ex. `#leads-site`) → *Allow*.
-  5. Copiez l'URL générée (`https://hooks.slack.com/services/...`) — c'est
-     votre `SLACK_WEBHOOK_URL`.
+- **Telegram** (alerte quand le bot ne sait pas répondre) :
+  1. Ouvrez Telegram, cherchez le bot **@BotFather** et démarrez une
+     conversation avec lui.
+  2. Envoyez `/newbot`, suivez les instructions (nom, puis un identifiant se
+     terminant par `bot`). BotFather vous renvoie un token du type
+     `123456789:AAExxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx` — c'est votre
+     `TELEGRAM_BOT_TOKEN`.
+  3. Démarrez une conversation avec **votre propre bot** (cherchez son nom
+     d'utilisateur dans Telegram) et envoyez-lui n'importe quel message
+     (ex. "salut") — un bot ne peut pas vous écrire tant que vous ne lui avez
+     pas parlé en premier.
+  4. Récupérez votre `chat_id` : ouvrez dans un navigateur
+     `https://api.telegram.org/bot<VOTRE_TOKEN>/getUpdates` (remplacez
+     `<VOTRE_TOKEN>` par le token de l'étape 2) juste après avoir envoyé le
+     message de l'étape 3. Vous verrez un JSON contenant
+     `"chat":{"id":123456789, ...}` — ce nombre est votre
+     `TELEGRAM_CHAT_ID`.
 
 ## 2. Déployer sur Vercel
 
@@ -42,7 +51,8 @@ faire à votre place.
    | `RESEND_API_KEY` | votre clé Resend |
    | `RESEND_FROM_EMAIL` | *(optionnel)* `Lemany Chatbot <chatbot@lemany.ch>` une fois le domaine vérifié — sinon laissez vide |
    | `LEAD_EMAIL_TO` | *(optionnel)* votre email — par défaut déjà `thyphaine.dierickx@gmail.com` |
-   | `SLACK_WEBHOOK_URL` | l'URL du webhook créée à l'étape 1 |
+   | `TELEGRAM_BOT_TOKEN` | le token du bot créé à l'étape 1 |
+   | `TELEGRAM_CHAT_ID` | le chat_id récupéré à l'étape 1 |
    | `ALLOWED_ORIGIN` | `https://lemany.ch` |
 
 4. *Deploy*. Vercel vous donne une URL temporaire (`*.vercel.app`) — utile
@@ -77,8 +87,8 @@ droite et essayez :
 - Une question nécessitant une recherche web récente.
 - "Je m'appelle Jean, mon email est jean@exemple.ch, je veux être rappelé"
   → un email doit arriver à l'adresse configurée dans `LEAD_EMAIL_TO`.
-- Une question hors sujet ou très spécifique → une alerte doit arriver sur
-  le canal Slack configuré.
+- Une question hors sujet ou très spécifique → une alerte doit arriver dans
+  votre conversation Telegram avec le bot.
 
 ## Réglages ajustables
 

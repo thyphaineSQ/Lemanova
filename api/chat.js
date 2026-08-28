@@ -1,6 +1,6 @@
 // Backend du chatbot Lemany : reçoit les messages du widget (chatbot-widget.js),
 // interroge Claude (avec recherche web) et déclenche l'email de lead / l'alerte
-// Slack quand le modèle appelle les outils correspondants.
+// Telegram quand le modèle appelle les outils correspondants.
 import Anthropic from "@anthropic-ai/sdk";
 
 export const config = { maxDuration: 30 };
@@ -116,28 +116,29 @@ async function sendLeadEmail(lead, pageUrl) {
   }
 }
 
-async function sendSlackAlert(payload, pageUrl) {
-  const url = process.env.SLACK_WEBHOOK_URL;
-  if (!url) {
-    console.error("SLACK_WEBHOOK_URL manquante — alerte non envoyée", payload);
+async function sendTelegramAlert(payload, pageUrl) {
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
+  if (!token || !chatId) {
+    console.error("TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID manquant(s) — alerte non envoyée", payload);
     return;
   }
   const text = [
-    ":question: *Question non résolue par le chatbot Lemany*",
-    `*Question :* ${payload.question}`,
-    `*Raison :* ${payload.reason}`,
-    pageUrl && `*Page :* ${pageUrl}`,
+    "Question non résolue par le chatbot Lemany",
+    `Question : ${payload.question}`,
+    `Raison : ${payload.reason}`,
+    pageUrl && `Page : ${pageUrl}`,
   ].filter(Boolean).join("\n");
 
   try {
-    const res = await fetch(url, {
+    const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text }),
+      body: JSON.stringify({ chat_id: chatId, text }),
     });
-    if (!res.ok) console.error("Slack webhook a répondu", res.status, await res.text());
+    if (!res.ok) console.error("Telegram a répondu", res.status, await res.text());
   } catch (err) {
-    console.error("Erreur envoi Slack:", err);
+    console.error("Erreur envoi Telegram:", err);
   }
 }
 
@@ -206,7 +207,7 @@ export default async function handler(req, res) {
             content: "Coordonnées transmises à l'équipe Lemany.",
           });
         } else if (block.name === "escalate_question") {
-          await sendSlackAlert(block.input, safePageUrl);
+          await sendTelegramAlert(block.input, safePageUrl);
           toolResults.push({
             type: "tool_result",
             tool_use_id: block.id,
