@@ -126,7 +126,8 @@ Normalize URLs before counting them.
 
 ## Step 3: Fetch and collect data
 
-Use the environment's approved web-fetching/browser tools.
+Use the environment's approved web-fetching/browser tools, following the fetch protocol in
+"Fetch protocol and failure handling" below for every fetch attempt.
 
 Never make assumptions about what the site does or does not contain before checking.
 
@@ -210,11 +211,37 @@ Priority order:
 
 Do not create an unbounded crawl.
 
+### Fetch protocol and failure handling
+
+Apply this protocol to every page fetch attempt, including the homepage, robots.txt, and sitemap.xml:
+
+1. Try `WebFetch` for the URL first.
+2. If `WebFetch` returns `EGRESS_BLOCKED` (or an equivalent network-egress restriction):
+   - Use `WebSearch` to discover and index target pages — site structure, indexed URLs, cached
+     snippets — as a substitute discovery/content source. Treat search snippets as partial,
+     lower-fidelity evidence, not a substitute for full-page content.
+   - If browser/Chrome automation tools are available in the environment, use those to inspect
+     the pages directly instead.
+   - Do **not** retry with `curl`, `wget`, Node, Python, or any other local networking code inside
+     a restricted sandbox. This does not bypass the proxy, wastes effort, and risks attempting to
+     circumvent a deliberate security boundary — never do it.
+   - Clearly mark, per page, how it was obtained: fetched directly, fetched via browser tool,
+     discovered only via WebSearch snippets, or not accessible at all.
+3. Never fail the entire audit just because `robots.txt` or `sitemap.xml` returns `EGRESS_BLOCKED`
+   or is otherwise unavailable. Treat both as optional discovery inputs: if unavailable, build the
+   candidate page list from whatever navigation, footer, and internal links were obtained from the
+   homepage instead, and note the limitation in the report.
+
 ### Crawl failure handling
 
-If the primary URL is inaccessible, explain the limitation and offer a framework-level audit.
+If every fetch path in the protocol above fails for the primary URL (no direct fetch, no browser
+tool, no usable WebSearch results), explain the limitation plainly — including whether it looks
+like an environment-level network restriction rather than a problem with the target site — and
+offer a framework-level audit or ask the user to paste content or upload a local crawl export
+instead of guessing.
 
-If secondary pages fail, note this and continue with accessible pages.
+If secondary pages fail while the homepage succeeded, note which pages and via what fallback tier,
+and continue the audit with the accessible pages.
 
 ---
 
