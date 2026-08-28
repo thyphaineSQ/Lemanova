@@ -4,5 +4,8 @@
   "type": "module",
   "scripts": {
     "generate": "node generate-articles.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.122.0"
   }
 }
