@@ -195,13 +195,38 @@
       inputEl.style.height = Math.min(inputEl.scrollHeight, 80) + "px";
     });
 
+    var isMobile = function () {
+      return window.matchMedia("(max-width:480px)").matches;
+    };
+
+    // Sur iOS, l'ouverture du clavier ne redimensionne pas les éléments en
+    // position fixed : la page défile et une partie du panneau (l'en-tête,
+    // le message d'accueil) passe hors écran. On force donc la hauteur du
+    // panneau à la zone réellement visible (visualViewport) pour que
+    // l'en-tête et le champ de saisie restent toujours à l'écran.
+    function syncMobileViewport() {
+      if (!window.visualViewport || !isMobile() || !panel.classList.contains("lmy-open")) return;
+      var vv = window.visualViewport;
+      panel.style.height = vv.height + "px";
+      panel.style.top = vv.offsetTop + "px";
+      msgsEl.scrollTop = msgsEl.scrollHeight;
+    }
+
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", syncMobileViewport);
+      window.visualViewport.addEventListener("scroll", syncMobileViewport);
+    }
+
     function openPanel() {
       panel.classList.add("lmy-open");
       if (msgsEl.children.length === 0) renderHistory();
       inputEl.focus();
+      syncMobileViewport();
     }
     function closePanel() {
       panel.classList.remove("lmy-open");
+      panel.style.height = "";
+      panel.style.top = "";
     }
 
     btn.addEventListener("click", function () {
