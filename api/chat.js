@@ -143,6 +143,7 @@ async function sendTelegramAlert(payload, pageUrl) {
 }
 
 export default async function handler(req, res) {
+  console.log("Requête reçue:", req.method, req.url, "origin=", req.headers.origin, "ua=", req.headers["user-agent"]);
   setCors(req, res);
   // Empêche tout proxy/CDN intermédiaire (y compris ceux d'opérateurs mobiles)
   // de mettre en cache une réponse de cette API et de la resservir ensuite
@@ -155,6 +156,7 @@ export default async function handler(req, res) {
     return;
   }
   if (req.method !== "POST") {
+    console.log("Méthode rejetée:", req.method);
     res.status(405).json({ error: "Méthode non autorisée" });
     return;
   }
