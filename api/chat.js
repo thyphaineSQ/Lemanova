@@ -144,6 +144,11 @@ async function sendTelegramAlert(payload, pageUrl) {
 
 export default async function handler(req, res) {
   setCors(req, res);
+  // Empêche tout proxy/CDN intermédiaire (y compris ceux d'opérateurs mobiles)
+  // de mettre en cache une réponse de cette API et de la resservir ensuite
+  // pour une requête différente sur la même URL.
+  res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0");
+  res.setHeader("Pragma", "no-cache");
 
   if (req.method === "OPTIONS") {
     res.status(204).end();
