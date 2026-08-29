@@ -159,7 +159,11 @@
         setTyping(false);
 
         if (!res.ok || !data.reply) {
-          addBubble("error", data.error || "Une erreur est survenue, réessayez dans un instant.");
+          addBubble(
+            "error",
+            (data.error || "Une erreur est survenue, réessayez dans un instant.") +
+              " [debug: HTTP " + res.status + "]"
+          );
           return;
         }
 
@@ -168,7 +172,11 @@
         saveHistory(history);
       } catch (err) {
         setTyping(false);
-        addBubble("error", "Connexion impossible. Vérifiez votre réseau et réessayez.");
+        addBubble(
+          "error",
+          "Connexion impossible. Vérifiez votre réseau et réessayez. [debug: " +
+            (err && (err.name + ": " + err.message)) + "]"
+        );
       } finally {
         sendEl.disabled = false;
       }
