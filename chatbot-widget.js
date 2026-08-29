@@ -162,7 +162,9 @@
           addBubble(
             "error",
             (data.error || "Une erreur est survenue, réessayez dans un instant.") +
-              " [debug: HTTP " + res.status + "]"
+              " [debug: HTTP " + res.status +
+              ", redirected=" + res.redirected +
+              ", url=" + res.url + "]"
           );
           return;
         }
