@@ -1,7 +1,7 @@
 # Mise en service du chatbot Lemany
 
 Le chatbot est prêt côté code : widget sur toutes les pages (`chatbot-widget.js`)
-+ backend serverless (`api/chat.js`) qui appelle Claude (Anthropic), avec recherche
++ backend serverless (`api/message.js`) qui appelle Claude (Anthropic), avec recherche
 web, capture de leads par email (Resend) et escalade des questions sans réponse
 vers Telegram.
 
@@ -62,7 +62,7 @@ faire à votre place.
 
 Le site est actuellement sur GitHub Pages (fichier `CNAME`). Pour que le
 chatbot fonctionne sur `lemany.ch`, le domaine doit pointer vers Vercel
-(GitHub Pages ne peut pas exécuter `api/chat.js`) :
+(GitHub Pages ne peut pas exécuter `api/message.js`) :
 
 1. Dans le projet Vercel → *Settings* → *Domains* → ajoutez `lemany.ch`.
 2. Vercel affiche les enregistrements DNS à créer (en général un
@@ -92,7 +92,7 @@ droite et essayez :
 
 ## Réglages ajustables
 
-- **Modèle / coût** : `api/chat.js` utilise `claude-opus-5` avec un effort
+- **Modèle / coût** : `api/message.js` utilise `claude-opus-5` avec un effort
   `"low"` (réponses rapides et économes, adaptées à un chat). Pour réduire
   encore les coûts, changez `MODEL` en `"claude-sonnet-5"` dans ce fichier.
 - **Placement du widget** : actuellement sur toutes les pages. Pour le

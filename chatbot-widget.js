@@ -1,9 +1,9 @@
 // Widget de chat Lemany — bulle flottante présente sur toutes les pages.
-// Appelle /api/chat (fonction serverless) ; aucune clé API côté client.
+// Appelle /api/message (fonction serverless) ; aucune clé API côté client.
 (function () {
   "use strict";
 
-  var API_URL = "/api/chat";
+  var API_URL = "/api/message";
   var STORAGE_KEY = "lemanyChatHistory";
   var GREETING =
     "Bonjour, je suis l'assistant Lemany. Posez-moi vos questions sur nos services (site web, SEO, automatisation, IA…), ou laissez-moi vos coordonnées pour être recontacté.";
