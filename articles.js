@@ -7,6 +7,23 @@
 // ============================================================
 export const articles = [
   {
+    id: 'ia-abordable-petite-equipe-geneve-vaud',
+    seoTitle: 'IA abordable pour PME : le vrai coût Genève/Vaud',
+    category: 'IA',
+    title: 'L\'IA coûte trop cher pour votre petite équipe ? Le vrai calcul, à Genève comme à Vaud',
+    date: '2 septembre 2026',
+    minutes: 6,
+    image: null,
+    excerpt: 'Vous pensez que l\'intelligence artificielle est réservée aux grandes entreprises avec un service informatique ? Voici le calcul réel pour une équipe de 5 à 15 personnes en Suisse romande, et où commencer sans se ruiner.',
+    content: [
+      "Vous scrollez LinkedIn un soir de semaine et tombez sur un post enthousiaste : une entreprise genevoise vient de « déployer trois agents IA » qui traitent ses demandes clients toute la nuit. Vous fermez l'onglet en pensant que c'est très bien pour eux, qu'ils ont sans doute un service informatique et un budget à six chiffres, et que pour votre atelier de huit personnes à Nyon ou votre cabinet de sept collaborateurs à Genève, ce sujet reste au rayon des choses qu'on regarde de loin. Un commercial vous a peut-être déjà appelé pour vous vendre « la plateforme IA qui va transformer votre entreprise », avec un devis à quinze mille francs et un contrat de deux ans. Vous avez raccroché, convaincu que l'intelligence artificielle n'est simplement pas faite pour une équipe de votre taille.",
+      "Faites pourtant le calcul sur une seule tâche répétitive de votre quotidien : répondre aux mêmes questions par e-mail — horaires, délais, disponibilités, suivi de commande. Si une personne y consacre trente minutes par jour, cela représente environ 125 heures par an, soit 8 750 à 11 000 CHF de temps de travail à 70-90 CHF de l'heure chargée. Un agent IA capable de répondre à ces questions récurrentes, ou de préparer une réponse que la personne n'a plus qu'à valider, coûte en réalité entre 50 et 250 CHF par mois selon l'outil et le volume — pas quinze mille francs, pas un contrat de deux ans. La confusion vient d'une seule chose : les commerciaux qui vous appellent vendent souvent une plateforme complète pensée pour des entreprises de deux cents personnes, alors que votre problème, lui, tient en une seule tâche précise.",
+      "La bonne question n'est donc pas « puis-je me permettre l'IA ? » mais « quelle est la tâche la plus répétitive de mon équipe, et existe-t-il un outil qui la fait pour trente à cent cinquante francs par mois ? ». On commence par un seul flux — le tri des e-mails entrants, la première réponse à une demande de devis, la relecture d'un document type — jamais par « installer l'IA dans toute l'entreprise ». On le laisse tourner un mois, on mesure le temps réellement gagné, et seulement alors on décide s'il vaut la peine d'ajouter un deuxième usage. C'est cette entrée progressive, et non l'ampleur du projet, qui rend l'IA rentable pour une équipe de cinq à quinze personnes — c'est d'ailleurs exactement comme cela que nous les mettons en place avec nos clients romands, un usage à la fois.",
+      "Le bassin lémanique a une particularité qui joue en votre faveur : le coût horaire y est parmi les plus élevés de Suisse, ce qui veut dire que chaque heure automatisée vaut davantage ici qu'ailleurs — le calcul se rentabilise donc plus vite pour une petite structure genevoise ou vaudoise que pour la même équipe installée en Suisse centrale. Attention cependant à un point souvent oublié par les petites structures : dès qu'un agent IA touche des données de clients — adresses, historique d'achat, échanges par e-mail — la loi fédérale sur la protection des données (nLPD) s'applique, quelle que soit la taille de l'entreprise. Choisissez un outil ou un partenaire qui vous dit clairement où les données sont hébergées et qui peut les effacer sur demande ; méfiez-vous d'une offre qui ne peut pas répondre à cette question en une phrase.",
+      "Le test à faire cette semaine ne coûte rien : listez les trois tâches les plus répétitives de votre équipe, chronométrez-les une journée, et multipliez par le nombre de jours travaillés dans l'année. Si l'une d'elles dépasse 5 000 CHF de temps de travail annuel, elle mérite un agent IA ciblé avant la fin de l'année — pas un projet de transformation numérique. Et si un prestataire vous répond par un devis à cinq chiffres et un engagement de deux ans avant même d'avoir vu vos trois tâches, ce n'est pas vous qui n'êtes pas prêt pour l'IA : c'est lui qui vous vend la mauvaise porte d'entrée."
+    ]
+  },
+  {
     id: 'agents-ia-comptabilite-geneve-vaud',
     seoTitle: 'Agent IA comptabilité PME — Genève & Vaud | Lemany',
     links: ['services-automatisation-ia.html', 'services-automatisation.html'],
