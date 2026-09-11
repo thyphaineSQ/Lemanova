@@ -1,5 +1,14 @@
 # Mise en service du chatbot Lemany
 
+> **Statut : ce chatbot maison n'est plus utilisé sur le site.** Un bug (405
+> reproductible uniquement sur mobile, non résolu malgré plusieurs pistes)
+> a conduit à le remplacer par un widget tiers (script
+> `clair-client-assistant.thyphaine-dierickx.chatgpt.site/widget.js`) sur
+> toutes les pages. `chatbot-widget.js` et `api/message.js` restent dans le
+> dépôt si vous voulez reprendre le sujet plus tard, mais ne sont plus
+> chargés par aucune page. Le reste de ce document décrit l'ancienne mise
+> en service, gardé pour référence.
+
 Le chatbot est prêt côté code : widget sur toutes les pages (`chatbot-widget.js`)
 + backend serverless (`api/message.js`) qui appelle Claude (Anthropic), avec recherche
 web, capture de leads par email (Resend) et escalade des questions sans réponse
