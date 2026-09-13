@@ -7,6 +7,24 @@
 // ============================================================
 export const articles = [
   {
+    id: 'agent-ia-gestion-stock-geneve-vaud',
+    seoTitle: 'Agent IA gestion de stock — PME Genève & Vaud | Lemany',
+    links: ['services-automatisation-ia.html', 'services-logiciels-metier.html'],
+    category: 'IA',
+    title: "Il manque une pièce dans le fourgon un vendredi matin : ce que ça coûte à une PME de Genève et Vaud",
+    date: '13 septembre 2026',
+    minutes: 6,
+    image: null,
+    excerpt: "Une pièce ou un outil manque au fourgon au pire moment, et personne ne sait qui l'a emprunté en dernier : le scénario coûte cher, en trajets imprévus et en matériel racheté, aux PME artisanales de Genève et Vaud. Comment un agent IA peut suivre le stock et les prêts de matériel à partir de l'outil déjà utilisé aujourd'hui, sans tout changer d'un coup.",
+    content: [
+      "Vendredi matin à 7h30, un électricien indépendant installé à Renens charge son fourgon avant de partir sur un chantier de rénovation à Lausanne, puis un second l'après-midi à Genève. En ouvrant la caisse à outils sur place, il découvre qu'il manque les disjoncteurs différentiels du bon calibre — ceux qu'un collègue a empruntés la semaine précédente pour un dépannage urgent à Nyon, sans jamais les remettre à leur place. Impossible de terminer l'installation dans les temps : direction le grossiste électrique le plus proche, vingt-cinq minutes de trajet aller-retour dans la circulation du vendredi, pendant que le client attend dans son salon et que le deuxième chantier de la journée prend déjà du retard avant même d'avoir commencé.",
+      "Le calcul est simple à refaire soi-même. Un aller-retour chez le fournisseur pour une pièce manquante prend en moyenne 45 minutes à 1h15 selon le trajet et la file d'attente au comptoir, immobilisant un technicien payé entre 65 et 85 CHF de l'heure — soit 50 à 105 CHF de temps perdu à chaque rupture, sans compter le rendez-vous suivant qui décale d'autant. Pour une petite équipe de trois à cinq techniciens qui gèrent chacun le stock de leur propre fourgon à l'œil et au post-it, ce genre d'imprévu revient en moyenne une à deux fois par semaine — soit entre 2 600 et 10 900 CHF par an rien qu'en temps de trajet, avant même de compter les rendez-vous qu'il faut reporter au client suivant.",
+      "S'ajoute une deuxième fuite, moins visible mais tout aussi réelle : le matériel prêté d'un chantier à l'autre, ou d'un collègue à l'autre, qui ne revient jamais à son point de départ. Une perceuse-visseuse professionnelle, un niveau laser ou un jeu de forets de qualité coûte entre 150 et 500 CHF pièce à remplacer ; une PME artisanale de cette taille en perd ou en rachète en moyenne trois à six par an faute de savoir qui a emprunté quoi et quand, soit 450 à 3 000 CHF par an de matériel racheté qui, quelque part, existe déjà dans l'entreprise — rangé dans le mauvais fourgon ou oublié sur une étagère à Morges.",
+      "Un agent IA branché sur la liste de stock que l'entreprise utilise déjà — même un simple tableau Excel partagé — peut répondre en quelques secondes, par WhatsApp ou SMS, à la question posée avant de charger le fourgon le matin : « il reste combien de disjoncteurs 16A en dépôt ? ». Il peut aussi alerter automatiquement l'équipe dès qu'un article passe sous un seuil défini, préparer un brouillon de commande au grossiste habituel pour validation, et enregistrer en une phrase qui a emprunté quel outil et sur quel chantier, avec un rappel après une semaine si l'objet n'est pas revenu. On ne change rien à la manière de travailler aujourd'hui : Lemany branche l'agent sur l'outil déjà en place, et on l'étend ensuite à mesure que la confiance s'installe — sans imposer un nouveau logiciel de gestion de stock du jour au lendemain.",
+      "Le signal à surveiller est simple à repérer sans outil : si, sur le dernier mois, il y a eu plus de deux fois « on n'a pas ce qu'il fallait, il a fallu aller en chercher » ou « qui a pris la perceuse, personne ne sait où elle est » — la mémoire collective et le post-it ne suivent plus la taille de l'équipe, même si le stock lui-même n'a pas changé. Le premier pas ne demande pas de tout automatiser d'un coup : il suffit de lister les cinq pièces ou outils qui bloquent le plus souvent une intervention quand ils manquent, de fixer un seuil minimum pour chacun, et de tester l'alerte automatique sur ces cinq-là avant, seulement ensuite, d'élargir au reste du stock."
+    ]
+  },
+  {
     id: 'agent-ia-tri-candidatures-geneve-vaud',
     seoTitle: 'Agent IA tri de CV — Recrutement PME Genève & Vaud | Lemany',
     links: ['services-automatisation-ia.html', 'services-logiciels-metier.html'],
