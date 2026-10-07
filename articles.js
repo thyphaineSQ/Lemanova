@@ -7,6 +7,33 @@
 // ============================================================
 export const articles = [
   {
+    id: 'agent-ia-bouclement-annuel-pieces-manquantes-geneve-vaud',
+    seoTitle: "Bouclement annuel : pièces manquantes, agent IA — Genève & Vaud",
+    links: [
+      'services-automatisation.html',
+      'services-logiciels-metier.html'
+    ],
+    category: 'Automatisation',
+    title: "Clôture annuelle : comment ne plus courir après 47 justificatifs manquants en janvier dans votre PME de Genève ou Vaud ?",
+    date: '7 octobre 2026',
+    minutes: 6,
+    image: null,
+    excerpt: "Chaque janvier, la fiduciaire réclame des pièces introuvables et la clôture glisse. Un agent IA les réclame toute l'année : le calcul et le premier pas pour les PME de Genève et Vaud.",
+    content: [
+      "## Le 15 janvier, la fiduciaire vous écrit : « il manque 47 pièces »",
+      "Une gérante d'une entreprise de rénovation de huit personnes, à Nyon, reçoit chaque année le même e-mail de sa fiduciaire en janvier : une liste de 47 lignes du relevé bancaire pour lesquelles il manque un justificatif. « Virement du 12.03, 1 840 CHF, à qui ? » « Paiement carte du 2.07, 63 CHF, quel fournisseur ? » Elle fouille sa boîte mail, le classeur du bureau, la messagerie du chantier, la voiture. Elle retrouve 30 pièces, en devine 10, et renonce à 7. La clôture, qui devait être bouclée avant la fin février, glisse à avril. Le décompte TVA suivant part avec du retard, et l'assemblée générale, qui doit approuver les comptes dans les six mois suivant la fin de l'exercice, se tient à la dernière minute.",
+      "## Ce que coûtent vraiment les pièces manquantes",
+      "Le calcul se refait avec vos chiffres. Prenons 15 lignes bancaires par mois sans justificatif identifié, ce qui est très courant dès que plusieurs personnes paient avec une carte ou que les factures arrivent par plusieurs canaux : cela fait 180 pièces à retrouver par an. À 12 minutes la pièce (la chercher, la photographier, répondre à la fiduciaire, qui relance), on arrive à 36 heures. Si la moitié de ce temps est du vôtre, à 70 CHF de l'heure, et l'autre moitié est facturée par la fiduciaire à 130 CHF de l'heure, la facture monte à environ 3 600 CHF par an. Sans compter les charges que l'on n'ose pas déduire faute de justificatif, ni la fatigue de janvier, qui n'est facturée nulle part.",
+      "En Suisse, les justificatifs doivent être conservés dix ans, et une comptabilité doit pouvoir s'appuyer sur des pièces vérifiables. À Genève comme dans le canton de Vaud, l'administration fiscale peut demander des explications sur une charge ; mieux vaut avoir la pièce sous la main que d'en reconstituer l'histoire trois ans plus tard. Cela dit, personne ne fait exprès de les perdre : elles sont simplement dispersées entre la boîte du gérant, celle de l'assistante, les photos d'un téléphone et un tiroir.",
+      "## Une vérification tout au long de l'année, pas un sprint en janvier",
+      "L'idée d'un agent IA pour cette tâche est modeste : chaque semaine, il compare les mouvements du compte bancaire avec les factures et tickets déjà reçus, et il demande la pièce manquante tant que le souvenir est frais. Concrètement, il lit les PDF reçus par e-mail, rapproche chaque paiement de sa facture (montant, date, nom du fournisseur), et classe l'ensemble dans un dossier par exercice. Quand une ligne reste sans pièce, il envoie un message court à la bonne personne : « Paiement de 63 CHF du 2 juillet chez Hornbach, c'est bien pour le chantier de Gland ? Envoyez simplement la photo du ticket. » La réponse, même sur WhatsApp ou par e-mail, est enregistrée et rattachée à la bonne ligne. Votre logiciel comptable et votre fiduciaire ne changent pas : ils reçoivent un dossier simplement plus complet.",
+      "Cette approche reste prudente. L'agent ne décide pas d'une imputation comptable et ne déclare rien à votre place : il prépare, rappelle et classe. Les factures en euros de fournisseurs français, fréquentes pour les entreprises proches de la frontière, ou les notes en allemand reçues d'un partenaire alémanique sont lues de la même manière, avec un point de contrôle humain pour les cas ambigus. Et comme les pièces contiennent des données de clients ou d'employés, il vaut la peine de choisir une solution qui traite ces informations conformément à la loi fédérale sur la protection des données (nLPD) et de décider, dès le départ, où elles sont hébergées.",
+      "## Par où commencer ce trimestre",
+      "Octobre est le bon moment : il reste assez de mois pour sentir la différence avant la clôture, sans l'urgence de janvier. Voici un premier pas qui ne demande aucun projet. Demandez à votre fiduciaire la liste des lignes sans pièce pour les neuf premiers mois de l'exercice, comptez-les, et multipliez par douze minutes. Si le résultat dépasse 15 heures, le sujet mérite d'être traité. Ensuite, regroupez au même endroit les justificatifs entrants (une seule adresse e-mail dédiée, par exemple) et décidez qui répond aux questions sur les paiements par carte. Cette discipline simple suffit souvent à diviser le travail de janvier par deux, avant même d'ajouter la moindre automatisation.",
+      "Si vous souhaitez aller plus loin, l'étape suivante consiste à confier à un agent le rapprochement hebdomadaire et les relances. Chez Lemany, nous mettons en place ce type d'assistant pour des PME de Genève et du canton de Vaud, en nous branchant sur ce que vous utilisez déjà : votre boîte mail, votre banque en ligne et votre outil de comptabilité. Un premier essai sur un seul compte bancaire et trois mois de pièces permet de juger du résultat avant de décider de poursuivre. Votre fiduciaire n'y perd rien : elle passe moins de temps à courir après des tickets et plus de temps à vous conseiller sur la fiscalité, la trésorerie et la prochaine année."
+    ]
+  },
+  {
     id: "agent-ia-factures-fournisseurs-geneve-vaud",
     seoTitle: "Factures fournisseurs : automatiser — Genève & Vaud | Lemany",
     links: [
