@@ -29,6 +29,165 @@ export const articles = [
     ]
   },
   {
+    id: 'agent-ia-bouclement-annuel-pieces-manquantes-geneve-vaud',
+    seoTitle: "Bouclement annuel : pièces manquantes, agent IA — Genève & Vaud",
+    links: [
+      'services-automatisation.html',
+      'services-logiciels-metier.html'
+    ],
+    category: 'Automatisation',
+    title: "Clôture annuelle : comment ne plus courir après 47 justificatifs manquants en janvier dans votre PME de Genève ou Vaud ?",
+    date: '7 octobre 2026',
+    minutes: 6,
+    image: null,
+    excerpt: "Chaque janvier, la fiduciaire réclame des pièces introuvables et la clôture glisse. Un agent IA les réclame toute l'année : le calcul et le premier pas pour les PME de Genève et Vaud.",
+    content: [
+      "## Le 15 janvier, la fiduciaire vous écrit : « il manque 47 pièces »",
+      "Une gérante d'une entreprise de rénovation de huit personnes, à Nyon, reçoit chaque année le même e-mail de sa fiduciaire en janvier : une liste de 47 lignes du relevé bancaire pour lesquelles il manque un justificatif. « Virement du 12.03, 1 840 CHF, à qui ? » « Paiement carte du 2.07, 63 CHF, quel fournisseur ? » Elle fouille sa boîte mail, le classeur du bureau, la messagerie du chantier, la voiture. Elle retrouve 30 pièces, en devine 10, et renonce à 7. La clôture, qui devait être bouclée avant la fin février, glisse à avril. Le décompte TVA suivant part avec du retard, et l'assemblée générale, qui doit approuver les comptes dans les six mois suivant la fin de l'exercice, se tient à la dernière minute.",
+      "## Ce que coûtent vraiment les pièces manquantes",
+      "Le calcul se refait avec vos chiffres. Prenons 15 lignes bancaires par mois sans justificatif identifié, ce qui est très courant dès que plusieurs personnes paient avec une carte ou que les factures arrivent par plusieurs canaux : cela fait 180 pièces à retrouver par an. À 12 minutes la pièce (la chercher, la photographier, répondre à la fiduciaire, qui relance), on arrive à 36 heures. Si la moitié de ce temps est du vôtre, à 70 CHF de l'heure, et l'autre moitié est facturée par la fiduciaire à 130 CHF de l'heure, la facture monte à environ 3 600 CHF par an. Sans compter les charges que l'on n'ose pas déduire faute de justificatif, ni la fatigue de janvier, qui n'est facturée nulle part.",
+      "En Suisse, les justificatifs doivent être conservés dix ans, et une comptabilité doit pouvoir s'appuyer sur des pièces vérifiables. À Genève comme dans le canton de Vaud, l'administration fiscale peut demander des explications sur une charge ; mieux vaut avoir la pièce sous la main que d'en reconstituer l'histoire trois ans plus tard. Cela dit, personne ne fait exprès de les perdre : elles sont simplement dispersées entre la boîte du gérant, celle de l'assistante, les photos d'un téléphone et un tiroir.",
+      "## Une vérification tout au long de l'année, pas un sprint en janvier",
+      "L'idée d'un agent IA pour cette tâche est modeste : chaque semaine, il compare les mouvements du compte bancaire avec les factures et tickets déjà reçus, et il demande la pièce manquante tant que le souvenir est frais. Concrètement, il lit les PDF reçus par e-mail, rapproche chaque paiement de sa facture (montant, date, nom du fournisseur), et classe l'ensemble dans un dossier par exercice. Quand une ligne reste sans pièce, il envoie un message court à la bonne personne : « Paiement de 63 CHF du 2 juillet chez Hornbach, c'est bien pour le chantier de Gland ? Envoyez simplement la photo du ticket. » La réponse, même sur WhatsApp ou par e-mail, est enregistrée et rattachée à la bonne ligne. Votre logiciel comptable et votre fiduciaire ne changent pas : ils reçoivent un dossier simplement plus complet.",
+      "Cette approche reste prudente. L'agent ne décide pas d'une imputation comptable et ne déclare rien à votre place : il prépare, rappelle et classe. Les factures en euros de fournisseurs français, fréquentes pour les entreprises proches de la frontière, ou les notes en allemand reçues d'un partenaire alémanique sont lues de la même manière, avec un point de contrôle humain pour les cas ambigus. Et comme les pièces contiennent des données de clients ou d'employés, il vaut la peine de choisir une solution qui traite ces informations conformément à la loi fédérale sur la protection des données (nLPD) et de décider, dès le départ, où elles sont hébergées.",
+      "## Par où commencer ce trimestre",
+      "Octobre est le bon moment : il reste assez de mois pour sentir la différence avant la clôture, sans l'urgence de janvier. Voici un premier pas qui ne demande aucun projet. Demandez à votre fiduciaire la liste des lignes sans pièce pour les neuf premiers mois de l'exercice, comptez-les, et multipliez par douze minutes. Si le résultat dépasse 15 heures, le sujet mérite d'être traité. Ensuite, regroupez au même endroit les justificatifs entrants (une seule adresse e-mail dédiée, par exemple) et décidez qui répond aux questions sur les paiements par carte. Cette discipline simple suffit souvent à diviser le travail de janvier par deux, avant même d'ajouter la moindre automatisation.",
+      "Si vous souhaitez aller plus loin, l'étape suivante consiste à confier à un agent le rapprochement hebdomadaire et les relances. Chez Lemany, nous mettons en place ce type d'assistant pour des PME de Genève et du canton de Vaud, en nous branchant sur ce que vous utilisez déjà : votre boîte mail, votre banque en ligne et votre outil de comptabilité. Un premier essai sur un seul compte bancaire et trois mois de pièces permet de juger du résultat avant de décider de poursuivre. Votre fiduciaire n'y perd rien : elle passe moins de temps à courir après des tickets et plus de temps à vous conseiller sur la fiscalité, la trésorerie et la prochaine année."
+    ]
+  },
+  {
+    id: "agent-ia-heures-facturables-geneve-vaud",
+    seoTitle: "Heures non facturées : agent IA — Genève & Vaud | Lemany",
+    links: [
+      "services-automatisation.html",
+      "services-logiciels-metier.html"
+    ],
+    category: "Automatisation",
+    title: "Des heures travaillées mais jamais facturées : comment ne plus en perdre dans votre PME de Genève ou Vaud ?",
+    date: "6 octobre 2026",
+    minutes: 6,
+    image: null,
+    excerpt: "Les heures se saisissent le vendredi, de mémoire, et celles qu'on a oubliées ne seront jamais facturées. Comment un agent IA reconstitue le temps passé à partir des e-mails, de l'agenda et des dossiers, pour que les PME de services de Genève et Vaud facturent chaque heure réellement travaillée.",
+    content: [
+      "Un vendredi à 17 h 20, dans un bureau d'architectes de Nyon, chacun ouvre le tableau des heures de la semaine. « Lundi... j'étais sur le chantier de Gland, non, c'était mardi ? » Une collaboratrice cherche dans son agenda, un autre dans ses e-mails envoyés, le patron devine : deux heures pour l'appel avec le maître d'ouvrage, une demi-heure pour le plan corrigé. Au total, la semaine tient en quarante lignes approximatives, saisies en vingt minutes par personne. Et personne ne sait vraiment combien d'heures ont filé entre les lignes : le téléphone du mardi après-midi, les trois retouches « rapides » du jeudi, la réunion qui a débordé. Ces heures-là ont été travaillées, mais elles n'apparaîtront jamais sur une facture.",
+      "Le calcul se refait avec vos propres chiffres. Prenez une équipe de huit personnes qui facturent leur temps. Si chacune oublie en moyenne une heure par semaine, ce qui est modeste quand on saisit de mémoire, cela représente huit heures par semaine, soit environ 370 heures par an sur 46 semaines travaillées. À un tarif horaire de 120 CHF, on arrive à 44 000 CHF de travail réalisé et jamais encaissé. À cela s'ajoute le temps de saisie lui-même : vingt minutes par personne et par semaine font encore 120 heures par an consacrées à remplir un tableau plutôt qu'à servir un client. Pour une petite structure, la somme pèse autant qu'un poste à mi-temps. Et ce chiffre ne tient pas compte des forfaits qui dérapent sans que personne ne s'en aperçoive : un mandat vendu 8 000 CHF qui a demandé 90 heures au lieu de 60 coûte 30 heures de marge, et on ne le découvre qu'à la clôture du dossier, quand il est trop tard pour en parler avec le client.",
+      "Ce n'est pas de la négligence, c'est le fonctionnement normal d'une journée de travail. On passe d'un dossier à l'autre, un client appelle, on répond à un e-mail entre deux réunions, et noter l'heure de début et de fin à chaque fois casserait la concentration. À Genève et dans le canton de Vaud, la plupart des PME de services, fiduciaires, bureaux d'ingénieurs, agences, cabinets de conseil ou d'avocats, facturent au temps passé ou au forfait suivi, avec des tarifs qui justifient d'être précis. Et quand le client demande le détail d'une facture, ou qu'un forfait déborde, l'absence de traces fiables fragilise la discussion. L'équipe n'est pas en cause : l'outil habituel, le tableau rempli le vendredi, demande simplement à la mémoire de faire un travail qu'elle ne fait pas bien.",
+      "La sortie consiste à inverser le sens : plutôt que de demander aux gens de se souvenir, on reconstitue le temps à partir de ce qui a déjà laissé des traces. Un agent IA peut parcourir l'agenda, les e-mails envoyés et reçus, les documents modifiés et les appels enregistrés dans le carnet, puis proposer à chaque collaborateur un brouillon de sa semaine : « mardi, 14 h à 15 h 30, dossier Gland, appel et plan modifié ». Il rapproche chaque activité d'un client ou d'un projet connu, repère les créneaux sans dossier attribué et pose la question : « Ces 45 minutes jeudi matin, c'était pour qui ? ». La personne confirme ou corrige en une minute. Le résultat est plus complet que la saisie de mémoire, et il prend des minutes au lieu de vingt.",
+      "Le point de départ reste modeste. Pas besoin de changer de logiciel de facturation ni de faire adopter un outil à toute l'équipe : on commence par une seule personne, ou un seul type de dossiers, et l'agent produit un brouillon que l'humain valide toujours. Rien ne part vers le client sans accord, et vous gardez le détail de ce qui a été proposé et corrigé. Sur le plan de la protection des données, l'agent lit des e-mails et des agendas qui contiennent des informations de clients : le choix d'un hébergement en Suisse ou dans un cadre conforme à la nouvelle loi sur la protection des données (nLPD), et la liste précise de ce que l'agent a le droit de lire, se décident avant le démarrage, pas après. Les collaborateurs doivent aussi savoir ce qui est analysé : c'est une question de confiance autant que de conformité.",
+      "Pour savoir si le sujet vous concerne, faites un test simple sur un mois. Prenez trois collaborateurs, demandez-leur de noter pendant une semaine leurs heures en temps réel, puis comparez avec ce qu'ils avaient saisi le vendredi précédent. L'écart, multiplié par votre tarif horaire et par le nombre de personnes, vous donne un ordre de grandeur de ce que vous perdez chaque année. Si cet écart dépasse une demi-heure par personne et par semaine, il y a de quoi automatiser la partie la plus pénible : retrouver ce qui s'est passé. Quelques semaines plus tard, vous saurez aussi quels clients et quels types de mandats consomment plus de temps que prévu, ce qui aide à ajuster vos prochains devis. Lemany accompagne ce type de démarche pas à pas, en partant de votre façon de travailler et de vos outils actuels.",
+    ]
+  },
+  {
+    id: "agent-ia-heures-non-facturees-geneve-vaud",
+    seoTitle: "Heures non facturées : agent IA — Genève & Vaud | Lemany",
+    links: [
+      "services-automatisation-ia.html",
+      "services-logiciels-metier.html"
+    ],
+    category: "IA",
+    title: "Des heures travaillées mais jamais facturées : combien en perd votre PME de services à Genève ou Vaud chaque mois ?",
+    date: "5 octobre 2026",
+    minutes: 6,
+    image: null,
+    excerpt: "Une heure notée sur un post-it, une réunion oubliée, un téléphone d'un quart d'heure jamais reporté : dans un bureau de services, une partie du temps passé ne figure jamais sur la facture. Comment un agent IA reconstitue les heures à partir de l'agenda et des e-mails, pour les PME de Genève et Vaud, sans imposer un nouveau logiciel de saisie.",
+    content: [
+      "Un vendredi à 17 h 30, dans un bureau d'architectes de Nyon, la responsable administrative prépare les factures du mois. Elle ouvre le tableau des heures : trois collaborateurs l'ont rempli, deux autres promettent de le faire « lundi ». Elle sait pourtant que le dossier de la villa de Gland a donné lieu à au moins deux séances de chantier et une dizaine d'échanges avec le maître d'ouvrage. Sur le tableau, il y en a la moitié. Elle facture ce qui est écrit, par prudence, plutôt que de réclamer à tout le monde de reconstituer son mois de mémoire. La facture part, et personne ne saura jamais ce qui n'y figure pas.",
+      "Le calcul se refait avec vos propres chiffres. Prenez une équipe de six personnes qui facturent au temps passé, à 140 CHF de l'heure en moyenne (un tarif courant pour un bureau technique, une fiduciaire ou un cabinet de conseil en Suisse romande). Si chacune oublie ou sous-déclare seulement une heure par semaine (un appel de dix minutes, un e-mail qui prend vingt minutes à rédiger, un déplacement non noté), cela fait six heures par semaine pour l'équipe, donc environ 270 heures sur une année de 45 semaines travaillées. À 140 CHF, cela représente 37 800 CHF de travail réellement effectué mais jamais envoyé au client. Même en divisant ce chiffre par deux, par honnêteté sur vos propres habitudes, il reste de quoi payer un mois de salaire complet, chaque année, pour un travail déjà fait.",
+      "Il ne s'agit ni de négligence ni de mauvaise foi. Saisir ses heures est une tâche que personne n'a jamais le temps de faire au bon moment : on y pense le soir, la semaine suivante, ou le jour où la facture doit partir. À Genève et dans le canton de Vaud, beaucoup de petites structures jonglent en plus avec plusieurs clients, plusieurs langues et des horaires qui débordent entre le bureau, le chantier et le télétravail. Le résultat est connu : des écarts entre ce que l'équipe sait avoir fait et ce qui est écrit, des factures arrondies au plus bas pour éviter la discussion, et des dirigeants qui n'osent plus réclamer la saisie après la troisième relance.",
+      "Un agent IA ne demande pas de saisir davantage, il reconstitue ce qui a déjà laissé une trace. Concrètement, il consulte, avec l'accord de chaque collaborateur, l'agenda (séances, visites de chantier, appels planifiés) et les e-mails envoyés par dossier, puis propose chaque semaine une feuille d'heures pré-remplie : « mardi, 2 h 15, séance avec M. Favre, dossier Gland ; mercredi, 40 minutes d'échanges avec l'ingénieur civil ». La personne n'a qu'à confirmer, corriger ou supprimer chaque ligne, en deux minutes au lieu de vingt. Le logiciel de facturation que vous utilisez déjà reste en place : l'agent prépare la matière, il ne décide ni du tarif, ni de ce que le client voit sur sa facture. Cela se met en place par étapes, en commençant par un seul collaborateur et un seul type de dossier pendant un mois.",
+      "Reste la question que se posent tous les dirigeants sérieux : et les données ? Un agenda et des e-mails contiennent des informations sur vos clients, parfois couvertes par le secret professionnel ou par des obligations de confidentialité contractuelles. La loi fédérale sur la protection des données (nLPD), entrée en vigueur en septembre 2023, demande de savoir quelles données sont traitées, où, et par qui. Pour ce type d'usage, on privilégie un traitement limité aux titres et aux horaires plutôt qu'au contenu des messages, un hébergement en Suisse ou dans l'Union européenne lorsque c'est possible, et une information claire donnée à l'équipe : l'objectif est de retrouver du temps facturable, pas de surveiller les gens. Un deuxième bénéfice se remarque vite : les factures deviennent plus faciles à défendre. Quand un client de Lausanne conteste trois heures de coordination, vous pouvez montrer les dates et les séances correspondantes, au lieu de plaider de mémoire. Les dirigeants y gagnent aussi une vision plus juste de la rentabilité de chaque dossier, ce qui aide à fixer un forfait réaliste lors du prochain devis plutôt que de découvrir, trop tard, qu'un mandat « à prix fixe » a coûté le double de ce qui était prévu. Un premier pas simple : demandez à votre équipe de noter pendant deux semaines, sur un simple tableau partagé, l'écart entre les heures qu'elle sait avoir passées et celles qui figurent sur les factures. Si l'écart dépasse une heure par personne et par semaine, le sujet mérite une vraie conversation, et nous serons heureux d'y réfléchir avec vous."
+    ]
+  },
+  {
+    id: "agent-ia-classement-documents-archivage-geneve-vaud",
+    seoTitle: "Classement et archivage des documents : agent IA — Genève & Vaud | Lemany",
+    links: [
+      "services-automatisation-ia.html",
+      "services-logiciels-metier.html"
+    ],
+    category: "Automatisation",
+    title: "« Où est le contrat signé l'an dernier ? » : qui classe et retrouve les documents de votre PME de Genève ou Vaud ?",
+    date: "4 octobre 2026",
+    minutes: 6,
+    image: null,
+    excerpt: "Contrats dans les mails, PDF sur le bureau de chacun, dossiers partagés sans logique : retrouver un document prend des minutes, et la conservation légale de dix ans devient un casse-tête. Comment un agent IA classe, nomme et retrouve vos documents dans les PME de Genève et Vaud, sans changer vos outils.",
+    content: [
+      "Un jeudi matin à Nyon, la gérante d'un bureau d'architectes de huit personnes reçoit un appel d'un client : « Vous pouvez me renvoyer l'avenant signé en mars de l'année dernière ? » Elle cherche dans sa boîte mail, puis dans le dossier partagé, où trois sous-dossiers s'appellent « Contrats », « Contrats 2025 » et « Contrats à classer ». Elle demande à un collègue, qui pense l'avoir sur son ordinateur, sous « scan_0412.pdf ». Vingt-cinq minutes plus tard, le client attend toujours, et l'avenant est retrouvé… dans les pièces jointes d'un mail de relance.",
+      "Le calcul se refait avec vos propres chiffres. Imaginons dix recherches de document par semaine dans l'ensemble de l'équipe, à cinq minutes en moyenne : cela fait près de 42 heures par an. À 60 CHF de l'heure, c'est environ 2 500 CHF, sans compter les doublons, les versions qui se contredisent et l'agacement de celui qui attend. Ce chiffre ne dit rien du jour où la recherche échoue vraiment : un contrat introuvable lors d'un litige, une pièce justificative manquante pendant un contrôle de TVA, un certificat d'assurance demandé par un maître d'ouvrage la veille d'un chantier.",
+      "Ce désordre n'a rien d'une faute. Les documents arrivent par dix chemins : mails, messageries, scans, signatures électroniques, téléchargements depuis un portail fournisseur. Chacun les range selon sa logique, et personne n'a le temps de revoir l'ensemble. Il y a pourtant une contrainte bien réelle : le Code des obligations (art. 958f) impose de conserver les livres comptables, les pièces justificatives et la correspondance commerciale pendant dix ans, sous une forme lisible et vérifiable. Pour une PME de Genève ou de Vaud, cela veut dire savoir quoi garder, pendant combien de temps, et pouvoir le produire sur demande de la fiduciaire, de l'administration fiscale cantonale ou d'un tribunal. À l'inverse, certaines données personnelles, comme les dossiers de candidats non retenus, ne doivent pas être gardées plus longtemps que nécessaire, ce que la nouvelle loi sur la protection des données (nLPD) rappelle désormais clairement.",
+      "La sortie ne passe pas par un projet de « gestion documentaire » à six chiffres. Un agent IA peut surveiller les endroits où les documents arrivent : une boîte mail dédiée, un dossier de scan, un espace partagé. Pour chaque fichier, il lit le contenu, reconnaît de quoi il s'agit (contrat, facture, attestation, offre, procès-verbal), repère le nom du client ou du fournisseur, la date et le montant, puis le renomme et le range selon une règle simple que vous avez fixée, par exemple « Année / Client / Type ». Il note aussi la date jusqu'à laquelle le document doit être conservé et vous prévient quand un contrat arrive à échéance. Pour retrouver quelque chose, vous lui posez la question comme à un collègue : « l'avenant signé avec la commune de Gland » ou « les factures d'électricité de 2023 », et il vous renvoie le bon fichier.",
+      "Le contexte romand rend l'exercice plus exigeant qu'ailleurs. Une PME genevoise travaille souvent avec des documents en français, en anglais et parfois en allemand, des fournisseurs français facturés en euros, des collaborateurs frontaliers dont les contrats et attestations suivent des règles différentes. Dans le canton de Vaud, beaucoup d'entreprises échangent aussi avec des communes, des maîtres d'ouvrage publics et des assurances qui exigent des pièces précises, dans des délais courts. Résultat : au moment d'un contrôle, d'un changement de fiduciaire ou d'une vente d'entreprise, tout le monde cherche en même temps le même dossier. Un agent qui classe au fil de l'eau, quelle que soit la langue du document, transforme cette course en simple demande d'export : « tout ce qui concerne ce client, de 2021 à aujourd'hui ».",
+      "Pour démarrer, un seul flux suffit, par exemple les contrats et les attestations reçus par mail. L'agent propose le classement, vous validez les premières dizaines de documents, puis il travaille seul sur les cas évidents et vous demande conseil sur les autres. Rien n'est supprimé sans votre accord : l'agent classe et signale, il ne détruit pas. Sur le plan de la confidentialité, un document peut contenir des noms, des salaires ou des données de santé. Le lieu d'hébergement (en Suisse, idéalement) et la liste des personnes qui peuvent interroger l'agent se décident au départ, pas après coup. Chez Lemany, nous construisons ces agents autour de vos outils actuels, sans vous imposer une nouvelle plateforme.",
+      "Pour savoir si le sujet vous concerne, faites un test simple cette semaine : choisissez trois documents que vous devriez pouvoir retrouver en moins d'une minute, par exemple le dernier contrat de bail, la dernière attestation d'assurance et une facture de l'an passé, et chronométrez-vous. Si l'un des trois prend plus de cinq minutes, ou si vous devez demander à quelqu'un, notez-le. Ce petit exercice vous montrera si votre problème vient du rangement, de la recherche ou de la conservation, et il servira de point de départ pour décider ce qu'il vaut la peine d'automatiser en premier."
+    ]
+  },
+  {
+    id: "agent-ia-acces-depart-collaborateur-geneve-vaud",
+    seoTitle: "Départ d'un collaborateur : fermer les accès — Genève & Vaud | Lemany",
+    links: [
+      "services-automatisation-ia.html",
+      "services-maintenance.html"
+    ],
+    category: "Process",
+    title: "Un collaborateur est parti il y a six mois : ses accès sont-ils vraiment tous fermés dans votre PME de Genève ou Vaud ?",
+    date: "3 octobre 2026",
+    minutes: 6,
+    image: null,
+    excerpt: "Messagerie, logiciel comptable, espace de partage, réseaux sociaux de l'entreprise : à chaque départ, un accès oublié reste ouvert des mois. Comment un agent IA tient la liste, déclenche la fermeture et garde la preuve, pour les PME de Genève et du canton de Vaud, sans service informatique.",
+    content: [
+      "Un jeudi de septembre à Nyon, la gérante d'une petite fiduciaire de huit personnes reçoit un appel d'un client : « J'ai reçu un e-mail de Julien avec un lien étrange, il n'est pas parti chez vous en mars ? » Julien a quitté l'entreprise il y a six mois, en bons termes, avec un pot de départ et un bouquet. Pourtant son adresse e-mail fonctionne toujours, il est encore membre du dossier partagé des clients, et son mot de passe du logiciel comptable n'a jamais été désactivé. Personne n'a rien oublié par négligence : le jour du départ, chacun pensait que quelqu'un d'autre s'en occupait.",
+      "Le scénario est banal, et il coûte plus cher qu'on ne l'imagine. Comptons avec vos propres chiffres. Une PME de vingt personnes voit partir en moyenne trois ou quatre collaborateurs par an, en comptant les temporaires, les stagiaires et les mandataires externes. Pour chacun, il y a facilement dix accès à fermer : messagerie, agenda, espace de partage, logiciel comptable, CRM, outil de planning, comptes bancaires en ligne, réseaux sociaux de l'entreprise, wifi, badge ou clés. Si chaque accès demande cinq minutes pour être retrouvé, vérifié et fermé, cela fait une heure par départ, soit quatre heures par an. Ce n'est pas le temps qui fait mal. C'est le risque : un seul accès oublié sur un dossier client, et c'est une fuite de données, une explication délicate à donner et parfois une annonce à faire au Préposé fédéral à la protection des données. À cela s'ajoutent les coûts cachés : un abonnement logiciel payé pour une personne qui n'est plus là, à 30 ou 50 CHF par mois, soit 360 à 600 CHF par an et par licence oubliée, et des notifications de clients qui continuent d'arriver dans une boîte que personne ne lit.",
+      "Le cadre légal ne laisse pas beaucoup de marge. La loi fédérale sur la protection des données révisée, en vigueur depuis septembre 2023, demande à l'entreprise de protéger les données personnelles par des mesures adaptées, et un ancien collaborateur qui peut encore ouvrir les dossiers de vos clients en est un cas d'école. Le Code des obligations demande de son côté au collaborateur de rendre tout ce qu'il a reçu pour son travail à la fin du contrat, mais cela ne fonctionne que si vous savez précisément ce qu'il avait reçu. Dans la région, le sujet est encore plus sensible à cause des profils très mobiles : frontaliers qui travaillent depuis la France deux jours par semaine, mandataires qui interviennent pour plusieurs sociétés, jeunes qui font un stage de trois mois. Plus les départs sont fréquents, moins la mémoire de l'équipe suffit.",
+      "La sortie n'est pas un grand projet informatique. Le premier pas est une simple liste, une par collaborateur : quels outils, quels accès, quelles clés, quel matériel. Un agent IA s'appuie sur cette liste pour faire ce que personne n'a le temps de faire. Dès que la date de départ est connue, il prépare la liste de fermeture, rappelle à chacun ce qui le concerne et fixe l'échéance au dernier jour de travail. Le jour J, il déclenche ce qui peut l'être automatiquement, comme la redirection des e-mails vers un collègue et la désactivation des comptes, et il demande une confirmation pour le reste. Chaque semaine, il compare les comptes réellement actifs avec la liste du personnel et signale ceux qui n'ont plus de propriétaire.",
+      "Ce qui change surtout, c'est que la fermeture devient vérifiable. Vous gardez une trace datée de ce qui a été fermé, par qui et quand, ce qui rassure votre fiduciaire, votre assurance et, le cas échéant, un client exigeant. L'agent travaille avec les outils que vous utilisez déjà et ne prend aucune décision seul sur les accès sensibles : il prépare, il rappelle, il vous soumet. Pour la protection des données, mieux vaut privilégier un hébergement en Suisse ou dans l'Union européenne, limiter ce que l'agent peut voir au strict nécessaire et vérifier avec votre prestataire où les informations sont stockées. Un premier test se fait sur un seul type de départ, par exemple les stagiaires, avant de l'étendre à toute l'équipe. Comptez quelques semaines pour que la liste soit juste, puis la routine s'installe : au troisième départ, plus personne ne se demande qui devait faire quoi, et la personne qui s'en va repart avec un message clair sur ce qui lui est demandé de rendre.",
+      "Pour savoir où vous en êtes, faites l'exercice cette semaine : prenez les trois derniers collaborateurs partis, et vérifiez si leur adresse e-mail, leur accès au dossier partagé et leur compte dans votre logiciel principal sont toujours actifs. Si au moins un accès répond oui, vous avez trouvé votre point de départ. Notez ensuite, sur une page, les dix accès que chaque nouvelle personne reçoit à son arrivée : c'est la même liste qu'il faudra fermer à son départ. Lemany accompagne les PME de Genève et Vaud pour transformer cette page en un processus simple, qui tourne tout seul et que vous pouvez montrer à n'importe quel client qui pose la question."
+    ]
+  },
+  {
+    id: "agent-ia-depart-collaborateur-acces-geneve-vaud",
+    seoTitle: "Départ d'un collaborateur : fermer les accès — Genève & Vaud | Lemany",
+    links: [
+      "services-automatisation-ia.html",
+      "services-maintenance.html"
+    ],
+    category: "IA",
+    title: "Un collaborateur quitte votre PME : qui ferme ses accès, récupère le matériel et protège vos données à Genève ou dans le canton de Vaud ?",
+    date: "2 octobre 2026",
+    minutes: 6,
+    image: null,
+    excerpt: "Messagerie, logiciel comptable, espace de partage, réseaux sociaux de l'entreprise, clés, téléphone : à chaque départ, une dizaine d'accès restent ouverts des mois plus tard. Comment un agent IA tient la liste, relance les bonnes personnes et garde la trace, pour les PME de Genève et Vaud, sans service informatique.",
+    content: [
+      "Un vendredi à Nyon, la responsable d'une agence de vingt personnes fête le dernier jour d'un collaborateur parti après six ans. Gâteau, carte, poignée de main. Le lundi, tout le monde passe à autre chose. Trois mois plus tard, un client écrit à cette personne, dont l'adresse e-mail fonctionne toujours et redirige vers... personne. Le même mois, la fiduciaire s'étonne qu'un ancien employé figure encore parmi les utilisateurs du logiciel comptable. Et le téléphone de service, lui, dort dans un tiroir dont personne ne connaît le code de verrouillage. Rien de dramatique, rien de malveillant : simplement un départ que personne n'a eu le temps de « fermer » proprement.",
+      "Le coût réel se calcule avec vos propres chiffres. Un départ touche en moyenne huit à douze accès : messagerie, agenda, logiciel comptable ou de facturation, espace de fichiers partagés, outil de réservation, comptes des réseaux sociaux de l'entreprise, accès au site internet, abonnements payés par carte, sans compter les clés, le badge et le matériel. Si la personne qui s'en occupe y consacre une à deux heures, et qu'il faut les refaire lors de chaque départ, une PME de vingt personnes avec 15 % de rotation par an (soit trois départs) y passe six heures. À 60 CHF de l'heure, cela représente 360 CHF, c'est peu. Le vrai prix est ailleurs : un accès oublié, c'est un client dont les messages se perdent, un abonnement qui continue de se facturer à 40 CHF par mois pendant deux ans, ou un ancien collaborateur qui peut encore consulter des dossiers qu'il n'a plus aucune raison de voir.",
+      "Ce dernier point n'est pas qu'une question de confort. Depuis le 1er septembre 2023, la nouvelle loi fédérale sur la protection des données (nLPD) demande aux entreprises, y compris aux petites, de protéger les données personnelles par des mesures adaptées. Des listes de clients, des dossiers d'employés ou des coordonnées de patients accessibles à quelqu'un qui a quitté l'entreprise font typiquement partie des situations qu'un contrôle ou un incident rend gênantes. Les PME de Genève et de Vaud, où les équipes changent souvent (frontaliers, contrats saisonniers, stagiaires, remplacements), sont particulièrement exposées : plus il y a de mouvements, plus la liste de fermeture change d'une personne à l'autre et plus elle est facile à oublier.",
+      "La sortie n'est ni un grand projet ni un nouveau logiciel. Un agent IA peut tenir pour vous une fiche de départ vivante. Dès que vous lui signalez une date de départ, il établit la liste des accès propres à cette personne (à partir de ce que vous lui avez indiqué lors de son arrivée), répartit les tâches (qui coupe la messagerie, qui récupère le matériel, qui prévient la fiduciaire), envoie les rappels aux bonnes personnes et coche chaque étape à mesure qu'elle est confirmée. Il prépare aussi les messages utiles : la réponse automatique qui renvoie les clients vers un successeur, la transmission des dossiers en cours, l'avis aux fournisseurs concernés. Une seule personne valide la fermeture finale ; l'agent ne coupe rien de sensible sans accord, et vous gardez un historique daté de qui a fait quoi, utile le jour où un contrôle ou un litige le demande.",
+      "Le premier pas est volontairement modeste : ne traitez que les départs, pas les arrivées ni les changements de poste. Commencez par une liste type d'une page, que vous remplissez à la main pour le prochain départ, en notant ce qui a été oublié. Ces oublis vous disent exactement où l'agent vous fera gagner du temps. Pour les petites équipes, la liste de base tient en cinq lignes : messagerie et agenda, outils partagés, outils financiers, comptes publics de l'entreprise (site, réseaux sociaux, avis Google), puis matériel et clés. L'agent ajoute ensuite les cas propres à chaque métier, comme les accès à un logiciel de gestion de cabinet ou à un portail de fournisseur. Deuxième réflexe utile : une fois par trimestre, l'agent peut vous présenter la liste des comptes encore actifs dans vos outils, à comparer avec la liste des personnes réellement en poste. Les écarts sautent aux yeux en deux minutes, là où un contrôle manuel prendrait une demi-journée que personne n'a. Troisième réflexe, côté ressources humaines : prévoir le départ avant qu'il ait lieu. Dès que le préavis est donné, la fiche s'ouvre, le transfert des dossiers commence et le dernier jour ne devient plus une course contre la montre.",
+      "Pour savoir si le sujet vous concerne, faites ce test simple cette semaine : listez les personnes qui ont quitté votre entreprise au cours des deux dernières années, puis vérifiez si leur adresse e-mail, leur accès au logiciel comptable et leur place dans l'espace de fichiers sont toujours actifs. Si vous trouvez ne serait-ce qu'un accès ouvert, vous savez que la procédure repose aujourd'hui sur la mémoire de quelqu'un. Chez Lemany, nous aidons les PME de Genève et de Vaud à transformer cette mémoire en une liste qui se remplit toute seule, adaptée à vos outils et à vos habitudes. Racontez-nous comment se passe votre prochain départ : nous vous dirons honnêtement si cela vaut la peine d'être automatisé."
+    ]
+  },
+  {
+    id: "agent-ia-permis-de-travail-echeances-geneve-vaud",
+    seoTitle: "Permis de travail : suivre les échéances avec l'IA — Genève & Vaud | Lemany",
+    links: [
+      "services-automatisation-ia.html",
+      "services-automatisation.html"
+    ],
+    category: "IA",
+    title: "Permis G, B, L : qui surveille les dates d'échéance des permis de travail de vos collaborateurs à Genève ou dans le canton de Vaud ?",
+    date: "1 octobre 2026",
+    minutes: 6,
+    image: null,
+    excerpt: "Un permis qui expire sans que personne ne l'ait vu, et c'est un collaborateur qui ne peut plus travailler du jour au lendemain. Comment un agent IA suit les échéances des permis G, B et L de votre équipe et prépare les rappels, pour les PME de Genève et Vaud, sans remplacer votre jugement ni vos démarches officielles.",
+    content: [
+      "Un jeudi de fin de mois, la responsable administrative d'un cabinet d'architectes de Carouge reçoit un appel de sa comptable : « Le permis de Julien arrive à échéance dans onze jours, tu as lancé le renouvellement ? » Elle n'en avait aucune idée. Les dates de validité sont éparpillées : une photocopie dans le dossier du personnel, une date dans un tableau Excel mis à jour pour la dernière fois en mars, un rappel Outlook créé par une collègue partie depuis. Elle passe l'après-midi à fouiller les dossiers, à rappeler l'employé, à recontacter l'office cantonal. Rien n'est perdu cette fois, mais pendant trois heures, elle ne sait pas si son collaborateur pourra encore travailler lundi.",
+      "Le coût se calcule avec vos propres chiffres. Prenons une PME de 25 personnes dont dix ont un permis (G frontalier, B séjour ou L courte durée) : cela fait une dizaine de dates à suivre, souvent deux ou trois démarches par an à anticiper, chacune demandant environ deux heures entre la recherche de la date, la préparation des documents et les relances. Soit 20 à 30 heures par an, à 60 CHF de l'heure, 1 200 à 1 800 CHF de temps administratif. Ce montant reste modeste comparé au risque d'un oubli : une personne qui ne peut plus travailler le temps de régulariser sa situation, un poste à couvrir en urgence, un client qui attend, et pour l'employeur, une situation désagréable avec les autorités qu'on préfère ne jamais connaître.",
+      "Le contexte genevois et vaudois rend cette surveillance moins anodine qu'ailleurs. Une part importante des équipes vient de France voisine avec un permis frontalier G, d'autres personnes sont arrivées de l'Union européenne ou d'ailleurs avec un permis B ou L, et les durées de validité ne sont pas les mêmes d'un dossier à l'autre : elles dépendent du contrat, du statut et de la situation de chacun. Les démarches passent par l'office cantonal compétent (à Genève, l'OCPM et l'OCIRT selon les cas ; dans le canton de Vaud, le Service de la population) et leurs délais de traitement varient. Il y a aussi un volet que l'on oublie : les copies de permis sont des données personnelles. Depuis l'entrée en vigueur de la nouvelle loi fédérale sur la protection des données en septembre 2023, les laisser dans une boîte mail ou un dossier partagé sans accès contrôlé n'est plus un simple détail d'organisation.",
+      "Un agent IA ne remplace ni votre responsable RH, ni les démarches officielles : il tient le calendrier à votre place. Concrètement, il lit les documents que vous lui transmettez (copie du permis, contrat de travail), en extrait le type de permis, le nom de la personne et la date de validité, puis les range dans un seul registre. À intervalles que vous fixez (par exemple 90, 60 puis 30 jours avant l'échéance), il prépare un rappel pour la personne responsable et, si vous le souhaitez, un message à l'employé lui demandant les pièces nécessaires au renouvellement. Tout ce qui sort reste validé par un humain avant l'envoi, et toute date illisible ou incohérente est signalée plutôt que devinée.",
+      "Le premier pas tient en une semaine et n'a rien de spectaculaire. Réunissez les permis actuels de l'équipe dans un dossier à accès restreint, laissez l'agent construire le registre, puis comparez-le à votre tableau actuel : les écarts sont souvent instructifs. Vérifiez ensuite que les rappels arrivent bien aux bonnes personnes, avec une personne suppléante désignée en cas d'absence. Une fois ce socle fiable, on peut ajouter d'autres échéances qui suivent la même logique : contrats de durée déterminée, certificats médicaux, formations obligatoires. Rien n'oblige à tout faire d'un coup. Dans une petite équipe, ce qui compte n'est pas la sophistication de l'outil mais la certitude que quelqu'un, ou quelque chose, regarde le calendrier à votre place chaque semaine, y compris pendant les vacances d'été ou les périodes de clôture où l'administratif passe naturellement au second plan. C'est aussi un argument pour vos collaborateurs : être prévenu à temps d'un renouvellement à préparer, c'est une inquiétude de moins pour eux, surtout pour celles et ceux dont la situation dépend directement de ce document.",
+      "Reste la question de la confiance, légitime quand il s'agit de documents d'identité. Trois garde-fous suffisent : un accès limité à deux ou trois personnes nommément désignées, un hébergement en Suisse ou dans un pays offrant un niveau de protection reconnu, et une durée de conservation définie qui supprime les copies une fois la personne partie. Si votre dernier contrôle des dates de permis remonte à plus de six mois, c'est probablement le bon moment pour poser la question à voix haute dans votre équipe : qui sait aujourd'hui, sans chercher, quelle est la prochaine échéance ?"
+    ]
+  },
+  {
     id: "agent-ia-factures-fournisseurs-geneve-vaud",
     seoTitle: "Factures fournisseurs : automatiser — Genève & Vaud | Lemany",
     links: [
@@ -535,6 +694,23 @@ export const articles = [
     ]
   },
   {
+    id: 'ia-abordable-petite-equipe-geneve-vaud',
+    seoTitle: 'IA abordable pour PME : le vrai coût Genève/Vaud',
+    category: 'IA',
+    title: 'L\'IA coûte trop cher pour votre petite équipe ? Le vrai calcul, à Genève comme à Vaud',
+    date: '2 septembre 2026',
+    minutes: 6,
+    image: null,
+    excerpt: 'Vous pensez que l\'intelligence artificielle est réservée aux grandes entreprises avec un service informatique ? Voici le calcul réel pour une équipe de 5 à 15 personnes en Suisse romande, et où commencer sans se ruiner.',
+    content: [
+      "Vous scrollez LinkedIn un soir de semaine et tombez sur un post enthousiaste : une entreprise genevoise vient de « déployer trois agents IA » qui traitent ses demandes clients toute la nuit. Vous fermez l'onglet en pensant que c'est très bien pour eux, qu'ils ont sans doute un service informatique et un budget à six chiffres, et que pour votre atelier de huit personnes à Nyon ou votre cabinet de sept collaborateurs à Genève, ce sujet reste au rayon des choses qu'on regarde de loin. Un commercial vous a peut-être déjà appelé pour vous vendre « la plateforme IA qui va transformer votre entreprise », avec un devis à quinze mille francs et un contrat de deux ans. Vous avez raccroché, convaincu que l'intelligence artificielle n'est simplement pas faite pour une équipe de votre taille.",
+      "Faites pourtant le calcul sur une seule tâche répétitive de votre quotidien : répondre aux mêmes questions par e-mail — horaires, délais, disponibilités, suivi de commande. Si une personne y consacre trente minutes par jour, cela représente environ 125 heures par an, soit 8 750 à 11 000 CHF de temps de travail à 70-90 CHF de l'heure chargée. Un agent IA capable de répondre à ces questions récurrentes, ou de préparer une réponse que la personne n'a plus qu'à valider, coûte en réalité entre 50 et 250 CHF par mois selon l'outil et le volume — pas quinze mille francs, pas un contrat de deux ans. La confusion vient d'une seule chose : les commerciaux qui vous appellent vendent souvent une plateforme complète pensée pour des entreprises de deux cents personnes, alors que votre problème, lui, tient en une seule tâche précise.",
+      "La bonne question n'est donc pas « puis-je me permettre l'IA ? » mais « quelle est la tâche la plus répétitive de mon équipe, et existe-t-il un outil qui la fait pour trente à cent cinquante francs par mois ? ». On commence par un seul flux — le tri des e-mails entrants, la première réponse à une demande de devis, la relecture d'un document type — jamais par « installer l'IA dans toute l'entreprise ». On le laisse tourner un mois, on mesure le temps réellement gagné, et seulement alors on décide s'il vaut la peine d'ajouter un deuxième usage. C'est cette entrée progressive, et non l'ampleur du projet, qui rend l'IA rentable pour une équipe de cinq à quinze personnes — c'est d'ailleurs exactement comme cela que nous les mettons en place avec nos clients romands, un usage à la fois.",
+      "Le bassin lémanique a une particularité qui joue en votre faveur : le coût horaire y est parmi les plus élevés de Suisse, ce qui veut dire que chaque heure automatisée vaut davantage ici qu'ailleurs — le calcul se rentabilise donc plus vite pour une petite structure genevoise ou vaudoise que pour la même équipe installée en Suisse centrale. Attention cependant à un point souvent oublié par les petites structures : dès qu'un agent IA touche des données de clients — adresses, historique d'achat, échanges par e-mail — la loi fédérale sur la protection des données (nLPD) s'applique, quelle que soit la taille de l'entreprise. Choisissez un outil ou un partenaire qui vous dit clairement où les données sont hébergées et qui peut les effacer sur demande ; méfiez-vous d'une offre qui ne peut pas répondre à cette question en une phrase.",
+      "Le test à faire cette semaine ne coûte rien : listez les trois tâches les plus répétitives de votre équipe, chronométrez-les une journée, et multipliez par le nombre de jours travaillés dans l'année. Si l'une d'elles dépasse 5 000 CHF de temps de travail annuel, elle mérite un agent IA ciblé avant la fin de l'année — pas un projet de transformation numérique. Et si un prestataire vous répond par un devis à cinq chiffres et un engagement de deux ans avant même d'avoir vu vos trois tâches, ce n'est pas vous qui n'êtes pas prêt pour l'IA : c'est lui qui vous vend la mauvaise porte d'entrée."
+    ]
+  },
+  {
     id: 'agents-ia-comptabilite-geneve-vaud',
     seoTitle: 'Agent IA comptabilité PME — Genève & Vaud | Lemany',
     links: ['services-automatisation-ia.html', 'services-automatisation.html'],
@@ -566,23 +742,6 @@ export const articles = [
       "Chaque ressaisie prend 3 à 5 minutes. Pour une PME qui traite 15 nouveaux dossiers par semaine, cela représente 2h30 à 4h par semaine rien que pour retaper des informations déjà connues — soit 120 à 190 heures par an. À 70 CHF de l'heure chargée, cela vaut entre 8 000 et 13 000 CHF par an, sans compter les erreurs : une adresse mal recopiée fait revenir une facture, un numéro de TVA mal reporté demande une correction comptable.",
       "Il ne s'agit pas de tout changer d'un coup. On commence par relier deux points précis — par exemple faire que le nom saisi dans le devis remplisse automatiquement la facture, ou que l'acceptation d'un devis crée toute seule la ligne dans le fichier de suivi. Ce sont des automatisations ciblées, souvent invisibles pour l'équipe au quotidien, qui branchent les outils déjà en place entre eux sans en changer aucun. C'est le genre de pont sur mesure que nous construisons, pièce par pièce.",
       "Le test à faire cette semaine : demandez à chaque personne de l'équipe combien de fois elle retape le nom d'un même client dans une journée. Si la réponse dépasse deux, vous avez trouvé votre premier chantier — souvent le moins cher à corriger de tous, et celui qui rend tous les autres plus faciles ensuite."
-    ]
-  },
-  {
-    id: 'onboarding-nouveaux-collaborateurs',
-    links: ['services-logiciels-metier.html', 'services-portails-clients.html'],
-    category: 'Process',
-    title: 'Former un nouveau collaborateur vous prend six semaines ?',
-    date: '4 août 2026',
-    minutes: 5,
-    image: null,
-    excerpt: 'Le savoir-faire de votre PME tient dans la tête de trois personnes et dans un dossier partagé. Chaque arrivée coûte alors des semaines à tout le monde.',
-    content: [
-      "La nouvelle recrue arrive un lundi. On lui montre l'écran par-dessus l'épaule : « tu verras, ici on fait comme ça ». Pendant six semaines, elle pose des questions à la personne d'à côté, qui s'arrête à chaque fois. Personne ne s'en plaint — c'est comme ça qu'on a toujours formé.",
-      "Le coût est pourtant facile à chiffrer. Une recrue à 6 500 CHF par mois qui n'est réellement productive qu'à moitié pendant six semaines, c'est environ 4 500 CHF. Ajoutez trois à quatre heures par semaine prises à un collègue expérimenté, soit près de 1 800 CHF. Et cela se répète à chaque arrivée, à chaque remplacement, à chaque retour de congé maternité.",
-      "La cause n'est pas le manque de sérieux : c'est que le processus n'existe nulle part par écrit. Il vit dans les habitudes, dans les modèles Word de chacun et dans la mémoire des anciens. Un classeur de procédures n'y change rien — il est rédigé une fois, jamais relu, et périmé au bout de trois mois.",
-      "Ce qui fonctionne, c'est de mettre le processus dans l'outil que l'équipe utilise déjà, pas dans un document à côté. Un formulaire qui demande les bonnes informations dans le bon ordre, des étapes qu'on ne peut pas sauter, des valeurs par défaut et un historique consultable : la formation devient invisible, elle est intégrée au travail. On commence par le processus le plus fréquent, celui qui déclenche le plus de questions.",
-      "Un test simple pour savoir par où commencer : demandez à la dernière personne arrivée de lister les dix questions qu'elle a posées le plus souvent. Cette liste est votre feuille de route — et elle vaut mieux que n'importe quel manuel."
     ]
   },
   {
@@ -654,6 +813,23 @@ export const articles = [
     ]
   },
   {
+    id: 'onboarding-nouveaux-collaborateurs',
+    links: ['services-logiciels-metier.html', 'services-portails-clients.html'],
+    category: 'Process',
+    title: 'Former un nouveau collaborateur vous prend six semaines ?',
+    date: '4 août 2026',
+    minutes: 5,
+    image: null,
+    excerpt: 'Le savoir-faire de votre PME tient dans la tête de trois personnes et dans un dossier partagé. Chaque arrivée coûte alors des semaines à tout le monde.',
+    content: [
+      "La nouvelle recrue arrive un lundi. On lui montre l'écran par-dessus l'épaule : « tu verras, ici on fait comme ça ». Pendant six semaines, elle pose des questions à la personne d'à côté, qui s'arrête à chaque fois. Personne ne s'en plaint — c'est comme ça qu'on a toujours formé.",
+      "Le coût est pourtant facile à chiffrer. Une recrue à 6 500 CHF par mois qui n'est réellement productive qu'à moitié pendant six semaines, c'est environ 4 500 CHF. Ajoutez trois à quatre heures par semaine prises à un collègue expérimenté, soit près de 1 800 CHF. Et cela se répète à chaque arrivée, à chaque remplacement, à chaque retour de congé maternité.",
+      "La cause n'est pas le manque de sérieux : c'est que le processus n'existe nulle part par écrit. Il vit dans les habitudes, dans les modèles Word de chacun et dans la mémoire des anciens. Un classeur de procédures n'y change rien — il est rédigé une fois, jamais relu, et périmé au bout de trois mois.",
+      "Ce qui fonctionne, c'est de mettre le processus dans l'outil que l'équipe utilise déjà, pas dans un document à côté. Un formulaire qui demande les bonnes informations dans le bon ordre, des étapes qu'on ne peut pas sauter, des valeurs par défaut et un historique consultable : la formation devient invisible, elle est intégrée au travail. On commence par le processus le plus fréquent, celui qui déclenche le plus de questions.",
+      "Un test simple pour savoir par où commencer : demandez à la dernière personne arrivée de lister les dix questions qu'elle a posées le plus souvent. Cette liste est votre feuille de route — et elle vaut mieux que n'importe quel manuel."
+    ]
+  },
+  {
     id: 'combien-coute-site-internet-suisse',
     seoTitle: 'Combien coûte un site internet en Suisse en 2026 ? — Lemany',
     links: ['services-sites-internet.html', 'services-refonte-site.html'],
@@ -722,6 +898,23 @@ export const articles = [
     ]
   },
   {
+    id: 'taches-repetitives-pme',
+    seoTitle: 'Les 5 t&acirc;ches que votre PME refait chaque semaine',
+    links: ['services-automatisation.html', 'services-automatisation-ia.html'],
+    category: 'Automatisation',
+    title: 'Les 5 tâches que votre PME refait chaque semaine (et comment les supprimer)',
+    date: '2 juillet 2026',
+    minutes: 8,
+    image: null,
+    excerpt: 'Facturation, relances, consolidation Excel : le vrai coût des tâches répétitives, chiffré sur des cas romands — et par où commencer.',
+    content: [
+      "Chaque semaine, la même scène : la facture recopiée depuis le devis, la relance client notée « à faire lundi », le tableau Excel consolidé le vendredi soir. Individuellement, ces tâches semblent anodines. Mises bout à bout, elles représentent souvent 8 à 15 heures par semaine dans une PME de 10 à 30 personnes.",
+      "Le calcul est simple : 10 heures hebdomadaires à un coût complet de 80 CHF/heure, c'est plus de 40 000 CHF par an — pour du travail qu'une machine fait mieux, sans oubli et sans vendredi soir.",
+      "Par où commencer ? Par la tâche la plus fréquente, pas la plus complexe. Une relance automatique à J+15 se met en place en quelques jours et produit un effet immédiat sur la trésorerie. La consolidation des chiffres vient ensuite : un tableau de bord alimenté en continu remplace le rituel du vendredi.",
+      "Notre conseil : listez pendant une semaine tout ce que votre équipe fait plus d'une fois. Cette liste vaut de l'or — c'est le cahier des charges de votre première automatisation."
+    ]
+  },
+  {
     id: 'combien-temps-developpement',
     seoTitle: 'Combien de temps pour d&eacute;velopper un site ou une app ?',
     links: ['services-sites-internet.html', 'services-applications-web.html'],
@@ -754,6 +947,22 @@ export const articles = [
       "Le site ensuite : une page par prestation importante, la ville dans les titres quand c'est naturel (« Garage à Nyon », pas « garage nyon pas cher meilleur »), et les données structurées schema.org LocalBusiness — invisibles pour l'humain, décisives pour Google et pour les assistants IA qui recommandent des adresses.",
       "Les avis enfin : demandez-les au bon moment (juste après une prestation réussie), rendez la démarche facile avec un lien direct, et répondez à tous — y compris les négatifs, avec calme. Un profil 4,6 avec 80 avis récents bat un 5,0 avec 6 avis de 2022.",
       "Le SEO local est le levier le plus rentable pour un commerce ou un artisan : peu de concurrents le travaillent sérieusement, et chaque position gagnée se traduit directement en appels."
+    ]
+  },
+  {
+    id: 'mvp-4-semaines',
+    seoTitle: 'MVP en 4 semaines : ce qu\'on garde, ce qu\'on coupe — Lemany',
+    links: ['services-mvp.html', 'services-saas.html'],
+    category: 'SaaS',
+    title: 'MVP en 4 semaines : ce qu\'on garde, ce qu\'on coupe',
+    date: '18 juin 2026',
+    minutes: 6,
+    image: null,
+    excerpt: 'Un MVP n\'est pas un produit au rabais : c\'est un produit qui répond à une seule question. Voici comment on tranche.',
+    content: [
+      "La plupart des projets SaaS échouent avant d'exister : trop de fonctionnalités prévues, trop de temps avant la première mise en ligne, plus de budget pour itérer. Un MVP en 4 semaines force les bonnes décisions.",
+      "Ce qu'on garde : le parcours qui crée de la valeur (celui pour lequel un client paierait), l'authentification, et un moyen de mesurer l'usage. Ce qu'on coupe : les rôles et permissions complexes, les préférences, les exports, tout ce qui commence par « il faudrait aussi ».",
+      "La règle qu'on applique : si une fonctionnalité ne change pas la réponse à « est-ce que quelqu'un paiera pour ça ? », elle attend la V2. C'est inconfortable — et c'est exactement pour ça que ça marche."
     ]
   },
   {
@@ -791,6 +1000,23 @@ export const articles = [
     ]
   },
   {
+    id: 'sortir-excel-methode-douce',
+    seoTitle: 'Sortir d\'Excel sans tout casser : la méthode douce — Lemany',
+    links: ['services-logiciels-metier.html', 'services-automatisation.html'],
+    category: 'Process',
+    title: 'Sortir d\'Excel sans tout casser : la méthode douce',
+    date: '4 juin 2026',
+    minutes: 7,
+    image: null,
+    excerpt: 'Excel n\'est pas l\'ennemi — c\'est le symptôme. Comment migrer progressivement sans bloquer l\'équipe.',
+    content: [
+      "Excel est probablement le meilleur outil de gestion jamais créé — jusqu'au jour où trois personnes travaillent sur le même fichier, où « final_v3 » côtoie « final_v3_VRAI », et où une formule cassée passe inaperçue pendant deux mois.",
+      "L'erreur classique : vouloir tout remplacer d'un coup. L'équipe perd ses repères, résiste, et retourne à Excel en douce. La méthode douce : on remplace un seul usage à la fois, en commençant par celui qui fait le plus mal — souvent la saisie partagée.",
+      "Concrètement : l'application reprend d'abord la structure de vos fichiers actuels, colonne par colonne. L'équipe retrouve ses habitudes, mais avec des données fiables, un historique et des droits d'accès. Les automatisations arrivent ensuite, une fois la confiance installée.",
+      "Dans nos projets, la bascule complète prend 4 à 8 semaines — et personne ne regrette le fichier partagé."
+    ]
+  },
+  {
     id: 'crm-sur-mesure-ou-marche',
     seoTitle: 'CRM sur mesure ou abonnement : comment trancher',
     links: ['services-crm.html', 'services-logiciels-metier.html'],
@@ -822,56 +1048,6 @@ export const articles = [
       "L'alternative : un module de réservation intégré à votre propre site. Réservation 24h/24, confirmations et rappels automatiques par e-mail ou SMS, gestion des créneaux et des capacités — et zéro commission, pour toujours. Le coût unique (généralement 2 500 à 8 000 CHF selon les intégrations) s'amortit souvent en moins d'un an de commissions évitées.",
       "L'autre enjeu, plus important que la commission : les données. Sur votre système, les coordonnées et l'historique de vos clients vous appartiennent. Vous pouvez les faire revenir — offre de saison, rappel d'entretien, relance des clients qui ne sont pas venus depuis 6 mois. Sur une plateforme, cet actif appartient à la plateforme.",
       "La stratégie raisonnable : gardez les plateformes comme canal d'acquisition pour les nouveaux clients si elles vous en apportent, et faites de votre site le canal principal — celui vers lequel pointent votre fiche Google, vos réseaux et vos rappels."
-    ]
-  },
-  {
-    id: 'taches-repetitives-pme',
-    seoTitle: 'Les 5 t&acirc;ches que votre PME refait chaque semaine',
-    links: ['services-automatisation.html', 'services-automatisation-ia.html'],
-    category: 'Automatisation',
-    title: 'Les 5 tâches que votre PME refait chaque semaine (et comment les supprimer)',
-    date: '2 juillet 2026',
-    minutes: 8,
-    image: null,
-    excerpt: 'Facturation, relances, consolidation Excel : le vrai coût des tâches répétitives, chiffré sur des cas romands — et par où commencer.',
-    content: [
-      "Chaque semaine, la même scène : la facture recopiée depuis le devis, la relance client notée « à faire lundi », le tableau Excel consolidé le vendredi soir. Individuellement, ces tâches semblent anodines. Mises bout à bout, elles représentent souvent 8 à 15 heures par semaine dans une PME de 10 à 30 personnes.",
-      "Le calcul est simple : 10 heures hebdomadaires à un coût complet de 80 CHF/heure, c'est plus de 40 000 CHF par an — pour du travail qu'une machine fait mieux, sans oubli et sans vendredi soir.",
-      "Par où commencer ? Par la tâche la plus fréquente, pas la plus complexe. Une relance automatique à J+15 se met en place en quelques jours et produit un effet immédiat sur la trésorerie. La consolidation des chiffres vient ensuite : un tableau de bord alimenté en continu remplace le rituel du vendredi.",
-      "Notre conseil : listez pendant une semaine tout ce que votre équipe fait plus d'une fois. Cette liste vaut de l'or — c'est le cahier des charges de votre première automatisation."
-    ]
-  },
-  {
-    id: 'mvp-4-semaines',
-    seoTitle: 'MVP en 4 semaines : ce qu\'on garde, ce qu\'on coupe — Lemany',
-    links: ['services-mvp.html', 'services-saas.html'],
-    category: 'SaaS',
-    title: 'MVP en 4 semaines : ce qu\'on garde, ce qu\'on coupe',
-    date: '18 juin 2026',
-    minutes: 6,
-    image: null,
-    excerpt: 'Un MVP n\'est pas un produit au rabais : c\'est un produit qui répond à une seule question. Voici comment on tranche.',
-    content: [
-      "La plupart des projets SaaS échouent avant d'exister : trop de fonctionnalités prévues, trop de temps avant la première mise en ligne, plus de budget pour itérer. Un MVP en 4 semaines force les bonnes décisions.",
-      "Ce qu'on garde : le parcours qui crée de la valeur (celui pour lequel un client paierait), l'authentification, et un moyen de mesurer l'usage. Ce qu'on coupe : les rôles et permissions complexes, les préférences, les exports, tout ce qui commence par « il faudrait aussi ».",
-      "La règle qu'on applique : si une fonctionnalité ne change pas la réponse à « est-ce que quelqu'un paiera pour ça ? », elle attend la V2. C'est inconfortable — et c'est exactement pour ça que ça marche."
-    ]
-  },
-  {
-    id: 'sortir-excel-methode-douce',
-    seoTitle: 'Sortir d\'Excel sans tout casser : la méthode douce — Lemany',
-    links: ['services-logiciels-metier.html', 'services-automatisation.html'],
-    category: 'Process',
-    title: 'Sortir d\'Excel sans tout casser : la méthode douce',
-    date: '4 juin 2026',
-    minutes: 7,
-    image: null,
-    excerpt: 'Excel n\'est pas l\'ennemi — c\'est le symptôme. Comment migrer progressivement sans bloquer l\'équipe.',
-    content: [
-      "Excel est probablement le meilleur outil de gestion jamais créé — jusqu'au jour où trois personnes travaillent sur le même fichier, où « final_v3 » côtoie « final_v3_VRAI », et où une formule cassée passe inaperçue pendant deux mois.",
-      "L'erreur classique : vouloir tout remplacer d'un coup. L'équipe perd ses repères, résiste, et retourne à Excel en douce. La méthode douce : on remplace un seul usage à la fois, en commençant par celui qui fait le plus mal — souvent la saisie partagée.",
-      "Concrètement : l'application reprend d'abord la structure de vos fichiers actuels, colonne par colonne. L'équipe retrouve ses habitudes, mais avec des données fiables, un historique et des droits d'accès. Les automatisations arrivent ensuite, une fois la confiance installée.",
-      "Dans nos projets, la bascule complète prend 4 à 8 semaines — et personne ne regrette le fichier partagé."
     ]
   },
   {

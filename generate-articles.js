@@ -121,8 +121,9 @@ function pageArticle(a, precedent, suivant, template) {
     ],
   });
 
-  const paragraphes = a.content.map((t) =>
-    `      <p style="margin:26px 0 0;font:400 16.5px/1.78 'Archivo',sans-serif;color:#333;text-wrap:pretty">${escapeHtml(t)}</p>`
+  const paragraphes = a.content.map((t) => t.startsWith('## ')
+    ? `      <h2 style="margin:40px 0 0;font:800 clamp(22px,3vw,28px)/1.2 'Archivo',sans-serif;color:#141414;letter-spacing:-.02em">${escapeHtml(t.slice(3))}</h2>`
+    : `      <p style="margin:26px 0 0;font:400 16.5px/1.78 'Archivo',sans-serif;color:#333;text-wrap:pretty">${escapeHtml(t)}</p>`
   ).join('\n');
 
   const cartes = (a.links && a.links.length === 2 ? a.links : LIENS_PAR_DEFAUT[a.category]).map((href) =>
