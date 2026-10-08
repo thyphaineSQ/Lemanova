@@ -7,6 +7,28 @@
 // ============================================================
 export const articles = [
   {
+    id: "agent-ia-feuilles-heures-saisie-temps-geneve-vaud",
+    seoTitle: "Feuilles d'heures : automatiser la saisie — Genève & Vaud | Lemany",
+    links: [
+      "services-automatisation-ia.html",
+      "services-logiciels-metier.html"
+    ],
+    category: "Automatisation",
+    title: "Feuilles d'heures remplies le vendredi de mémoire : comment ne plus perdre d'heures facturables dans votre PME de Genève ou Vaud ?",
+    date: "8 octobre 2026",
+    minutes: 6,
+    image: null,
+    excerpt: "Heures notées sur un coin de papier, recopiées en fin de mois, oubliées à la facturation : la saisie du temps coûte des heures facturables et complique le suivi légal. Comment un agent IA collecte, relance et met en forme les heures de votre équipe, pour les PME de Genève et du canton de Vaud.",
+    content: [
+      "Un vendredi à 17 h 40, à Nyon, la responsable d'une petite agence de communication ouvre le tableau des heures de l'équipe. Trois colonnes sont vides. Marc a « tout en tête », Sophie est déjà partie en week-end, et le stagiaire a noté ses heures sur un post-it resté dans sa veste. Elle reconstitue la semaine à partir des e-mails envoyés et de l'agenda, en soupirant, parce que la facture au client est prévue lundi. À la fin du mois, le total ne colle pas avec ce qu'elle avait estimé, et personne ne sait vraiment où ont passé les quinze heures de différence.",
+      "Le calcul se refait avec vos propres chiffres. Prenez une équipe de huit personnes qui oublient en moyenne une heure facturable par semaine, parce qu'un appel de dix minutes ou une retouche rapide n'a jamais été noté. Cela fait huit heures par semaine, soit environ 380 heures par an en tenant compte des vacances. À 110 CHF de l'heure facturée, c'est plus de 40 000 CHF de travail réalisé mais jamais payé. Ajoutez la collecte elle-même : si la personne qui relance, recopie et vérifie y consacre une demi-journée par semaine, soit 100 heures par an à 60 CHF, on arrive encore à 6 000 CHF, sans compter le stress des vendredis soir.",
+      "Ce n'est pas de la mauvaise volonté. Noter son temps interrompt le travail, et on le fait donc quand on y repense, c'est-à-dire trop tard. À Genève et dans le canton de Vaud, beaucoup de petites équipes mélangent en plus les profils : des employés à temps partiel, des indépendants en renfort, des collaborateurs qui travaillent chez le client ou à distance depuis la France voisine. Chacun a sa façon de noter, et le tableau partagé devient un patchwork. Or la loi sur le travail demande en principe aux employeurs d'enregistrer la durée du travail de leurs employés (avec des assouplissements possibles sous conditions). Mieux vaut vérifier avec votre fiduciaire ou l'office cantonal compétent ce qui s'applique à votre entreprise, mais une saisie fiable reste dans tous les cas la meilleure protection en cas de question sur les heures supplémentaires.",
+      "La sortie ne demande pas de changer d'outil ni d'imposer un logiciel de pointage à toute l'équipe. Un agent IA peut rappeler chacun au bon moment, par message, avec une question simple : « Hier, vous avez travaillé sur quoi, et combien de temps ? ». La réponse en une phrase, écrite ou dictée, suffit. L'agent la rattache au bon client ou projet, repère les trous évidents (une journée sans entrée, un projet jamais mentionné alors qu'il apparaît dans l'agenda) et pose la question seulement quand c'est nécessaire. En fin de semaine, il met tout en forme dans le tableau que vous utilisez déjà et prépare le récapitulatif par client, prêt à facturer.",
+      "Le point de départ est volontairement modeste : une seule équipe, un seul canal de messagerie, quatre semaines d'essai. Vous gardez la main sur ce qui est validé, et l'agent n'invente jamais une heure : s'il manque une information, il la demande. Comme ces données concernent vos collaborateurs, parlez-en ouvertement avec eux et choisissez dès le départ un hébergement situé en Suisse ou conforme à la nLPD. L'objectif n'est pas de surveiller, mais de faire gagner du temps à chacun. Chez Lemany, nous construisons ces assistants autour de vos outils actuels, par petites étapes.",
+      "Pour savoir si le sujet vous concerne, comparez simplement, sur le dernier mois, les heures saisies avec ce que vous estimez avoir réellement travaillé pour deux clients. Si l'écart dépasse 10 %, il y a de l'argent à récupérer. Notez aussi combien de temps il a fallu cette semaine pour que tout le monde remplisse sa feuille. Ces deux chiffres suffisent à décider si un premier essai d'un mois vaut la peine, et ils serviront de point de comparaison honnête à la fin."
+    ]
+  },
+  {
     id: "agent-ia-factures-fournisseurs-geneve-vaud",
     seoTitle: "Factures fournisseurs : automatiser — Genève & Vaud | Lemany",
     links: [
